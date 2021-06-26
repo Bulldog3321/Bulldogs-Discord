@@ -18,6 +18,8 @@
 .scroller-RmtA4e::-webkit-scrollbar { display: none; }
 .scroller-2LSbBU::-webkit-scrollbar { display: none; }
 .contentRegionScroller-26nc1e::-webkit-scrollbar { display: none; }
+.container-24CyRY::-webkit-scrollbar { display: none; }
+.scroller-9moviB::-webkit-scrollbar { display: none; }
 
 /* glow badges */
 .numberBadge-2s8kKX{
@@ -157,6 +159,22 @@
 
 /* floating friends area */
 #app-mount .container-1D34oG {
+  position: relative;
+  border-radius: 10px;
+  margin: 5px 10px 5px 0;
+  left: 5px;
+}
+
+/* floating stage discovery */
+#app-mount .container-1a3EgQ {   
+  position: relative;
+  border-radius: 10px;
+  margin: 5px 10px 5px 0;
+  left: 5px;
+}
+
+/* floating store page */
+#app-mount .applicationStore-1pNvnv { 
   position: relative;
   border-radius: 10px;
   margin: 5px 10px 5px 0;
