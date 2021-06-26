@@ -1,13 +1,5 @@
 /* ----------------------------------------UNIVERSAL---------------------------------------- */
 
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css);
-
-:root {
-  --accentcolor:   97,179,222;   /* blurple */
-  --accentcolor2:  250,110,246;  /* boostpink */
-  --linkcolor:     129,216,208;  /* link */
-}
-
 /* old font */
 :root { --font-display: var(--font-primary)!important; }
 
