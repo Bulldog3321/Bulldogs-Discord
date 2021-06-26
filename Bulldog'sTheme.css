@@ -1,10 +1,3 @@
-/**
- * @name Bulldog's css
- * @description coom
- * @author Bulldog#0446
- * @version 1.0.9
- */
-
 /* ----------------------------------------UNIVERSAL---------------------------------------- */
 
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css);
@@ -372,39 +365,6 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg { display: none; }
 /* remove change avatar icon */
 .avatarUploaderIndicator-2G-aIZ { display: none; }
 
-/* reorder theme toggler and bdcompat settings *
-#app-mount .item-PXvHYJ[data-item-id="bdCompat"],
-#app-mount .item-PXvHYJ[data-item-id="theme-toggler"] { order: 1; }
-.item-PXvHYJ[data-item-id="pc-moduleManager-plugins"] ~ div { order: 2; }
-
-/* plugin settings divider *
-.item-PXvHYJ[data-item-id=pc-updater] {
-  height: 4.65rem;
-  align-items: unset !important;
-}
-.item-PXvHYJ[data-item-id=pc-updater]:hover {
-  background: linear-gradient(180deg,
-  var(--background-modifier-hover) 0%, var(--background-modifier-hover) 43%,
-  var(--background-secondary) 43.01%, var(--background-secondary) 100%) !important;
-}
-.item-PXvHYJ[data-item-id=pc-updater][class*=selected] {
-  background: linear-gradient(180deg, 
-  var(--background-modifier-selected) 0%, var(--background-modifier-selected) 43%,
-  var(--background-secondary) 43.01%, var(--background-secondary) 100%) !important;
-}
-.item-PXvHYJ[data-item-id=pc-updater]:after {
-  position: absolute;
-  margin-top: 2.19rem;
-  border-top: 1px solid var(--background-modifier-accent);
-  line-height: 2.6rem;    
-  width: 89.5%;
-  content: "Plugin Settings";
-  color: rgb(159, 159, 159);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-}
-
 /* 2 column emoji settings */
 .marginBottom40-2vIwTv > .marginBottom4-2qk4Hy {
   display: none;
@@ -426,35 +386,4 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg { display: none; }
 }
 #app-mount .emojiRow-zIc7ZX:hover > .emojiImage-1hZi2F {
   opacity: 0;
-}
-
-/* ----------------------------------------PLUGIN/THEME EDITS---------------------------------------- */
-
-/* fix "Better Friends List" spacing *
-.headerCellContent-1pLtOr { margin: auto; }
-.bfl-title { padding-right: 30px; }
-.bfl-mutualGuilds.bfl-container { padding: 0 0 12px 10px; }
-
-/* fix notebook color *
-.modal-yWgWj-.hn-notebook { background-color: var(--background-secondary); }
-
-/* better folders server list gap fix */
-.BF-folderSidebar { margin-left: -5px; margin-right: 5px; }
-
-/* centered user details *
-.UserDetails-dates-icons { justify-content: center; }
-.UserDetails-connections-connections { justify-content: center; }
-
-/* better modern channel indicators *
-#app-mount .containerDefault--pIXnN .wrapper-2jXpOf:not(.modeSelected-346R90):not(.modeConnected-3IsKId):hover,
-#app-mount .channel-2QD9_O:not(.selected-aXhQR6):hover {
-  background: var(--background-primary) !important;
-}
-#app-mount .modeSelected-346R90,
-#app-mount .channel-2QD9_O.selected-aXhQR6 { 
-  border-bottom-right-radius: 24px !important; 
-  border-top-right-radius: 24px !important 
-}
-#app-mount .modeUnread-1qO3K1 {
-  background: var(--background-secondary) !important;
 }
