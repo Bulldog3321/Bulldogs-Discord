@@ -181,7 +181,7 @@
   border-bottom-left-radius: 3px;
 }
 .theme-dark .scrollableContainer-2NUZem:focus-within {
-  border-bottom: solid 3px var(--blurple-replace);
+  border-bottom: solid 3px rgb(97,179,222);
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
