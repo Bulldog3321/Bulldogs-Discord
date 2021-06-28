@@ -11,6 +11,21 @@
 /* old font */
 :root { --font-display: var(--font-primary)!important; }
 
+/* change watermark */
+.wordmark-2iDDfm path {
+  display:none;
+}
+.wordmark-2iDDfm:after {
+  content: 'Discord';
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute !important;
+  left: 10px;
+  top: 5px;
+  width: 100vw;
+}
+
 /* remove scrollbars */
 .peopleList-3c4jOR::-webkit-scrollbar { display: none; }
 .scroller-1JbKMe::-webkit-scrollbar { display: none; }
@@ -204,16 +219,39 @@
 #status-picker .item-1tOPte:not(#status-picker-custom-status) .status-1fhblQ { display: none; }
 
 /* compact home page buttons */
-.privateChannels-1nO12o .content-3YMskv {
-  --columns: 3; display: grid; grid-template-columns: repeat(var(--columns), 1fr); grid-auto-rows: min-content; }
-.privateChannels-1nO12o .content-3YMskv > * {
-  grid-column: 1/-1; }
-.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) {
-  grid-column: auto; }
-.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .content-3QAtGj {
-  display: none; }
-.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .avatar-3uk_u9 {
-  width: 100%; margin: 0 !important; }
+.privateChannels-1nO12o .content-3YMskv { --columns: 3; display: grid; grid-template-columns: repeat(var(--columns), 1fr); grid-auto-rows: min-content; }
+.privateChannels-1nO12o .content-3YMskv > * { grid-column: 1/-1; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) { grid-column: auto; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .content-3QAtGj { display: none; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .avatar-3uk_u9 { width: 100%; margin: 0 !important; }
+
+/* friends background */
+.avatar-3W3CeO.wrapper-3t9DeA:before {
+  content: '';
+  position: absolute;
+  top: -20px; 
+  left: -25px;
+  min-width: 585px;
+  height: var(--friendblockheight) !important;
+  z-index: -1;
+  opacity: 0.3;
+  background: var(--csbg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;}
+.userInfo-2zN2z8 {
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* rounded friends list buttons */
+.actionButton-uPB8Fs, .actionButton-uPB8Fs.highlight-Lf97TE { border-radius: 12px; }
+
+/* remove friends separators */
+.peopleListItem-2nzedh {
+  border-top: 0px solid var(--background-modifier-accent);
+}
 
 /* hide friends title */
 .tabBar-ZmDY9v { right: 112px; position: relative; background-color: var(--background-primary); }
@@ -253,6 +291,8 @@
 
 /* better chat box */
 .theme-dark .scrollableContainer-2NUZem {
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   transition: all 0.25s;
   border-bottom: solid 3px var(--background-secondary);
@@ -264,11 +304,24 @@
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+.channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
+  background: rgba(0,0,0, 0);
+  margin-bottom: 5px;
+}
+.typing-2GQL18, .base-gE7OpD {
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  position: relative;
+  margin-right: 35px;
+}
+.cooldownWrapper-3joyFc {
+  margin-right: 5px;
+}
 
 /* transparent chat box background */
 .form-2fGMdU:before { display: none; }
 .scroller-2LSbBU { margin-bottom: -100px; padding-bottom: 90px; }
-.channelTextArea-2VhZ6z, .scrollableContainer-2NUZem { background: var(--background-secondary); }
 .replyBar-1YLQ2F { background: transparent; }
 
 /* hide chat box icons until hover */
@@ -278,16 +331,14 @@
 /* mobile jump to present */
 .jumpToPresentBar-G1R9s6 {
   visibility: hidden;
-  bottom: 8px;
-  padding: 0;
-  border-radius: 15px;
 }
 .jumpToPresentBar-G1R9s6 .barButtonIcon-3t4V3d {
   visibility: visible;
   padding: 12px;
-  background-color: var(--background-accent);
-  border-radius: 50%;
-  margin-bottom: 2em;
+  background-color: var(--background-tertiary);
+  border-radius: 24px;
+  margin-bottom: 50px;
+  margin-right: -10px;
 }
 
 /* rounded toolbar */
@@ -336,6 +387,16 @@
 div[aria-label$="(Limited)"] path[d^="M2"][d*="19"] { fill: #ffd01a; }
 div[aria-label$="(NSFW)"] path:last-child { fill: #ed4245; }
 
+/* image background blur */
+#app-mount div > .backdrop-1wrmKB, .layer-2KE1M9 {
+  backdrop-filter: blur(5px); /* Customizable Value (the higher the pixel count, the more blur there is) */
+  transition: opacity .5s;
+}
+.backdrop-1wrmKB.withLayer-RoELSG {
+  opacity: .5 !important;
+  transition: opacity .5s;
+}
+
 /* better embeds */
 .embedFull-2tM8-- {
   border-left: 0px;
@@ -374,14 +435,43 @@ div[aria-label$="(NSFW)"] path:last-child { fill: #ed4245; }
 /* smaller channel icons */
 .icon-1DeIlz { width: 15px; }
 
+/* unread channel icon glow */
+.modeUnread-1qO3K1>div>a>div>.icon-1DeIlz{
+  color:var(--interactive-active);
+}
+
 /* disable copying usernames and time stamps */
 .header-23xsNx{ user-select:none; }
 
 /* smaller mentions */
 #app-mount .wrapper-3WhCwL { border-radius: 5px; padding: 2px 3px; font-size: 0.9em; }
+.wrapper-3WhCwL:hover { background-color: rgb(97,179,222, 0.8) !important; transition: 0.2s; }
 
 /* fix audio embed width */
 .wrapperAudio-1jDe0Q { width: auto !important; min-width: 400px; }
+
+/* change file upload limit text */
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .title-2Vtl4y {
+  font-size: 0px;
+}
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .title-2Vtl4y:before {
+  content: 'That was';
+  font-size: 22px;
+  font-weight: normal;
+} 
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .title-2Vtl4y:after {
+  content: ' fucking gay';
+  font-size: 22px;
+  font-style: italic;
+}
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .instructions-2Du9gG {
+  font-size: 0px;
+  width: 180px;
+} 
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .instructions-2Du9gG:after {
+  content: "Don't ever post that bullshit again you fucking retard";
+  font-size: 12px;
+}
 
 /* center users in voice display */
 .voiceUsers-2V7vuh { width: 100%; justify-content: space-evenly; grid-template-columns: none; }
