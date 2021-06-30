@@ -564,9 +564,9 @@ img[class^="avatar"]{
 .theme-dark .scrollableContainer-2NUZem {
   background-color: rgba(0,0,0,0.2);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 3px;
   transition: all 0.25s;
-  border-bottom: solid 3px var(--background-secondary);
+  border-bottom: solid 3px transparent;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -577,29 +577,33 @@ img[class^="avatar"]{
 }
 .channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
   background: rgba(0,0,0, 0);
-  margin-bottom: 5px;
 }
 .typing-2GQL18, .base-gE7OpD {
   background-color: rgba(0,0,0,0.2);
   backdrop-filter: blur(5px);
-  border-radius: 50px;
-  position: relative;
-  margin-right: 35px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: 0 20px 0 20px;
+  margin-bottom: -1px;
 }
 .cooldownWrapper-3joyFc {
-  margin-right: 5px;
+  margin-right: 6px;
 }
-
-/* transparent chat box background */
-.form-2fGMdU:before { 
-  display: none; 
+.attachedBars-tZDmyV { 
+  margin: 0 20px 0 20px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+.replyBar-1YLQ2F { 
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
 }
 .scroller-2LSbBU { 
   margin-bottom: -100px; 
   padding-bottom: 90px; 
 }
-.replyBar-1YLQ2F { 
-  background: transparent; 
+.form-2fGMdU:before { 
+  display: none; 
 }
 
 /* hide chat box icons until hover */
