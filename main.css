@@ -563,7 +563,6 @@ img[class^="avatar"]{
 /* better chat box */
 .theme-dark .scrollableContainer-2NUZem {
   background-color: rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
   border-radius: 3px;
   transition: all 0.25s;
   border-bottom: solid 3px transparent;
@@ -580,7 +579,6 @@ img[class^="avatar"]{
 }
 .typing-2GQL18, .base-gE7OpD {
   background-color: rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   margin: 0 20px 0 20px;
@@ -697,16 +695,6 @@ div[aria-label$="(NSFW)"] path:last-child {
   fill: #ed4245; 
 }
 
-/* image background blur */
-#app-mount div > .backdrop-1wrmKB, .layer-2KE1M9 {
-  backdrop-filter: blur(5px);
-  transition: opacity .5s;
-}
-.backdrop-1wrmKB.withLayer-RoELSG {
-  opacity: .5 !important;
-  transition: opacity .5s;
-}
-
 /* better embeds */
 .embedFull-2tM8-- {
   border-left: 0px;
@@ -816,12 +804,15 @@ div[aria-label$="(NSFW)"] path:last-child {
   grid-template-columns: none; 
 }
 
-/* hide nitro and gif chat icons */
-button[aria-label="Send a gift"] { 
-  display: none; 
+/* hide gift, gif, and sticker icons */
+.buttons-3JBrkn>[aria-label][tabindex]{
+    display:none;
 }
-button[aria-label="Open GIF picker"] { 
-  display: none; 
+.buttons-3JBrkn>[aria-label][tabindex]+.buttonContainer-28fw2U{
+    display:none;
+}
+.stickerButton-3OEgwj{
+    display:none;
 }
 
 /* hide textbox when you don't have permission */
