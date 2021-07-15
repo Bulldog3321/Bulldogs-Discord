@@ -8,11 +8,13 @@
 }
 
 :root {
-  --blurple-recolor: rgb(97,179,222)
+  --blurple-recolor: rgb(97,179,222);
 }
 
 /* old font */
-:root { --font-display: var(--font-primary)!important; }
+:root { 
+  --font-display: var(--font-primary)!important;
+}
 
 /* background */
 :root .bg-h5JY_x {
@@ -270,7 +272,7 @@
 .container-1D34oG .peopleListItem-2nzedh {
   border-radius: 10px;
   border-top: none;
-  background: var(--background-secondary);
+  background: var(--background-secondary-alt);
   margin: 5px 20px 5px 20px;
   padding: 16px 14px;
 }
@@ -561,10 +563,10 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG {
   background-color: var(--background-modifier-hover) !important;
 }
 .wrapper-3_530D { 
-  background: var(--background-tertiary);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
   padding: 4px 1px 4px 1px;
+}
+.menu-3sdvDG {
+  overflow: hidden;
 }
 
 /* round button container */
@@ -1139,20 +1141,16 @@ img[class^="avatar"]{
 
 /* avatar zoom on hover */
 .avatar-37jOim:hover{
-  transform:scale(1.8);
-  border:solid;
-  border-radius:10px !important;
-  border-width:5px;
-  margin-top:-30%;
-  margin-left:30%;
-  transition:200ms;
+  transform: scale(1.8);
+  border: solid;
+  border-radius: 10px !important;
+  border-width: 5px;
+  margin-top: -30%;
+  margin-left: 30%;
+  transition: 0.2s;
 }
-.avatar-37jOim:hover .avatarHint-2A3RNb > foreignObject {
-  mask: none !important;
-} 
-.avatar-37jOim:hover .mask-1l8v16 > foreignObject { 
-  mask: none !important; 
-  border-radius:10px;
+.avatar-37jOim {
+  transition: 0.2s;
 }
 .pointerEvents-2zdfdO {
   pointer-events: none;
@@ -1233,6 +1231,29 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   display: none; 
 }
 
+/* 2 column emoji settings */
+.marginBottom40-2vIwTv > .marginBottom4-2qk4Hy {
+  display: none;
+}
+.emojiRow-zIc7ZX {
+  display: inline-flex;
+  margin-right: 50px;
+}
+#app-mount .emojiUploader-1f0pVx {
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-11px);
+}
+#app-mount .emojiUploader-1f0pVx .avatar-2Hubm8 {
+  height: 32px !important; 
+}
+#app-mount .emojiRow-zIc7ZX:hover > .emojiUploader-1f0pVx {
+  opacity: 1;
+}
+#app-mount .emojiRow-zIc7ZX:hover > .emojiImage-1hZi2F {
+  opacity: 0;
+}
+
 /* reorder theme toggler and bdcompat settings */
 #app-mount .item-PXvHYJ[data-item-id="bdCompat"],
 #app-mount .item-PXvHYJ[data-item-id="theme-toggler"] { 
@@ -1242,7 +1263,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   order: 2; 
 }
 
-/* plugin settings divider */
+/* pc plugin settings divider */
 .item-PXvHYJ[data-item-id=pc-updater] {
   height: 4.65rem;
   align-items: unset !important;
@@ -1270,27 +1291,12 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   font-size: 12px;
 }
 
-/* 2 column emoji settings */
-.marginBottom40-2vIwTv > .marginBottom4-2qk4Hy {
-  display: none;
+/* bd buttons */
+.bd-controls > .bd-addon-button:first-of-type {
+  border-radius: 20px 0 0 20px !important;
 }
-.emojiRow-zIc7ZX {
-  display: inline-flex;
-  margin-right: 50px;
-}
-#app-mount .emojiUploader-1f0pVx {
-  opacity: 0;
-  position: absolute;
-  transform: translateX(-11px);
-}
-#app-mount .emojiUploader-1f0pVx .avatar-2Hubm8 {
-  height: 32px !important; 
-}
-#app-mount .emojiRow-zIc7ZX:hover > .emojiUploader-1f0pVx {
-  opacity: 1;
-}
-#app-mount .emojiRow-zIc7ZX:hover > .emojiImage-1hZi2F {
-  opacity: 0;
+:root .bd-controls > .bd-addon-button:last-of-type {
+  border-radius: 0 20px 20px 0 !important;
 }
 
 /* ----------------------------------------PLUGIN/THEME EDITS---------------------------------------- */
