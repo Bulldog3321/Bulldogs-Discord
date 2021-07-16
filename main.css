@@ -9,6 +9,7 @@
 
 :root {
   --blurple-recolor: rgb(97,179,222);
+  --spacing: 6px
 }
 
 /* old font */
@@ -46,15 +47,13 @@
 /* ----------------------------------------SERVER LIST---------------------------------------- */
 
 /* floating server list */
-.scroller-1Bvpku { 
-  background-color: var(--background-secondary);
-}
 #app-mount .guilds-1SWlCJ {
   border-radius: 10px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin-bottom: var(--spacing);
+  margin-left: var(--spacing);
 }
 #app-mount .guilds-1SWlCJ .scroller-1Bvpku {
+  background-color: var(--background-secondary);
   padding-top: 9px;
   padding-bottom: 4px;
 }
@@ -83,7 +82,7 @@
 }
 #app-mount .sidebar-2K8pFh {
   background-color: rgb(0, 0, 0);
-  margin-left: 5px;
+  margin-left: var(--spacing);
 }
 .animatedContainer-1NSq4T {
   border-radius: 10px 10px 0 0;
@@ -105,9 +104,9 @@
 /* floating user area */
 #app-mount .panels-j1Uci_ {
   background-color: var(--background-secondary);
-  margin-bottom: 5px;
-  margin-top: 5px;
   border-radius: 10px;
+  margin-bottom: var(--spacing);
+  margin-top: var(--spacing);
 }
 
 /* fly in voice chat buttons */
@@ -126,7 +125,7 @@
 
 /* compact status selection */
 #status-picker {
-  bottom: 1px;
+  bottom: 2px;
   right: 8px;
   width: 240px;
   border-radius: 10px !important;
@@ -175,7 +174,7 @@
 #app-mount .modeSelected-346R90,
 #app-mount .channel-2QD9_O.selected-aXhQR6 {
   background-color: rgba(112, 135, 215, 0.1); 
-  border-radius: 4px 24px 24px 4px !important; 
+  border-radius: 2px 24px 24px 2px !important; 
 }
 #app-mount .modeSelected-346R90:hover,
 #app-mount .channel-2QD9_O.selected-aXhQR6:hover {
@@ -205,7 +204,8 @@
   background-color: rgba(67, 181, 129, 0.18);
 }
 #app-mount .modeConnected-3IsKId::before {
-  border-left: 2px solid rgba(67, 181, 129);
+  border-left: 4px solid rgba(67, 181, 129);
+  border-radius: 20px;
 }
 #app-mount .channel-2QD9_O {
   margin-left: 0;
@@ -217,28 +217,13 @@
 
 /* ----------------------------------------HOME PAGE---------------------------------------- */
 
-/* floating friends area */
-#app-mount .container-1D34oG {
+/* floating home page */
+#app-mount .container-1D34oG, #app-mount .container-1a3EgQ, #app-mount .applicationStore-1pNvnv {
   position: relative;
   border-radius: 10px;
-  margin: 0 10px 5px 0;
-  left: 5px;
-}
-
-/* floating stage discovery */
-#app-mount .container-1a3EgQ {   
-  position: relative;
-  border-radius: 10px;
-  margin: 0 10px 5px 0;
-  left: 5px;
-}
-
-/* floating store page */
-#app-mount .applicationStore-1pNvnv { 
-  position: relative;
-  border-radius: 10px;
-  margin: 0 10px 5px 0;
-  left: 5px;
+  margin-right: var(--spacing);
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 
 /* compact home page buttons */
@@ -310,14 +295,15 @@
 /* floating chat area */
 #app-mount .chat-3bRxxu {
   border-radius: 10px;
-  margin: 0 10px 5px 0;
-  left: 5px;
+  margin-left: var(--spacing);
+  margin-right: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 
 /* floating member list */
 #app-mount .members-1998pB {
-  margin: 5px 5px 5px 0;
   border-radius: 10px;
+  margin: var(--spacing);
 }
 
 /* channel group lines */
@@ -497,7 +483,7 @@
   background-color: var(--background-secondary); 
   border-radius:10px;
   padding: 6px 0px 6px 0px;
-  margin-right: -3px;
+  margin-right: -2px;
 }
 
 /* better search bar */
@@ -529,7 +515,6 @@
 /* round message highlight */
 .message-2qnXI6, .mentioned-xhSam7 { 
   border-radius: 15px 15px 15px 15px; 
-  margin-right: 20px; 
 }
 .mentioned-xhSam7:before { 
   display: none; 
@@ -622,7 +607,7 @@ div[aria-label$="(NSFW)"] path:last-child {
   height: 100px; 
   width: calc(100%); 
   display: block; 
-  margin-bottom: 9px; 
+  margin-bottom: 8px; 
 }
 
 /* old style reactions */
@@ -1310,4 +1295,4 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .modal-yWgWj-.hn-notebook { background-color: var(--background-secondary); }
 
 /* better folders server list gap fix */
-.BF-folderSidebar { margin-left: -5px; margin-right: 5px; }
+.BF-folderSidebar { margin-left: -6px; margin-right: 6px; }
