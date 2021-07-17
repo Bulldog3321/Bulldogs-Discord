@@ -955,7 +955,7 @@ div[aria-label$="(NSFW)"] path:last-child {
 
 /* radial status */
 #app-mount .wrapper-3t9DeA { 
-  border-radius: 16% !important; 
+  border-radius: 28% !important; 
 }
 #app-mount .wrapper-3t9DeA svg:not(:root) { 
   overflow: visible; 
@@ -988,15 +988,15 @@ div[aria-label$="(NSFW)"] path:last-child {
   y: 1; 
 }
 #app-mount .wrapper-3t9DeA img, #app-mount .wrapper-3t9DeA.avatar-AvHqJA { 
-  border-radius: 16%; 
+  border-radius: 20%; 
 }
 #app-mount .wrapper-3t9DeA svg[width="25"][height="15"] > rect { 
-  rx: calc(16% * 2) !important; 
-  ry: calc(16% * 2) !important; 
+  rx: calc(20% * 2) !important; 
+  ry: calc(20% * 2) !important; 
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] svg.cursorDefault-dsQJ1n rect, #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect {
-  ry: calc(16% * 3.3); 
-  rx: calc(16% * 3.3);
+  ry: calc(20% * 3.3); 
+  rx: calc(20% * 3.3);
 }
 #app-mount .wrapper-3t9DeA rect {
   x: 0; 
@@ -1006,8 +1006,8 @@ div[aria-label$="(NSFW)"] path:last-child {
   -webkit-mask: none; 
   mask: none; 
   display: block;
-  rx: 20%; 
-  ry: 20%; 
+  rx: 24%; 
+  ry: 24%; 
   fill: transparent !important; 
   stroke-width: 1px;
 }
@@ -1054,8 +1054,8 @@ div[aria-label$="(NSFW)"] path:last-child {
   stroke-width: 3px; 
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] img {
-  -webkit-clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 16%); 
-  clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 16%);
+  -webkit-clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 20%); 
+  clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 20%);
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect { 
   x: -70; y: -76; 
@@ -1065,12 +1065,12 @@ div[aria-label$="(NSFW)"] path:last-child {
   stroke-width: 4px; 
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] img {
-  -webkit-clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 16%);
-  clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 16%);
+  -webkit-clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 22%);
+  clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 22%);
 }
 #app-mount .wrapper-3t9DeA:not([style*="80px;"]):not([style*="120px;"]):not([style*="16px"]) > svg > foreignObject:not(:only-child) img {
-  -webkit-clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 16%);
-  clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 16%);
+  -webkit-clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 20%);
+  clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 20%);
 }
 #app-mount .wrapper-3t9DeA[style="width: 16px; height: 16px;"] rect { 
   display: none; 
@@ -1138,7 +1138,7 @@ div[aria-label$="(NSFW)"] path:last-child {
 }
 
 /* squared avatars */
-:root {--avatar-radius: 16%;}
+:root {--avatar-radius: 20%;}
 img[class^="avatar"]{
   border-radius: var(--avatar-radius) !important;
 }
