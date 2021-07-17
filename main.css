@@ -32,11 +32,12 @@
 .container-24CyRY::-webkit-scrollbar { display: none; }
 .scroller-9moviB::-webkit-scrollbar { display: none; }
 .scroller-3BxosC::-webkit-scrollbar { display: none; }
+.body-3HBlXn::-webkit-scrollbar { display: none;}
 
 /* remove right click buttons */
 [id='user-context-user-profile'], [id="user-context-roles"], [id="user-context-mention"], 
 [id="user-context-note"], [id="user-context-block"], [id="user-context-remove-friend"], 
-[id="message-devmode-copy-id"], [id="message-mark-unread"], [id="message-tts"],
+[id="message-mark-unread"], [id="message-tts"],
 [id="message-notebook"], [id="message-translate-message"] {
   display: none;
 }
@@ -60,8 +61,7 @@
 
 /* glow badges */
 .numberBadge-2s8kKX{
-  background-color: #e33c17 !important;
-  filter: drop-shadow(0 0 3px #063b53) drop-shadow(0 0 5px #063b53);
+  filter: drop-shadow(0 0 4px #ff9999)
 }
 
 /* better expanded folders */
@@ -275,7 +275,7 @@
 /*call dock*/
 .wrapper-3EGhDO {
   background-color: var(--background-secondary);
-  border-radius: 15px;
+  border-radius: 14px;
   padding: 0px;
 }
 .colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
@@ -304,6 +304,7 @@
 #app-mount .members-1998pB {
   border-radius: 10px;
   margin: var(--spacing);
+  margin-left: 0 !important;
 }
 
 /* channel group lines */
@@ -414,7 +415,7 @@
 }
 .scroller-2LSbBU { 
   margin-bottom: -100px; 
-  padding-bottom: 90px; 
+  padding-bottom: 100px; 
 }
 .form-2fGMdU:before { 
   display: none; 
@@ -512,18 +513,16 @@
   transform: scale(0.8);
 }
 
-/* round message highlight */
-.message-2qnXI6, .mentioned-xhSam7 { 
-  border-radius: 15px 15px 15px 15px; 
-}
-.mentioned-xhSam7:before { 
-  display: none; 
-}
-.replying-1x3H0T:before { 
-  display: none; 
+/* two line channel description */
+[class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"] {
+  white-space: normal;
+  max-height: 2.4em;
+  line-height: 1.2em;
+  text-overflow: ellipsis;
+  position: relative;
 }
 
-/* round menus and buttons */
+/* round buttons */
 button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG {
   border-radius: 20px !important;
 }
@@ -665,13 +664,13 @@ div[aria-label$="(NSFW)"] path:last-child {
 
 /* hide gift, gif, and sticker icons */
 .buttons-3JBrkn>[aria-label][tabindex]{
-    display:none;
+  display:none;
 }
 .buttons-3JBrkn>[aria-label][tabindex]+.buttonContainer-28fw2U{
-    display:none;
+  display:none;
 }
 .stickerButton-3OEgwj{
-    display:none;
+  display:none;
 }
 
 /* hide textbox when you don't have permission */
@@ -682,43 +681,88 @@ div[aria-label$="(NSFW)"] path:last-child {
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
 
 /* better user popouts */
-.avatar-37jOim.wrapper-3t9DeA { 
-  width: 90px !important; 
-  height: 90px !important; 
+.avatarWrapper-3r9PdD {
+  top: 0;
+  left: 50%;
+  margin: 15px 0 0 -40px;
 }
-.avatarWrapperNormal-26WQIb { 
-  margin-left: -2px; 
-  margin-top: -2px; 
+.avatar-37jOim {
+  border: none;
+  background: none;
 }
-.headerText-1vVs-U { 
-  margin-left: 104px; 
-  margin-top: -62px; 
-  margin-bottom: 10px; 
-  min-height: 40px; 
+.userPopout-xaxa6l .banner-2QYc2d {
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  height: 180px;
+  -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
-.headerTop-3vNv-a { 
-  padding-top: 64px; 
+.userPopout-xaxa6l .banner-2QYc2d.bannerPremium-2hSAwz {
+  background-color: transparent !important;
 }
-.container-q03LZO { 
-  top: 50px; 
-  right: 16px; 
+.userPopout-xaxa6l .headerTop-3vNv-a {
+  padding-top: 110px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
-.customStatusText-1vtUsN { 
-  display: block; 
+.userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U {
+  padding-bottom: 8px;
 }
-.customStatusEmoji-3a2-Zo { 
-  width: 50px !important; 
-  height: 50px !important; 
-  margin-bottom: 6px; 
+.userPopout-xaxa6l .customStatus-oN4ZZY,
+.userPopout-xaxa6l .aboutMeSection-1Fw5Ia {
+  padding-top: 10px;
 }
-.avatarHint-2A3RNb,.setIdentityLink-1t8Ahd,.footer-3UKYOU { 
-  display: none; 
+.userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu {
+  max-width: unset;
+  position: static;
+  justify-content: center;
 }
-.body-3HBlXn { 
-  padding-top: 8px;
+.userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu > * {
+  margin: 0 2px;
+}
+.userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu:empty {
+  margin-bottom: 20px;
+}
+.userPopout-xaxa6l .divider-ewBQKj,
+.userPopout-xaxa6l .body-3HBlXn .activity-2INFPu .spotifyIcon-2J9kSv,
+.userPopout-xaxa6l .headerTop-3vNv-a .headerTagWithNickname-3l_x6x,
+.avatarHint-2A3RNb,.setIdentityLink-1t8Ahd,.footer-3UKYOU {
+  display: none;
 }
 .bodyInnerWrapper-26fQXj {
+  margin-right: 10px;
   max-height: 274px;
+}
+
+/* avatar zoom on hover */
+.avatar-37jOim:hover{
+  transform: scale(2.0);
+  margin-top: 40%;
+  transition: 0.2s;
+}
+.avatar-37jOim {
+  transition: 0.2s;
+}
+
+/* filled role colors */
+.role-2irmRk {
+  position: relative;
+  overflow: hidden; 
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+}
+.roleCircle-3xAZ1j::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: .1;
+  pointer-events: none;
 }
 
 /* better user modals */
@@ -911,7 +955,7 @@ div[aria-label$="(NSFW)"] path:last-child {
 
 /* radial status */
 #app-mount .wrapper-3t9DeA { 
-  border-radius: 16px !important; 
+  border-radius: 16% !important; 
 }
 #app-mount .wrapper-3t9DeA svg:not(:root) { 
   overflow: visible; 
@@ -944,15 +988,15 @@ div[aria-label$="(NSFW)"] path:last-child {
   y: 1; 
 }
 #app-mount .wrapper-3t9DeA img, #app-mount .wrapper-3t9DeA.avatar-AvHqJA { 
-  border-radius: 16px; 
+  border-radius: 16%; 
 }
 #app-mount .wrapper-3t9DeA svg[width="25"][height="15"] > rect { 
-  rx: calc(10px * 2) !important; 
-  ry: calc(10px * 2) !important; 
+  rx: calc(16% * 2) !important; 
+  ry: calc(16% * 2) !important; 
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] svg.cursorDefault-dsQJ1n rect, #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect {
-  ry: calc(10px * 3.3); 
-  rx: calc(10px * 3.3);
+  ry: calc(16% * 3.3); 
+  rx: calc(16% * 3.3);
 }
 #app-mount .wrapper-3t9DeA rect {
   x: 0; 
@@ -962,8 +1006,8 @@ div[aria-label$="(NSFW)"] path:last-child {
   -webkit-mask: none; 
   mask: none; 
   display: block;
-  rx: 10px; 
-  ry: 10px; 
+  rx: 20%; 
+  ry: 20%; 
   fill: transparent !important; 
   stroke-width: 1px;
 }
@@ -1007,26 +1051,26 @@ div[aria-label$="(NSFW)"] path:last-child {
 #app-mount .wrapper-3t9DeA[style*="80px"] rect { 
   width: 80px; 
   height: 80px; 
-  stroke-width: 2px; 
+  stroke-width: 3px; 
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] img {
-  -webkit-clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 8px); 
-  clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 8px);
+  -webkit-clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 16%); 
+  clip-path: inset(calc(3px + 1px) calc(3px + 1px) round 16%);
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect { 
   x: -70; y: -76; 
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] rect { 
   width: 120px; height: 120px; 
-  stroke-width: 3px; 
+  stroke-width: 4px; 
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] img {
-  -webkit-clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 8px);
-  clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 8px);
+  -webkit-clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 16%);
+  clip-path: inset(calc(4px + 1px) calc(4px + 1px) round 16%);
 }
 #app-mount .wrapper-3t9DeA:not([style*="80px;"]):not([style*="120px;"]):not([style*="16px"]) > svg > foreignObject:not(:only-child) img {
-  -webkit-clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 8px);
-  clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 8px);
+  -webkit-clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 16%);
+  clip-path: inset(calc(2px + 1px) calc(2px + 1px) round 16%);
 }
 #app-mount .wrapper-3t9DeA[style="width: 16px; height: 16px;"] rect { 
   display: none; 
@@ -1070,7 +1114,7 @@ div[aria-label$="(NSFW)"] path:last-child {
   mask: none; 
 }
 #app-mount .avatarHintInner-1TvA8u {
-  border-radius: 12px !important;
+  border-radius: 16% !important;
   padding-top: 0;
   width: calc(100% - 3px - 3px + 1px * 2); 
   height: calc(100% - 3px - 3px + 1px * 2);
@@ -1094,7 +1138,7 @@ div[aria-label$="(NSFW)"] path:last-child {
 }
 
 /* squared avatars */
-:root {--avatar-radius: 10px;}
+:root {--avatar-radius: 16%;}
 img[class^="avatar"]{
   border-radius: var(--avatar-radius) !important;
 }
@@ -1124,46 +1168,9 @@ img[class^="avatar"]{
   border-radius: var(--avatar-radius) !important;
 }
 
-/* avatar zoom on hover */
-.avatar-37jOim:hover{
-  transform: scale(1.8);
-  border: solid;
-  border-radius: 10px !important;
-  border-width: 5px;
-  margin-top: -30%;
-  margin-left: 30%;
-  transition: 0.2s;
-}
-.avatar-37jOim {
-  transition: 0.2s;
-}
-.pointerEvents-2zdfdO {
-  pointer-events: none;
-}
-
-/* filled role colors */
-.role-2irmRk {
-  position: relative;
-  overflow: hidden; 
-  border: none;
-  padding: 5px;
-  border-radius: 6px;
-}
-.roleCircle-3xAZ1j::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  opacity: .1;
-  pointer-events: none;
-}
-
 /* ----------------------------------------SETTINGS---------------------------------------- */
 
-/* small settings */
+/* floating settings */
 :root {
   --width2: 60%;
   --height2: 85%;
