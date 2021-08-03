@@ -1,10 +1,11 @@
 # Bulldogs-Theme
-A very customizable theme
+A very customizable dark blue theme
 
 ### Plugin Support
 * Better Friends List
 * Better Folders
 * Holy Notes
+* Send Message with Webhook
 
 # Installation
 
