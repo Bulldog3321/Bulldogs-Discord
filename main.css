@@ -65,8 +65,11 @@
 .uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC {
   background-color: var(--background-primary);
 }
-.powercord-product, .theme-dark .scroller-1-nKid {
+.powercord-product, .powercord-toast .header, .theme-dark .scroller-1-nKid, .theme-dark .autocomplete-1vrmpx {
   background-color: var(--background-secondary);
+}
+.powercord-toast, .powercord-toast .contents .inner {
+  background-color: var(--background-tertiary);
 }
 
 /* old font */
@@ -84,8 +87,10 @@
 .container-24CyRY::-webkit-scrollbar,
 .scroller-9moviB::-webkit-scrollbar,
 .scroller-3BxosC::-webkit-scrollbar,
-.body-3HBlXn::-webkit-scrollbar { 
-  display: none; }
+.body-3HBlXn::-webkit-scrollbar,
+.scroller-1d5FgU::-webkit-scrollbar { 
+  display: none; 
+}
 
 /* remove right click buttons */
 [id='user-context-user-profile'], [id="user-context-roles"], [id="user-context-mention"], 
@@ -284,8 +289,24 @@
   border-radius: var(--radius);
   margin-right: var(--spacing);
 }
+.nowPlayingColumn-2sl4cE, .container-lRFx4q, .scroller-2ZPeAD {
+  border-radius: var(--radius);
+  border: none;
+}
 .theme-dark .container-1D34oG {
   background-color: #000;
+}
+
+/* floating discover page */
+.theme-dark .pageWrapper-1PgVDX {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
+  margin-right: var(--spacing);
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+.scroller-1d5FgU {
+  margin-right: 18px;
 }
 
 /* compact home page buttons */
@@ -436,7 +457,7 @@
   border-left: 4px solid rgba(255, 255, 255, 0.6);
 }
 #app-mount .modeUnread-1qO3K1 .channelName-2YrOjO, .subtitle-3V1p2E {
-  color: rgb(255, 255, 255, 0.7);
+  color: var(--blurple-recolor);
 }
 #app-mount .modeUnread-1qO3K1 .unread-2lAfLh {
   display: none;
@@ -1316,8 +1337,8 @@ img[class^="avatar"]{
 
 /* floating settings */
 :root {
-  --width2: 60%;
-  --height2: 85%;
+  --width2: 54%;
+  --height2: 80%;
 }
 .layers-3iHuyZ {
   align-items: center;
@@ -1355,6 +1376,15 @@ img[class^="avatar"]{
   overflow: visible;
   transform: translateZ(0);
   z-index: 3;
+}
+.sidebar-CFHs9e {
+  margin-right: 8px;
+}
+.sidebarRegionScroller-3MXcoP::-webkit-scrollbar {
+  display: none;
+}
+.side-8zPYf6 .separator-gCa7yv {
+  display: none;
 }
 
 /* settings dividers lines */
@@ -1459,6 +1489,21 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* ----------------------------------------PLUGIN/THEME EDITS---------------------------------------- */
 
+/* better folders server list gap fix */
+.BF-folderSidebar { 
+  margin-left: -14px; 
+  margin-right: 14px; 
+}
+.BF-folderSidebar .guilds-1SWlCJ { 
+  border-top-left-radius: 0; 
+  border-bottom-left-radius: 0; 
+  padding-right: 8px; 
+  background-color: var(--background-primary); 
+}
+.BF-folderSidebar .guilds-1SWlCJ .scroller-1Bvpku { 
+  padding-left: 8px; 
+}
+
 /* fix "Better Friends List" spacing */
 .headerCellContent-1pLtOr { margin: auto; }
 .bfl-title { padding-right: 30px; }
@@ -1469,6 +1514,3 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* fix webhook message sender color */
 .theme-dark .modal-yWgWj- { background-color: var(--background-secondary);}
-
-/* better folders server list gap fix */
-.BF-folderSidebar { margin-left: -6px; margin-right: 6px; }
