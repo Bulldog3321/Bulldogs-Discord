@@ -69,7 +69,7 @@
   background-color: var(--background-secondary);
 }
 .powercord-toast, .powercord-toast .contents .inner {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-tertiary) !important;
 }
 
 /* old font */
@@ -1470,7 +1470,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   position: absolute;
   margin-top: 2.19rem;
   border-top: 1px solid var(--background-modifier-accent);
-  line-height: 2.6rem;    
+  line-height: 2.6rem;
   width: 89.5%;
   content: "Plugin Settings";
   color: rgb(159, 159, 159);
@@ -1513,4 +1513,4 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .modal-yWgWj-.hn-notebook { background-color: var(--background-secondary); }
 
 /* fix webhook message sender color */
-.theme-dark .modal-yWgWj- { background-color: var(--background-secondary);}
+.theme-dark .modal-yWgWj- { background-color: var(--background-secondary); }
