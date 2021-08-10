@@ -1540,7 +1540,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* ----------------------------------------PLUGIN/THEME EDITS---------------------------------------- */
 
-/* better folders server list gap fix */
+/* better folders gap fix */
 .BF-folderSidebar { 
   margin-left: -14px; 
   margin-right: 14px; 
@@ -1565,6 +1565,11 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* fix webhook message sender color */
 .theme-dark .modal-yWgWj- { background-color: var(--background-secondary); }
+
+/* BD better folders gap fix */
+.content-Pph8t6:not(.hidden-3dXt4k) {
+  margin-left: 0; 
+}
 
 /* ----------------------------------------BLURPLE RECOLOR---------------------------------------- */
 :root {
