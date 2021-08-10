@@ -348,10 +348,19 @@
   background-color: var(--background-primary);
 }
 
+/* floating call area */
+.callContainer-36WRfH, .centerControls-2E5oVA, .wrapper-2qzCYF.minimum-28Z35l {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
+}
+.wrapper-2qzCYF.minimum-28Z35l {
+  margin-bottom: var(--spacing);
+}
+
 /*call dock*/
 .wrapper-3EGhDO {
   background-color: var(--background-secondary);
-  border-radius: var(--radius);
+  border-radius: 20px;
   padding: 0px;
 }
 .colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
@@ -792,12 +801,11 @@
 
 /* old style reactions */
 .reaction-1hd86g,.reaction-1hd86g:hover {
-  background-color: var(--background-secondary); 
   border: none; 
   border-radius: var(--radius); 
 }
 .reaction-1hd86g.reactionMe-wv5HKu {
-  background-color:rgba(114,137,218,.3); 
+  background-color:rgba(114,137,218,.3) !important; 
 }
 
 /* smaller channel icons */
@@ -1422,6 +1430,34 @@ img[class^="avatar"]{
   flex-grow: 1;
   background: linear-gradient(to right, var(--blurple-recolor) 50%, transparent);
   margin-left: 5px;
+}
+
+/* BD divider line */
+.bd-sidebar-header {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bd-sidebar-header:before {
+  content: "";
+  height: 2px;
+  flex-grow: 1;
+  background: linear-gradient(to left, var(--blurple-recolor) 50%, transparent);
+  margin-right: -10px;
+  margin-top: -5px;
+}
+.bd-sidebar-header:after {
+  content: "";
+  height: 2px;
+  flex-grow: 1;
+  background: linear-gradient(to right, var(--blurple-recolor) 50%, transparent);
+  margin-left: 44px;
+  margin-top: -5px;
+}
+.bd-sidebar-header .bd-changelog-button {
+  margin-left: -70px;
+  margin-top: 30px;
 }
 
 /* simple switches */
