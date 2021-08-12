@@ -12,6 +12,8 @@ Powercord
 
 Better Discord
 * Server Folders
+* User Details
+* UserBackgrounds
 
 # Installation
 
