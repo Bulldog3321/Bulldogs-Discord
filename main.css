@@ -1576,11 +1576,11 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   border-radius: 0 20px 20px 0 !important;
 }
 
-/* ----------------------------------------PLUGIN/THEME EDITS---------------------------------------- */
+/* ----------------------------------------PLUGIN/THEME SUPPORT---------------------------------------- */
 
-/* Powercord */
+/* --------------------Powercord-------------------- */
 
-/* better folders gap fix */
+/* Better Folders */
 .BF-folderSidebar { 
   margin-left: -14px; 
   margin-right: 14px; 
@@ -1595,22 +1595,54 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   padding-left: 8px; 
 }
 
-/* fix "Better Friends List" spacing */
-.headerCellContent-1pLtOr { margin: auto; }
-.bfl-title { padding-right: 30px; }
-.bfl-mutualGuilds.bfl-container { padding-left: 10px; }
+/* Better Friends List */
+.headerCellContent-1pLtOr { 
+  margin: auto; 
+}
+.bfl-title { 
+  padding-right: 30px; 
+}
+.bfl-mutualGuilds.bfl-container { 
+  padding-left: 10px; 
+}
 
-/* fix holy notes color */
-.modal-yWgWj-.hn-notebook { background-color: var(--background-secondary); }
+/* Holy Notes */
+.modal-yWgWj-.hn-notebook { 
+  background-color: var(--background-primary); 
+}
 
-/* fix webhook message sender color */
-.theme-dark .modal-yWgWj- { background-color: var(--background-secondary); }
+/* Webhook Message Sender */
+.theme-dark .modal-yWgWj- {
+  background-color: var(--background-primary); 
+}
 
-/* Better Discord */
+/* --------------------Better Discord-------------------- */
 
-/* BD server folders gap fix */
+/* Server Folders */
 .content-Pph8t6:not(.hidden-3dXt4k) {
   margin-left: 0; 
+}
+
+/* User Details */
+.userPopout-xaxa6l .UserDetails-dates-container {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: var(--radius);
+}
+.root-3QyAh1 .UserDetails-dates-container {
+  position: absolute;
+  top: 204px;
+  left: 146px;
+}
+
+/* UserBackgrounds */
+.userPopout-xaxa6l .UserBackgrounds-banner-badge {
+  top: 8px;
+}
+.userPopout-xaxa6l .UserBackgrounds-banner-arrow {
+  margin-top: 131px;
 }
 
 /* ----------------------------------------BLURPLE RECOLOR---------------------------------------- */
