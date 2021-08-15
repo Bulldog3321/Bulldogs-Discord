@@ -1,5 +1,5 @@
 # Bulldogs-Theme
-A very customizable dark blue theme
+A simple dark blue theme
 
 ![image1](https://cdn.discordapp.com/attachments/825154270881775677/872222500367515688/unknown.png)
 
