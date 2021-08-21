@@ -24,4 +24,4 @@ cd powercord/src/Powercord/themes && git clone https://github.com/Bulldog3321/Bu
 ```
 
 ### Better Discord
-Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sBD.theme.css) into your themes folder
+Drop [Bulldog'sBD.theme.css](https://github.com/Bulldog3321/Bulldogs-Theme/blob/main/Bulldog'sBD.theme.css) into your themes folder
