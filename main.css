@@ -1489,6 +1489,8 @@ img[class^="avatar"]{
   position: absolute;
   cursor: pointer;
   pointer-events: none;
+  bottom: -30px;
+  left: -29px;
   transition: all 0.1s;
 }
 .avatar-1BDn8e:hover + h2::after {
