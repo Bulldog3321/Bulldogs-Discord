@@ -119,19 +119,33 @@
 }
 
 /* remove scrollbars */
-.peopleList-3c4jOR::-webkit-scrollbar,
-.scroller-1JbKMe::-webkit-scrollbar,
-.members-1998pB::-webkit-scrollbar,
-.scroller-RmtA4e::-webkit-scrollbar,
-.scroller-2LSbBU::-webkit-scrollbar,
 .contentRegionScroller-26nc1e::-webkit-scrollbar,
-.container-24CyRY::-webkit-scrollbar,
-.scroller-9moviB::-webkit-scrollbar,
-.scroller-3BxosC::-webkit-scrollbar,
-.body-3HBlXn::-webkit-scrollbar,
-.scroller-1d5FgU::-webkit-scrollbar,
-.perksModal-fSYqOq::-webkit-scrollbar { 
-  display: none; 
+.scroller-3BxosC::-webkit-scrollbar {
+  display: none;
+}
+
+/* subtle scrollbars */
+.scrollerBase-289Jih.disableScrollAnchor-3V9UtP::-webkit-scrollbar-thumb,
+.scrollerBase-289Jih.auto-Ge5KZx::-webkit-scrollbar-thumb,
+.members-1998pB::-webkit-scrollbar-thumb,
+.scroller-RmtA4e::-webkit-scrollbar-thumb,
+.scroller-2UmRce::-webkit-scrollbar-thumb,
+.scroller-tlc3kG::-webkit-scrollbar-thumb {
+  background-color: var(--background-tertiary);
+}
+.scrollerBase-289Jih.disableScrollAnchor-3V9UtP::-webkit-scrollbar-track,
+.scrollerBase-289Jih.auto-Ge5KZx::-webkit-scrollbar-track {
+  background: none;
+  margin-bottom: 36px;
+}
+.members-1998pB::-webkit-scrollbar-track {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.scroller-RmtA4e::-webkit-scrollbar-track,
+.scroller-2UmRce::-webkit-scrollbar-track,
+.scroller-tlc3kG::-webkit-scrollbar-track {
+  margin-bottom: 4px;
 }
 
 /* remove right click buttons */
@@ -865,7 +879,7 @@
   background-color: var(--background-primary);
 }
 
-/* cleaner pins */
+/* cleaner pins and inbox */
 .messageGroupWrapper-o-Zw7G {
   border-radius: var(--radius);
   border: none;
@@ -873,6 +887,9 @@
 .messagesPopoutWrap-1MQ1bW {
   width: auto;
   max-width: 600px;
+  border-radius: var(--radius);
+}
+.container-enaOkj {
   border-radius: var(--radius);
 }
 
