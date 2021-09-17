@@ -672,10 +672,28 @@
   transform: scale(1.04);
 }
 
-/* rounded message end */
+/* rounded message hover */
 .message-2qnXI6 {
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+
+/* message slide */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.message-2qnXI6 {
+animation: slide-up 0.4s ease;
+}
+.isSending-9nvak6 {
+  display: none;
 }
 
 /* better chat box */
@@ -1108,20 +1126,12 @@
   font-size: 0.9em; 
 }
 
-/* hide gift, gif, and sticker icons */
+/* hide gift and sticker icons */
 .buttons-3JBrkn>[aria-label][tabindex]{
-  display:none;
-}
-.buttons-3JBrkn>[aria-label][tabindex]+.buttonContainer-28fw2U{
   display:none;
 }
 .stickerButton-3OEgwj{
   display:none;
-}
-
-/* hide textbox when you don't have permission */
-.channelTextAreaDisabled-8rmlrp>div { 
-  display: none; 
 }
 
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
