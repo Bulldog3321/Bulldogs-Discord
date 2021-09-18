@@ -9,11 +9,13 @@ Powercord
 * Better Friends List
 * Holy Notes
 * Send Message with Webhook
+* PSpectrum
 
 Better Discord
 * Server Folders
 * User Details
 * UserBackgrounds
+* Permission Viewer
 
 # Installation
 
