@@ -108,7 +108,8 @@
 .theme-dark .uploadModal-2ifh8j, .uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC, 
 .theme-dark .perksModal-fSYqOq, .theme-dark .contentWrapper-3WC1ID,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .theme-dark .addGamePopout-2RY8Ju {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .theme-dark .addGamePopout-2RY8Ju,
+.theme-dark .message-2qRu38 {
   background-color: var(--background-primary);
 }
 .powercord-product, .theme-dark .scroller-1-nKid, .theme-dark .autocomplete-1vrmpx {
@@ -203,7 +204,7 @@
   contain: unset !important;
 }
 .unreadMentionsIndicatorBottom-2mDYbI {
-  bottom: 142px;
+  bottom: 150px;
 }
 
 /* glow badges */
@@ -239,11 +240,12 @@
 .sidebar-2K8pFh nav {
   background-color: var(--background-primary);
   border-radius: var(--radius);
-  margin-top: var(--spacing);
+  overflow: hidden;
 }
 .sidebar-2K8pFh {
   background-color: rgb(0, 0, 0);
   margin-left: var(--spacing);
+  margin-top: var(--spacing);
 }
 .scroller-1JbKMe {
   background-color: var(--background-primary);
@@ -287,6 +289,20 @@
   border-radius: var(--radius);
   margin-bottom: var(--spacing);
   margin-top: var(--spacing);
+}
+
+/* fly in voice chat buttons */
+.panels-j1Uci_ .container-3baos1 button[aria-checked="false"], .panels-j1Uci_ .container-3baos1 button:not([role="switch"]) {
+  transition: 0.1s ease-in-out;
+  width: 0px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ {
+  transition: 0.1s ease-in-out;
+  width: 32px !important;
+  overflow: visible !important;
+  opacity: 1 !important;
 }
 
 /* compact status selection */
@@ -904,6 +920,9 @@ animation: slide-up 0.4s ease;
 #app-mount #search-results {
   border-radius: var(--radius);
   background-color: var(--background-secondary);
+  box-shadow: none;
+  margin-top: 10px;
+  margin-right: -6px;
 }
 #app-mount #search-results .option-96V44q::after {
   background: transparent;
@@ -917,21 +936,23 @@ animation: slide-up 0.4s ease;
 .messagesPopoutWrap-1MQ1bW, .container-enaOkj {
   width: auto;
   max-width: 600px;
-  max-height: 958px !important;
+  max-height: 952px !important;
   position: fixed;
   margin-top: 10px;
   right: 6px;
   border-radius: var(--radius);
+  box-shadow: none;
 }
 .messageGroupWrapper-o-Zw7G {
   border-radius: var(--radius);
 }
 .browser-2NpbWS {
-  max-height: 958px !important;
+  max-height: 952px !important;
   position: fixed;
   margin-top: 10px;
   right: 6px;
   border-radius: var(--radius);
+  box-shadow: none;
 }
 
 /* two line channel description */
