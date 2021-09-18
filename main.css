@@ -754,7 +754,10 @@ animation: slide-up 0.4s ease;
 .channelTextArea-rNsIhG:hover .buttons-3JBrkn { 
   opacity: 1; 
 }
-.uploadModal-2ifh8j .scrollableContainer-2NUZem .buttons-3JBrkn {
+.channelTextArea-3bF57p:hover .buttons-3JBrkn{
+  opacity: 1;
+}
+.uploadModal-2ifh8j .scrollableContainer-2NUZem:hover .buttons-3JBrkn {
   opacity: 1;
 }
 
@@ -2006,7 +2009,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .item-PXvHYJ[data-item-id="theme-toggler"] {
   order: 1 !important;
 }
-.side-8zPYf6>div:nth-child(n+33) {
+.side-8zPYf6>div:nth-child(n+35) {
   order: 2;
 }
 
@@ -2045,7 +2048,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   border-radius: 0 20px 20px 0 !important;
 }
 
-/* ----------------------------------------PLUGIN/THEME SUPPORT---------------------------------------- */
+/* ----------------------------------------PLUGIN SUPPORT---------------------------------------- */
 
 /* --------------------Powercord-------------------- */
 
@@ -2093,7 +2096,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* Server Folders */
 .content-Pph8t6:not(.hidden-3dXt4k) {
-  margin-left: 0; 
+  margin-right: 0; 
 }
 
 /* User Details */
@@ -2160,26 +2163,4 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 #permissions-modal-wrapper .role-side {
   background-color: var(--background-secondary) !important;
-}
-.member-perms-header {
-  background-color: var(--background-primary);
-  padding: 8px 12px 8px 12px;
-  margin: 12px 0 0 0;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  text-transform: uppercase;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  color: white !important;
-}
-.member-perms {
-  background-color: var(--background-secondary);
-  padding: 8px 12px 8px 12px;
-  margin: 0 0 16px 0;
-  margin-top: 0px !important;
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-}
-.member-perms::-webkit-scrollbar-track {
-  margin-bottom: 4px;
 }
