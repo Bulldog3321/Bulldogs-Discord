@@ -694,24 +694,6 @@
   border-bottom-right-radius: var(--radius);
 }
 
-/* message slide */
-@keyframes slide-up {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.message-2qnXI6 {
-animation: slide-up 0.4s ease;
-}
-.isSending-9nvak6 {
-  display: none;
-}
-
 /* better chat box */
 .theme-dark .scrollableContainer-2NUZem {
   background-color: var(--background-secondary);
