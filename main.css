@@ -4,7 +4,8 @@
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 @import url('https://mr-miner1.github.io/Better-Badges/src/badges.css');
 @import url('https://snappercord.github.io/Settings-Icons/source.css');
-@import url('https://v-briese.github.io/channel-icons/channelicons.theme.css');
+/* @import url('https://v-briese.github.io/channel-icons/channelicons.theme.css'); */
+@import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 @import url("https://nyri4.github.io/Discolored/main.css");
 
 /* blurple recolor */
@@ -419,12 +420,36 @@
   background-color: var(--background-primary); 
 }
 
-/* friends background */
+/* friends grid */
+.peopleColumn-29fq28 .title-30qZAO {
+  position: absolute;
+  top: -50px;
+  left: -24px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--header-primary);
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.peopleColumn-29fq28 .scrollerBase-289Jih {
+  overflow: visible !important;
+}
+.peopleColumn-29fq28 {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.peopleColumn-29fq28 > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
 .container-1D34oG .peopleListItem-2nzedh {
   border-radius: var(--radius);
   border-top: none;
   background: var(--background-secondary);
-  margin: 5px 20px 5px 20px;
+  margin: 5px 0 5px 0;
   padding: 16px 14px;
   transition: all 0.1s ease-in;
 }
@@ -1479,7 +1504,7 @@ img[class^="avatar"]{
 /* ----------------------------------------USER MODALS---------------------------------------- */
 
 .root-3QyAh1 > .body-r6_QPy {
-  height: 270px;
+  height: 290px;
 }
 
 /* tabs */
@@ -1566,19 +1591,27 @@ img[class^="avatar"]{
   display: none;
 }
 .root-3QyAh1 .body-r6_QPy .listScroller-3GmIYj {
-  padding-left: 10px;
-  margin-bottom: 15px !important;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
-.root-3QyAh1 .listScroller-3GmIYj .mask-1l8v16.svg-2V3M55, .listRow-1iDGel .listAvatar-1BbvHX.wrapper-3t9DeA {
-  width: 90px !important;
-  height: 90px !important;
-}
-.root-3QyAh1 .listAvatar-1BbvHX {
-  margin-right: -10px;
+.root-3QyAh1 .body-r6_QPy .wrapper-3t9DeA {
+  margin-left: -6px;
+  margin-top: -5px;
 }
 .root-3QyAh1 .noIcon-1a_FrS.iconSizeMedium-2OqPjI {
   top: -25px;
   margin-bottom: -25px;
+}
+.root-3QyAh1 .listScroller-3GmIYj .mask-1l8v16.svg-2V3M55, .listRow-1iDGel .listAvatar-1BbvHX.wrapper-3t9DeA {
+  width: 100px !important;
+  height: 100px !important;
+}
+#app-mount .root-3QyAh1 .listScroller-3GmIYj .wrapper-3t9DeA rect {
+  display: none;
+}
+.root-3QyAh1 .wrapper-3t9DeA {
+  margin-right: -13px;
+  margin-bottom: -8px;
 }
 
 /* grid connections */
@@ -1931,7 +1964,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   display: none; 
 }
 
-/* 2 column emoji settings */
+/* emoji settings grid */
 .marginBottom40-2vIwTv > .marginBottom4-2qk4Hy {
   display: none;
 }
@@ -2113,6 +2146,10 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+.UserDetails-connections-connectionsBody div:not(.UserDetails-connections-connections) {
+  left: -4px;
+  margin: 5px 2px !important;
+}
 .userPopout-xaxa6l .UserDetails-mutualServers-header {
   background-color: var(--background-primary);
   padding: 8px 12px 8px 12px;
@@ -2129,6 +2166,9 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   margin: 0 0 16px 0;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+.UserDetails-mutualServers-mutualGuild, .UserDetails-mutualServers-guildAcronym {
+  border-radius: 30% !important;
 }
 
 /* UserBackgrounds */
