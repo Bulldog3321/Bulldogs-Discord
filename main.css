@@ -472,6 +472,12 @@
 .actionButton-uPB8Fs.highlight-Lf97TE {
   background-color: var(--background-primary);
 }
+.peopleListItem-2nzedh {
+  overflow: hidden !important;
+}
+.userInfo-2zN2z8 {
+  max-width: 82%;
+}
 
 /* floating call area */
 .callContainer-36WRfH, .centerControls-2E5oVA, .wrapper-2qzCYF.minimum-28Z35l {
