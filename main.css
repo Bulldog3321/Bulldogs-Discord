@@ -1648,6 +1648,9 @@ img[class^="avatar"]{
   padding: 59px 55px 59px 10px;
   border-radius: var(--rs-avatar-shape);
 }
+.nameTag-ECvD8P .username-FvTBog {
+  white-space:nowrap;
+}
 .nameTag-ECvD8P:hover {
   filter: opacity(100%) !important;
 }
