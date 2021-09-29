@@ -10,6 +10,7 @@ Powercord
 * Holy Notes
 * Send Message with Webhook
 * PSpectrum
+* UserDetails
 
 Better Discord
 * Server Folders
