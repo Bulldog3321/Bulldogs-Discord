@@ -11,6 +11,7 @@ Powercord
 * Send Message with Webhook
 * PSpectrum
 * UserDetails
+* DM Typing Indicator
 
 Better Discord
 * Server Folders
