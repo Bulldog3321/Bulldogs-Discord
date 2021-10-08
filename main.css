@@ -153,7 +153,6 @@
 }
 .members-1998pB::-webkit-scrollbar-track {
   margin-top: 4px;
-  margin-bottom: 4px;
 }
 .scroller-2UmRce::-webkit-scrollbar-track,
 .scroller-tlc3kG::-webkit-scrollbar-track,
@@ -1675,9 +1674,15 @@ img[class^="avatar"]{
   left: 18px;
   top: 70px;
   width: 150px;
+  max-height: 115px;
   background-color: rgba(0, 0, 0, .5);
   border-radius: var(--radius);
   text-align: center;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+.root-3QyAh1 .customStatus-1COQYu::-webkit-scrollbar {
+  display: none;
 }
 .root-3QyAh1 .customStatus-1COQYu .customStatusEmoji-1xY2Yn {
   display: block;
