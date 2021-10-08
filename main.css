@@ -49,6 +49,7 @@
 /* variables */
 :root {
   --blurple-recolor: rgb(97,179,222);
+  --background: rgb(0,0,0);
   --spacing: 6px;
   --radius: 10px;
 }
@@ -71,7 +72,7 @@
 
 /* background */
 .bg-h5JY_x {
-  background: rgb(0, 0, 0);
+  background: var(--background);
 }
 
 /* recoloring */
@@ -97,20 +98,20 @@
 .theme-dark .perksModal-fSYqOq, .theme-dark .contentWrapper-3WC1ID,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .theme-dark .addGamePopout-2RY8Ju,
-.theme-dark .message-2qRu38 {
+.theme-dark .message-2qRu38, .theme-dark .pageWrapper-1PgVDX {
   background-color: var(--background-primary);
 }
 .powercord-product, .theme-dark .scroller-1-nKid, .theme-dark .autocomplete-1vrmpx {
   background-color: var(--background-secondary);
 }
-.childWrapper-anI2G9, .circleIconButton-1QV--U,
+.childWrapper-anI2G9, .circleIconButton-1XqULR,
 .theme-dark .container-2x5lvQ section, .theme-dark .container-2x5lvQ .header-2C89wJ {
   background-color: var(--background-tertiary);
 }
-.circleIconButton-1QV--U:hover, .circleIconButton-1QV--U.selected-1JjBPm {
+.circleIconButton-1XqULR:hover, .circleIconButton-1XqULR.selected-2jcQaY {
   background-color: var(--blurple-recolor);
 }
-.childWrapper-anI2G9, .circleIconButton-1QV--U {
+.childWrapper-anI2G9, .circleIconButton-1XqULR {
   color: var(--blurple-recolor);
 }
 #app-mount .message-2qnXI6:hover {
@@ -188,15 +189,15 @@
   padding-top: 10px !important;
   border-radius: var(--radius);
 }
-.tutorialContainer-30WoTp {
+.tutorialContainer-32VdNI {
   position: fixed;
   bottom: 74px;
 }
-.scroller-1Bvpku > .listItem-GuPuDH:nth-last-child(2) {
+.scroller-1Bvpku > .listItem-1hlISG:nth-last-child(2) {
   position: fixed;
   bottom: 14px;
 }
-.tutorialContainer-30WoTp::before {
+.tutorialContainer-32VdNI::before {
   background: var(--background-primary);
   position: fixed;
   content: "";
@@ -214,8 +215,11 @@
 .unreadMentionsIndicatorBottom-2mDYbI {
   bottom: 150px;
 }
+.bar-30k2ka {
+  border-radius: var(--radius);
+}
 
-/* glow badges */
+/* badge shadow */
 .numberBadge-2s8kKX {
   filter: drop-shadow(0 0 2px #000000);
 }
@@ -251,7 +255,7 @@
   overflow: hidden;
 }
 .sidebar-2K8pFh {
-  background-color: rgb(0, 0, 0);
+  background: var(--background);
   margin-left: var(--spacing);
   margin-top: var(--spacing);
 }
@@ -400,10 +404,7 @@
 
 /* floating home page */
 .container-1D34oG, .container-1a3EgQ, .applicationStore-1pNvnv {
-  margin-right: var(--spacing);
-  margin-left: var(--spacing);
-  margin-bottom: var(--spacing);
-  margin-top: var(--spacing);
+  margin: var(--spacing);
 }
 .peopleColumn-29fq28, .stageSection-3mAD8V, .applicationStore-1pNvnv {
   background-color: var(--background-primary);
@@ -415,7 +416,20 @@
   border: none;
 }
 .theme-dark .container-1D34oG {
-  background-color: #000;
+  background: var(--background);
+}
+
+/* floating discover page */
+.pageWrapper-1PgVDX, .scroller-3Vjo4T {
+  margin: var(--spacing);
+  border-radius: var(--radius);
+}
+.scroller-3Vjo4T {
+  height: 1006px;
+}
+.base-3dtUhz .thin-1ybCId {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
 }
 
 /* clean activity */
@@ -474,14 +488,14 @@
 }
 .container-1D34oG .peopleListItem-2nzedh {
   border-radius: 18px;
-  border-top: none;
+  border: none;
   background: var(--background-secondary);
   margin: 5px 0 5px 0;
   padding: 34px 14px;
   transition: all 0.1s ease-in;
+  min-width: 1vw !important;
 }
 .container-1D34oG .peopleListItem-2nzedh:hover {
-  transform: scale(1.01);
   background-color: var(--background-modifier-hover);
 }
 .container-1D34oG .peopleListItem-2nzedh:hover .text-3MU_QQ,
@@ -495,16 +509,13 @@
 .actionButton-uPB8Fs {
   border-radius: var(--radius);
   background-color: var(--background-primary);
-  z-index: 1;
 }
 .actionButton-uPB8Fs.highlight-Lf97TE {
   background-color: var(--background-primary);
 }
-.container-1D34oG .peopleListItem-2nzedh {
-  overflow: hidden !important;
-}
 .container-1D34oG .peopleListItem-2nzedh .userInfo-2zN2z8 {
-  max-width: 20vw;
+  max-width: 22vw;
+  min-width: 1vw;
   margin-top: 4px;
 }
 .container-1D34oG .peopleListItem-2nzedh .wrapper-3t9DeA {
@@ -512,10 +523,12 @@
   margin-left: 4px;
 }
 .container-1D34oG .peopleListItem-2nzedh .text-37NqbO {
-  padding-left: 4px;
+  padding-left: 10px;
+}
+.ring-13rgEW {
+  box-shadow: none;
 }
 .container-1D34oG .peopleListItem-2nzedh .wrapper-3t9DeA[style*="32px"] rect {
-  width: 13.3vw !important;
   stroke-width: 1px !important;
 }
 #app-mount .container-1D34oG .peopleListItem-2nzedh .wrapper-3t9DeA foreignObject[mask*=mobile]:after {
