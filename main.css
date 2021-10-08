@@ -278,6 +278,7 @@
   box-shadow: none !important;
   opacity: 1 !important;
   transition: opacity .5s;
+  z-index: 2;
 }
 .animatedContainer-1NSq4T:after {
   background: linear-gradient(00deg, var(--background-primary), transparent 100%);
