@@ -26,6 +26,7 @@
 /* variables */
 :root {
   --blurple-recolor: rgb(97,179,222);
+  --background: rgb(0,0,0);
   --spacing: 6px;
   --radius: 10px;
 }
