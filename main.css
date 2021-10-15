@@ -66,7 +66,7 @@
 .card-o7rAq-, .card-3IImnr, .card-1o0mns, .emptyCard-COmm00, .side-8zPYf6 .item-PXvHYJ, .powercord-product,
 .container-1nZlH6, .addGamePopout-2RY8Ju, .formNotice-2_hHWR, .authedApp-mj2Hmd, .select-2fjwPw, .popout-APcvZm,
 .contentWrapper-SvZHNd, .bd-addon-list .bd-addon-card, .bd-search-wrapper, .notDetected-33MY4s, .nowPlaying-284llR,
-.markup-2BOw-j code {
+.markup-2BOw-j code, .wrapper-35wsBm {
   border-radius: var(--radius);
 }
 
@@ -1121,7 +1121,7 @@
   fill:hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
 }
 
-/* better embeds */
+/* embeds */
 .embedFull-2tM8-- {
   border: none;
   margin-left: 10px;
@@ -1140,7 +1140,7 @@
   border-radius: var(--radius);
 }
 
-/* better image/video embeds */
+/* image/video embeds */
 .embed-IeVjo6, .imageWrapper-2p5ogY, .spoilerContainer-331r0R.hidden-HHr2R9 {
   border-radius: var(--radius);
 }
@@ -1151,7 +1151,7 @@
   margin-top: -4px;
 }
 
-/* better audio embeds */
+/* audio embeds */
 .wrapperAudio-1jDe0Q {
   padding: 10px 0 0 0;
   width: auto !important;
@@ -1167,32 +1167,45 @@
   border-bottom-right-radius: var(--radius);
 }
 
-/* better attachments */
+/* attachments */
 .attachment-33OFj0 {
   border-radius: var(--radius);
   border: none;
 }
 
-/* better invite embeds */
-.wrapper-35wsBm {
-  border-radius: var(--radius);
+/* attachment preview embeds */
+.textContainer-C0szpm {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.footer-2yA7Ep {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 /* bigger emoji tooltips */
+.popoutContainer-1MXdqN {
+  border-radius: var(--radius);
+}
 .emojiSection-3Fb9ix .flex-1xMQg5 {
   display: block;
   text-align: center;
 }
 .emojiSection-3Fb9ix .emoji {
-  width: 150px;
-  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
   margin-bottom: 8px;
+  margin-top: 0;
+}
+.emojiSection-3Fb9ix .horizontal-1ae9ci>.flex-1xMQg5, .horizontal-1ae9ci>.flexChild-faoVW3 {
+  margin: 0;
 }
 
 /* bigger reaction hover */
 .reactionTooltipContent-2TwEIL {
   display: block;
   text-align: center;
+  max-width: 150px;
 }
 .reactionTooltipEmoji-3LG0v8.emoji {
   height: 100px;
@@ -1551,11 +1564,12 @@ img[class^="avatar"]{
     background-position: 135% 0;
   }
 }
-.avatar-1BDn8e[src*="866192755238895646"] + h2::after, /* Bulldög#0533*/
-.avatar-1BDn8e[src*="468500443300102158"] + h2::after, /* booba googa#9980*/
+.avatar-1BDn8e[src*="866192755238895646"] + h2::after, /* Bulldög#0533 */
+.avatar-1BDn8e[src*="468500443300102158"] + h2::after, /* skmotenman#9980 */
 .avatar-1BDn8e[src*="766385575530856458"] + h2::after, /* Crenshaw#1312*/
 .avatar-1BDn8e[src*="424952600345968650"] + h2::after, /* Ary#6321 */
-.avatar-1BDn8e[src*="679860570782040186"] + h2::after /* коронавирус#7894 */ {
+.avatar-1BDn8e[src*="679860570782040186"] + h2::after, /* коронавирус#7894 */
+.avatar-1BDn8e[src*="662118883074768905"] + h2::after /* Womfette#6070 */ {
   content: "";
 }
 /* Bulldög#0533 */
@@ -1566,7 +1580,7 @@ img[class^="avatar"]{
   background-size: 400% 100%;
   z-index: 2;
 }
-/* booba googa#9980 */
+/* skmotenman#9980 */
 .avatar-1BDn8e[src*="468500443300102158"]:hover + h2::after {
   content: 'Spedtard';
   background: linear-gradient(to left,rgb(0, 0, 0), rgb(240, 20, 240), rgb(0, 0, 0));
@@ -1592,8 +1606,16 @@ img[class^="avatar"]{
 }
 /* коронавирус#7894 */
 .avatar-1BDn8e[src*="679860570782040186"]:hover + h2::after {
-  content: 'Foreskin Fred';
-  background: linear-gradient(to left,rgb(0, 0, 0), rgb(63, 41, 21), rgb(0, 0, 0));
+  content: 'Loli';
+  background: linear-gradient(to left,rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  animation: gradient-border 4s linear infinite;
+  background-size: 400% 100%;
+  z-index: 2;
+}
+/* Womfette#6070 */
+.avatar-1BDn8e[src*="662118883074768905"]:hover + h2::after {
+  content: "Loli's Wife";
+  background: linear-gradient(to left,rgb(0, 0, 0), rgb(60, 40, 20), rgb(0, 0, 0));
   animation: gradient-border 4s linear infinite;
   background-size: 400% 100%;
   z-index: 2;
@@ -1688,7 +1710,7 @@ img[class^="avatar"]{
   left: 18px;
   top: 70px;
   width: 150px;
-  max-height: 115px;
+  max-height: 90px;
   background-color: rgba(0, 0, 0, .5);
   border-radius: var(--radius);
   text-align: center;
@@ -1735,7 +1757,7 @@ img[class^="avatar"]{
 /* three dots otpions */
 .root-1gCeng .additionalActionsIcon-365LnQ {
 position: absolute;
-top: 100px;
+top: 105px;
 left: 40px;
 transform: scale(2);
 }
