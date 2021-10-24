@@ -1,7 +1,7 @@
 # Bulldogs-Theme
-A simple dark blue theme
+A simple rounded dark blue theme
 
-![image1](https://cdn.discordapp.com/attachments/825154270881775677/891495193184964688/DiscordCanary_hsyCx3vZai.png)
+![image](https://cdn.discordapp.com/attachments/825154270881775677/891495193184964688/DiscordCanary_hsyCx3vZai.png)
 
 ### Plugin Support
 Powercord
@@ -14,7 +14,6 @@ Powercord
 * DM Typing Indicator
 
 Better Discord
-* Server Folders
 * User Details
 * UserBackgrounds
 * Permission Viewer
