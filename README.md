@@ -6,17 +6,18 @@ A simple rounded dark blue theme
 ### Plugin Support
 Powercord
 * Better Folders
-* Better Friends List
 * Holy Notes
 * Send Message with Webhook
 * PSpectrum
 * UserDetails
 * DM Typing Indicator
+* Pin DMs
 
 Better Discord
 * User Details
 * UserBackgrounds
 * Permission Viewer
+* ChannelDms
 
 # Installation
 
