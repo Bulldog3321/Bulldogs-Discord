@@ -1,6 +1,6 @@
 /**
   * @name Bulldog's Theme
-  * @description A simple dark blue theme
+  * @description A simple rounded dark blue theme
   * @author Bulldög#0533
   * @version BD
   * @website https://github.com/Bulldog3321/Bulldogs-Theme
@@ -9,6 +9,7 @@
 
 @import url("https://bulldog3321.github.io/Bulldogs-Theme/main.css");
 
+/* colouring */
 .theme-dark {
   --background-primary: rgb(24, 28, 37);
   --background-secondary: rgb(20, 23, 31);
@@ -29,11 +30,6 @@
   --background: rgb(0,0,0);
   --spacing: 6px;
   --radius: 10px;
-}
-
-/* old font */
-:root {
-  --font-display: var(--font-primary)!important;
 }
 
 /* blurple recolor */
