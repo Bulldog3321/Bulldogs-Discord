@@ -616,11 +616,12 @@
 .container-16j22k::before {
   content: "offline";
   display: block;
-  bottom: 24px; right: 24px;
+  bottom: 24px;
+  right: 24px;
   position: absolute;
   padding: 8px 16px;
   background-color: #f04747;
-  border-radius: 4px;
+  border-radius: var(--radius);
   color: #fff;
   font-weight: 500
 }
@@ -2275,7 +2276,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   display: block;
 }
 
-/* pc settings cards */
+/* PC settings cards */
 .powercord-entities-manage-search {
   margin-bottom: 20px;
 }
@@ -2312,18 +2313,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   margin-left: -6px;
 }
 
-/* cumcord settings cards */
-.cumcord-plugin-card {
-  border-radius: var(--radius);
-  background-color: var(--background-secondary);
-}
-.ysink_zone_card {
-  border-radius: var(--radius) !important;
-  background-color: var(--background-secondary) !important;
-  border: 1px solid var(--background-tertiary) !important;
-}
-
-/* bd settings cards */
+/* BD settings cards */
 .bd-addon-list .bd-addon-card {
   border: 1px solid var(--background-tertiary);
 }
@@ -2332,6 +2322,122 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 .bd-controls > .bd-addon-button:last-of-type {
   border-radius: 0 20px 20px 0 !important;
+}
+
+/* Cumcord settings cards */
+.cumcord-plugin-card {
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+}
+.cumcord-card-header {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 16px;
+  margin: -17px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.cumcord-card-right {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 12px;
+  padding-top: 13px;
+  margin: -17px;
+  margin-bottom: 14px;
+}
+.ysink_zone_card {
+  border-radius: var(--radius) !important;
+  background-color: var(--background-secondary) !important;
+  border: 1px solid var(--background-tertiary) !important;
+}
+.ysink_zone_card .ysink_zone_row {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 16px;
+  margin: -17px;
+  margin-bottom: 10px;
+}
+.ysink_zone_card .ysink_zone_title {
+  margin-top: 6px !important;
+}
+
+/* Kernel settings cards */
+.kernel-card {
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+  border: solid 1px var(--background-tertiary);
+}
+.kernel-card-header {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 16px;
+  margin: -16px;
+  margin-bottom: 16px;
+  border: none;
+}
+.kernel-card-desc {
+  border: none;
+}
+.kernel-card-tools {
+  border-radius: 24px;
+  background-color: var(--background-secondary);
+  transition: 0.25s;
+}
+.kernel-card-tools:hover {
+  background-color: var(--background-tertiary);
+}
+.kernel-toolbutton:hover {
+  border-radius: 24px;
+}
+/* Kernel BDCompat settings cards */
+.bdcompat-addon-card {
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+  border: solid 1px var(--background-tertiary);
+}
+.bdcompat-card-header {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 16px;
+  margin: -16px;
+  margin-bottom: 16px;
+  border: none;
+}
+.bdcompat-card-desc {
+  border: none;
+}
+.bdcompat-card-tools {
+  border-radius: 24px;
+  background-color: var(--background-secondary);
+  transition: 0.25s;
+}
+.bdcompat-card-tools:hover {
+  background-color: var(--background-tertiary);
+}
+.bdcompat-toolbutton:hover {
+  border-radius: 24px;
+}
+/* Kernel PCCompat settings cards */
+.pc-settings-addon-card {
+  border-radius: var(--radius) !important;
+  background-color: var(--background-secondary) !important;
+  border: solid 1px var(--background-tertiary) !important;
+}
+.pc-settings-card-header {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 16px;
+  margin: -16px;
+  margin-bottom: 16px;
+}
+.pc-settings-addon-card .pc-settings-card-header {
+  padding-bottom: 16px !important;
 }
 
 /* ----------------------------------------PLUGIN SUPPORT---------------------------------------- */
