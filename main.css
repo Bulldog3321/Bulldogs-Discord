@@ -258,7 +258,9 @@ body #app-mount .sidebarRegion-1VBisG {
 }
 
 /* squared server icons */
-.wrapper-28eC3z foreignObject, .wrapperSimple-Js2rIO, .folderIconWrapper-1oRIZr {
+.wrapper-28eC3z foreignObject,
+.wrapperSimple-Js2rIO,
+.folderIconWrapper-1oRIZr, .folderIconWrapper-226oVY {
   mask: none;
   border-radius: 26%;
 }
@@ -1277,10 +1279,14 @@ body #app-mount .sidebarRegion-1VBisG {
   background-color: rgba(97, 179, 222, 0.1);
   border-radius: 6px;
   font-size: 0.9rem;
-  padding: 1px 2px;
 }
 #app-mount .mention:hover {
   filter: brightness(100%);
+}
+#app-mount .mention .channelIcon-3I2O7O {
+  height: 1rem;
+  width: 1rem;
+  top: 2px;
 }
 
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
@@ -1559,38 +1565,41 @@ body #app-mount .sidebarRegion-1VBisG {
 
 /* squared avatars */
 :root {--avatar-radius: 26%};
-img[class^="avatar"]{
-  border-radius: var(--avatar-radius) !important;
+
+img[class^="avatar"] {
+  border-radius: var(--avatar-radius);
 }
-:root .root-3QyAh1 .topSection-y3p-_D > header .header-4zuFdR .mask-1l8v16 foreignObject {
-  mask: none !important; 
-  border-radius: var(--avatar-radius) !important;
+.wrapper-1VLyxH foreignObject,
+.callAvatarMask-fiNMWy foreignObject,
+.avatarContainer-gPrCzX foreignObject,
+.avatarMasked-qX7NI7 {
+  mask: none;
+  -webkit-mask: none;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .avatarUploaderInner-Oiob_P {
-  border: none !important ; 
-  border-radius: var(--avatar-radius) !important;
-}
-:root .wrapper-3t9DeA, :root .avatar-1BDn8e, :root .profile-1eT9hT .avatarUploaderInner-3UNxY3,
-:root .voiceAvatar-14IynY, :root .avatar-3tNQiO, :root .border-Jn5IOt, :root .avatar-3bWpYy, :root .clickableAvatar-1wQpeh,
-:root .emptyUser-7txhlW, :root .avatar-VxgULZ, :root .wrapper-2QE8vf.ringingIncoming-38YcLn::after,
-:root .wrapper-2QE8vf.ringingOutgoing-mbXhhQ::after, :root .replyAvatar-1K9Wmr, :root .avatarSpeaking-2c8-9i,
-:root .avatar-3Heyg_, :root .avatarContainer-2LLZwy, :root .appAvatar-3bgkQ9 {
-  border-radius: var(--avatar-radius) !important;
-}
-:root .wrapper-3t9DeA foreignObject, :root .callAvatarMask-1SLlRi foreignObject,
-:root .avatarContainer-3CQrif foreignObject, :root .avatarMasked-3y6o4j {
-  mask: none !important;
-  -webkit-mask: none !important;
-}
-:root .wrapper-3t9DeA, :root .avatar-1BDn8e, :root .profile-1eT9hT .avatarUploaderInner-3UNxY3,
-:root .voiceAvatar-14IynY, :root .avatar-3tNQiO, :root .border-Jn5IOt, :root .avatar-3bWpYy, :root .clickableAvatar-1wQpeh,
-:root .emptyUser-7txhlW, :root .avatar-VxgULZ, :root .wrapper-2QE8vf.ringingIncoming-38YcLn::after,
-:root .wrapper-2QE8vf.ringingOutgoing-mbXhhQ::after, :root .replyAvatar-1K9Wmr, :root .avatarSpeaking-2c8-9i,
-:root .avatar-3Heyg_, :root .avatarContainer-2LLZwy, :root .appAvatar-3bgkQ9 {
-  border-radius: var(--avatar-radius) !important;
-}
+.wrapper-1VLyxH,
+.avatar-2e8lTP,
+.profile-1o7I_1 .avatarUploaderInner-yEhTv5,
+.voiceAvatar-lRbblo,
+.avatar-3FKimL,
+.border-2BJQjd,
+.avatar-3TrM7c,
+.clickableAvatar-igrb2Y,
+.emptyUser-2FDCJv,
+.avatar-b5OQ1N,
+.wrapper-3mYmFS.ringingIncoming-fibTw-::after,
+.wrapper-3mYmFS.ringingOutgoing-1NjfRn::after,
+.replyAvatar-sHd2sU,
+.avatarSpeaking-33RRJU,
+.avatar-2EVtgZ,
+.avatarContainer-3tBLDx,
+.appAvatar-2_lufo,
+.flexChild-3PzYmX .avatarUploaderInner-yEhTv5,
+.iconInactive-26M06U,
 .avatarUploaderInner-p38nm2 {
-  border-radius: var(--avatar-radius) !important;
+  border-radius: var(--avatar-radius);
+}
+.avatarHint-k7pYop foreignObject:not(.avatarHintInner-2HUAWj) {
+  mask: unset !important;
 }
 
 /* user tags */
@@ -1693,6 +1702,7 @@ img[class^="avatar"]{
 .root-8LYsGj {
   width: 700px;
   height: 475px;
+  border-radius: var(--radius);
 }
 .root-8LYsGj > .topSection-13QKHs {
   background: none;
@@ -1944,18 +1954,15 @@ img[class^="avatar"]{
   height: 396px;
 }
 .root-8LYsGj .body-1Ukv50 .wrapper-1VLyxH {
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-right: -13px;
-  margin-bottom: -8px;
+  margin-right: -17px;
 }
 .root-8LYsGj .noIcon-3gSX9V.iconSizeMedium-2vzSua {
   top: -25px;
   margin-bottom: -25px;
 }
 .root-8LYsGj .listScroller-entkMk .mask-1FEkla.svg-2azL_l, .listRow-2nO1T6 .listAvatar-2bU5Uh.wrapper-1VLyxH {
-  width: 100px !important;
-  height: 100px !important;
+  width: 75px !important;
+  height: 75px !important;
 }
 #app-mount .root-8LYsGj .listScroller-entkMk .wrapper-1VLyxH rect {
   display: none;
