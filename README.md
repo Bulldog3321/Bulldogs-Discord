@@ -7,9 +7,7 @@ A simple rounded dark blue theme
 Powercord
 * Better Folders
 * Holy Notes
-* Send Message with Webhook
 * PSpectrum
-* UserDetails
 * DM Typing Indicator
 * Pin DMs
 
@@ -17,7 +15,7 @@ Better Discord
 * User Details
 * UserBackgrounds
 * Permission Viewer
-* ChannelDms
+* GuildProfile
 
 # Installation
 
