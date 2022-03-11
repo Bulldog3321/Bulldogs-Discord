@@ -16,6 +16,13 @@ Better Discord
 * UserBackgrounds
 * Permission Viewer
 * GuildProfile
+* ShowSessions
+* PlatformIndicators
+* ChannelDms
+* PinnedMessageIcons
+
+Cumcord
+* Sperm Bank
 
 # Installation
 
