@@ -5,9 +5,11 @@
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://mr-miner1.github.io/Better-Badges/src/badges.css");
 @import url("https://lavender-discord.github.io/IconsaxDiscord/theme.css");
+@import url("https://lavender-discord.github.io/Context-Iconsax/theme.css");
 @import url("https://lavender-discord.github.io/Settings-Iconsax/theme.css");
 @import url("https://crearts-community.github.io/Settings-Icons/src/source.css");
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
+@import url("https://crearts-community.github.io/Mention-Links/theme.css");
 
 /* blurple recolor */
 :root {
@@ -46,7 +48,12 @@
 
 /* settings icons */
 [class*="premiumLabel-3"] svg {
-  display: none !important;
+  display: none;
+}
+
+/* context icons */
+.submenuContainer-3EVTeH .iconContainer-1-SsTR {
+  display: flex !important;
 }
 
 /* better badges */
@@ -60,8 +67,11 @@
 
 /* variables */
 :root {
-  --blurple-recolor: rgb(97, 179, 222);
+  --blurple-recolor: rgb(var(--accentcolor));
   --background: rgb(0, 0, 0);
+  --hover: 79, 84, 92;
+  --selected: 112, 135, 215;
+  --message-hover: 21, 24, 31;
   --spacing: 6px;
   --radius: 10px;
 }
@@ -413,16 +423,16 @@
   background: none !important;
 }
 .member-2gU6Ar:hover {
-  background: rgba(79, 84, 92, 0.25) !important;
+  background-color: rgba(var(--hover), 0.25) !important;
 }
 .layout-1qmrhw {
   border-radius: var(--radius);
 }
 .selected-1-Z6gm .layout-1qmrhw {
-  background-color: rgba(112, 135, 215, 0.1);
+  background-color: rgba(var(--selected), 0.1);
 }
 .selected-1-Z6gm .layout-1qmrhw:hover {
-  background-color: rgba(112, 135, 215, 0.18) !important;
+  background-color: rgba(var(--selected), 0.18) !important;
 }
 .membersGroup-2eiWxl {
   padding: 16px 10px 0px 10px;
@@ -799,7 +809,7 @@
   right: 24px;
   padding: 8px 16px;
   border-radius: var(--radius);
-  background-color: #f04747;
+  background-color: var(--dangercolor);
   color: #fff;
   font-weight: 500;
 }
@@ -831,17 +841,17 @@
 }
 .wrapper-NhbLHG:not(.wrapper-NhbLHG.modeSelected-3DmyhH):not(.wrapper-NhbLHG.modeConnected-NrO4cP):hover,
 .interactive-1vLZ_I:not(.interactive-1vLZ_I.selected-3veCBZ):hover {
-  background-color: rgba(79, 84, 92, 0.25);
+  background-color: rgba(var(--hover), 0.25);
   padding-left: 4px;
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH,
 .interactive-1vLZ_I.selected-3veCBZ {
-  background-color: rgba(112, 135, 215, 0.1);
+  background-color: rgba(var(--selected), 0.1);
   border-radius: 0 24px 24px 0;
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH:hover,
 .interactive-1vLZ_I.selected-3veCBZ:hover {
-  background-color: rgba(112, 135, 215, 0.18);
+  background-color: rgba(var(--selected), 0.18);
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH::before,
 .interactive-1vLZ_I.selected-3veCBZ::before {
@@ -977,7 +987,7 @@
   border: solid 2px transparent;
 }
 .scrollableContainer-15eg7h:hover {
-  border: solid 2px rgba(97,179,222,0.4);
+  border: solid 2px rgba(var(--accentcolor), 0.4);
 }
 .scrollableContainer-15eg7h:focus-within {
   border: solid 2px var(--blurple-recolor);
@@ -1261,7 +1271,7 @@
   background-color: var(--background-primary);
 }
 .colorDanger-3n-KnP.focused-3qFvc8 {
-  background-color: rgba(237,66,69,0.5);
+  background-color: rgba(var(--dangercolor),0.5);
 }
 .menu-1QACrS .scroller-1bVxF5 {
   padding: 0;
@@ -1324,7 +1334,7 @@
   transition: 0.1s;
 }
 .message-2CShn3:hover {
-  background-color: #15181e !important;
+  background-color: rgb(var(--message-hover)) !important;
 }
 .backgroundFlash-1X5jVs {
   border-top-right-radius: var(--radius);
@@ -1527,7 +1537,7 @@ display: none;
 /* smaller mentions */
 #app-mount .mention {
   color: var(--blurple-recolor);
-  background-color: rgba(97, 179, 222, 0.1);
+  background-color: rgba(var(--accentcolor), 0.1);
   border-radius: 6px;
   font-size: 0.9rem;
 }
@@ -2389,10 +2399,10 @@ img[class^="avatar"] {
   transition: 0.25s;
 }
 .side-2ur1Qk .item-3XjbnG:hover {
-  background-color: rgba(79, 84, 92, 0.25) !important;
+  background-color: rgba(var(--hover), 0.25) !important;
 }
 .side-2ur1Qk .selected-g-kMVV.item-3XjbnG {
-  background-color: rgba(112, 135, 215, 0.1) !important;
+  background-color: rgba(var(--selected), 0.1) !important;
 }
 
 /* simple switches */
