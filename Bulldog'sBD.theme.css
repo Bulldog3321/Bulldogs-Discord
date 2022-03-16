@@ -13,28 +13,28 @@
 .theme-dark {
   --background-primary: rgb(24, 28, 37);
   --background-secondary: rgb(20, 23, 31);
-  --background-secondary-alt: #0c0e13;
+  --background-secondary-alt: rgb(12, 14, 19);
   --background-modifier-hover: rgba(255, 255, 255, 0.01);
   --background-modifier-active: rgba(255, 255, 255, 0.03);
   --background-modifier-selected: rgba(255, 255, 255, 0.04);
   --text-muted: rgb(182, 182, 182);
   --interactive-normal: rgb(200, 200, 200);
-  --interactive-hover: var(--blurple-recolor);
-  --interactive-active: white;
+  --interactive-active: #ffffff;
   --interactive-muted: #30343d;
 }
 
 /* variables */
 :root {
-  --blurple-recolor: rgb(97,179,222);
-  --background: rgb(0,0,0);
+  --blurple-recolor: rgb(97, 179, 222);
+  --background: rgb(0, 0, 0);
   --spacing: 6px;
   --radius: 10px;
 }
 
 /* blurple recolor */
 :root {
-  --accentcolor:   97,179,222;   /* blurple */
-  --accentcolor2:  250,110,246;  /* boostpink */
-  --linkcolor:     129,216,208;  /* link */
+  --accentcolor:   97, 179, 222;   /* blurple */
+  --accentcolor2:  250, 110, 246;  /* boostpink */
+  --linkcolor:     129, 216, 208;  /* link */
+  --dangercolor:   240, 71, 71;    /* red */
 }
