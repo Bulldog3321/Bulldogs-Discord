@@ -4,8 +4,8 @@
 @import url("https://nyri4.github.io/Discolored/main.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://mr-miner1.github.io/Better-Badges/src/badges.css");
-@import url("https://obscure-git.github.io/IconsaxDiscord/theme.css");
-@import url("https://obscure-git.github.io/Settings-Iconsax/theme.css");
+@import url("https://lavender-discord.github.io/IconsaxDiscord/theme.css");
+@import url("https://lavender-discord.github.io/Settings-Iconsax/theme.css");
 @import url("https://crearts-community.github.io/Settings-Icons/src/source.css");
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 
@@ -42,6 +42,11 @@
 #app-mount .wrapper-1VLyxH foreignObject[mask*=mobile]:after {
   top: 75%;
   right: 3px;
+}
+
+/* settings icons */
+[class*="premiumLabel-3"] svg {
+  display: none !important;
 }
 
 /* better badges */
@@ -300,7 +305,7 @@
   position: fixed;
   bottom: 14px;
 }
-.scroller-3X7KbA > .listItem-3SmSlK:nth-last-child(2) {
+.scroller-3X7KbA > .listItem-3SmSlK:nth-last-child {
   position: fixed;
   bottom: 14px;
 }
@@ -372,13 +377,17 @@
 .content-1jQy2l:before {
   display: none;
 }
-/* server home tab */
-.background-1JKyRc .auto-2K3UW5 {
+/* server home page */
+.homeContainer-r4Hvv1 {
   background-color: var(--background-primary);
   border-radius: var(--radius);
 }
-.theme-dark .background-1JKyRc {
+.theme-dark .background-fkKrXt {
   background: none;
+}
+.container-4HqGB3.background-3X6Uak, .container-2Hi7Km, .container-xwOzwi {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
 }
 
 /* member list */
@@ -1072,6 +1081,9 @@
 .toolbar-3_r2xA:hover {
   background-color: var(--background-tertiary);
 }
+.theme-dark .headerBarInner-2pcZSM:after {
+  background: none;
+}
 
 /* better search bar */
 .search-39IXmY {
@@ -1216,6 +1228,14 @@
 }
 .messageGroupWrapper-1jf_7C {
   border-radius: var(--radius);
+}
+
+/* server list inbox button */
+.iconButton-2z1iK7 {
+  background-color: var(--background-tertiary);
+  color: var(--blurple-recolor);
+  height: 48px;
+  margin: 0;
 }
 
 /* two line channel description */
