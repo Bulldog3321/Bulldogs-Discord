@@ -1,17 +1,20 @@
 /* ----------------------------------------ADDONS---------------------------------------- */
 
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
-@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
-@import url('https://mr-miner1.github.io/Better-Badges/src/badges.css');
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
-@import url('https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css');
-@import url('https://nyri4.github.io/Discolored/main.css');
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://mr-miner1.github.io/Better-Badges/src/badges.css");
+@import url("https://obscure-git.github.io/IconsaxDiscord/theme.css");
+@import url("https://obscure-git.github.io/Settings-Iconsax/theme.css");
+@import url("https://crearts-community.github.io/Settings-Icons/src/source.css");
+@import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 
 /* blurple recolor */
 :root {
   --accentcolor:   97, 179, 222;   /* blurple */
   --accentcolor2:  250, 110, 246;  /* boostpink */
   --linkcolor:     129, 216, 208;  /* link */
+  --dangercolor:   240, 71, 71;    /* red */
 }
 
 /* radial status */
@@ -46,14 +49,6 @@
   --badge-size: 22px; /*discord defualt = 18px, theme defualt = 22px;*/
   --badge-margin: 1.5px; /*discord default = 2px, theme defualt = 1.5px*/
   --badges-everywhere-size: 15px; /*default = 15px*/
-}
-
-/* settings icons */
-body #app-mount .sidebarRegion-1VBisG {
-  flex: 0 !important;
-}
-.item-3XjbnG::before {
-  margin-right: 6px !important;
 }
 
 /* ----------------------------------------MISC---------------------------------------- */
@@ -190,35 +185,63 @@ body #app-mount .sidebarRegion-1VBisG {
   display: none;
 }
 .winButton-3UMjdg {
-  height: 22px;
-  top: 3px;
-  right: 4px;
-  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  margin: 4px;
+  top: 1px;
+  right: 2px;
+  opacity: 0.8;
+  transition: 0.2s;
 }
 .winButton-3UMjdg:after {
-  position: absolute;
   content: " ";
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  background-color: rgba(60, 69, 93, 0.3);
+  width: 18px;
+  height: 18px;
+  opacity: 0;
   transition: 0.2s;
-  pointer-events: none;
 }
-.winButton-3UMjdg:active:after {
-  opacity: 0.65;
+.winButton-3UMjdg:focus::after,
+.winButton-3UMjdg:hover::after {
+  opacity: 1;
 }
-.winButton-3UMjdg.winButtonMinMax-3RsPUg:nth-last-of-type(2):hover:after {
-  background-color: #00ca4e;
+.winButton-3UMjdg svg {
+  width: 0;
+  height: 0;
 }
-.winButton-3UMjdg.winButtonMinMax-3RsPUg:nth-last-of-type(1):hover:after {
-  background-color: #ffbd44;
+.winButton-3UMjdg:nth-child(4) {
+  background-color: #fac536
 }
-.winButton-3UMjdg.winButtonClose-3Q8ZH5:hover:after {
-  background-color: #ff605c;
+.winButton-3UMjdg:nth-child(4):hover {
+  background-color: #DA9E10;
 }
-.winButton-3UMjdg:hover, .winButton-3UMjdg:active {
-  background-color: transparent;
+.winButton-3UMjdg:nth-child(4)::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3E%3Crect ry='1' y='8' x='5' height='2' width='8'/%3E%3C/svg%3E");
+  background-color: #7D631B;
+}
+.winButton-3UMjdg:nth-child(3) {
+  background-color: #39ea49;
+}
+.winButton-3UMjdg:nth-child(3):hover {
+  background-color: #13C11E;
+}
+.winButton-3UMjdg:nth-child(3)::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3E%3Cpath d='M5.414 3.862L10 8.448V4.862c0-.415-.585-1-1-1zM4 5.276v3.586c0 .416.585 1 1 1h3.586z'/%3E%3C/svg%3E");
+  background-color: #1D7525;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+.winButton-3UMjdg:nth-child(2) {
+  background-color: #f25056
+}
+.winButton-3UMjdg:nth-child(2):hover {
+  background-color: #D52735;
+}
+.winButton-3UMjdg:nth-child(2)::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3E%3Cpath fill='%2379282B' d='M4.172 4.034a.998.998 0 000 1.414l1.414 1.414-1.414 1.414a.998.998 0 000 1.415.998.998 0 001.414 0L7 8.276l1.414 1.415a.998.998 0 001.414 0 .998.998 0 000-1.415L8.414 6.862l1.414-1.414a.998.998 0 000-1.414.998.998 0 00-1.414 0L7 5.448 5.586 4.034a.998.998 0 00-1.414 0z'/%3E%3C/svg%3E");
+  background-color: #79282B;
+  margin-top: 4px;
+  margin-left: 2px;
 }
 
 /* ----------------------------------------LAYOUT---------------------------------------- */
@@ -968,7 +991,7 @@ body #app-mount .sidebarRegion-1VBisG {
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   bottom: 0;
-  margin: 0 56px;
+  margin: 0 20px;
   padding: 0 2px;
 }
 .scroller-kQBbkU {
@@ -1282,6 +1305,10 @@ body #app-mount .sidebarRegion-1VBisG {
 }
 .message-2CShn3:hover {
   background-color: #15181e !important;
+}
+.backgroundFlash-1X5jVs {
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 .repliedMessage-3Z6XBG {
   background-color: var(--background-secondary);
@@ -2474,7 +2501,7 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
   margin-bottom: 10px;
 }
 .powercord-product {
-  border-radius: 5px 24px 24px 5px;
+  border-radius: 5px 24px 24px 5px !important;
   background-color: var(--background-secondary);
   border: none;
   border-left: 4px solid #7289da;
@@ -2515,7 +2542,7 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
 
 /* BD settings cards */
 .bd-addon-list .bd-addon-card {
-  border-radius: 5px 24px 24px 5px;
+  border-radius: 5px 24px 24px 5px !important;
   border-left: 4px solid #7289da;
   padding: 15px;
 }
@@ -2533,6 +2560,9 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
 }
 .bd-addon-list .bd-footer {
   padding: 0;
+}
+.bd-controls .bd-addon-button {
+  border-radius: 0px !important;
 }
 .bd-controls > .bd-addon-button:first-of-type {
   border-radius: 20px 0 0 20px !important;
