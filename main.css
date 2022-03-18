@@ -1,15 +1,13 @@
 /* ----------------------------------------ADDONS---------------------------------------- */
 
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
-@import url("https://nyri4.github.io/Discolored/main.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
 @import url("https://mr-miner1.github.io/Better-Badges/src/badges.css");
-@import url("https://lavender-discord.github.io/IconsaxDiscord/theme.css");
-@import url("https://lavender-discord.github.io/Context-Iconsax/theme.css");
+@import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 @import url("https://lavender-discord.github.io/Settings-Iconsax/theme.css");
 @import url("https://crearts-community.github.io/Settings-Icons/src/source.css");
-@import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
-@import url("https://crearts-community.github.io/Mention-Links/theme.css");
+@import url("https://crearts-community.github.io/Context-Icons/theme.css");
 
 /* blurple recolor */
 :root {
@@ -54,6 +52,12 @@
 /* context icons */
 .submenuContainer-3EVTeH .iconContainer-1-SsTR {
   display: flex !important;
+}
+.iconContainer-1-SsTR {
+  display: none;
+}
+:root {
+  --context-icon-size: 18px;
 }
 
 /* better badges */
