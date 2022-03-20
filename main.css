@@ -7,7 +7,6 @@
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 @import url("https://lavender-discord.github.io/Settings-Iconsax/theme.css");
 @import url("https://crearts-community.github.io/Settings-Icons/src/source.css");
-@import url("https://crearts-community.github.io/Context-Icons/theme.css");
 
 /* blurple recolor */
 :root {
@@ -49,7 +48,7 @@
   display: none;
 }
 
-/* context icons */
+/* context icons *
 .submenuContainer-3EVTeH .iconContainer-1-SsTR {
   display: flex !important;
 }
@@ -136,7 +135,7 @@
 .markup-eYLPri code, .wrapper-1HIH0j, .tooltip-14MtrL, .px-MnE_OR.botTag-7aX5WZ, .rem-3kT9wc.botTag-7aX5WZ, 
 .container-3i3IzO, .searchBar-3TnChZ .searchBarComponent-3N7dCG, .wrapper-2SplAX, .item-3XjbnG, 
 .accountProfileCard-lbN7n-, .background-3d_SjE, .notice-1Qe0b_, .swatch-35F5kl, .profileBannerPreview-3mLIdO,
-.cardWrapper-1bSePP, .warning-RBGtx2 {
+.cardWrapper-1bSePP, .warning-RBGtx2, .list-3-WAYB {
   border-radius: var(--radius) !important;
 }
 
@@ -473,7 +472,6 @@
 .unreadMentionsIndicatorBottom-3RJMnQ .bar-2eAyLE .text-2GsXbW {
   display: none;
 }
-
 .unreadTop-1DJtGv,
 .unreadBottom-3Ojk6R {
   padding: 10px;
@@ -537,11 +535,11 @@
   margin-top: -12px;
 }
 
-/* fade in user buttons */
-.panels-3wFtMD .container-YkUktl button {
+/* user buttons */
+.panels-3wFtMD button {
   transition: 0.25s;
 }
-.panels-3wFtMD .container-YkUktl button:hover {
+.panels-3wFtMD button:hover {
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -552,16 +550,11 @@
   width: 232px;
   border-radius: var(--radius);
 }
-#status-picker .scroller-1bVxF5 {
-  padding: 0;
-}
 #status-picker .scroller-1bVxF5 .item-1OdjEX {
-  border-radius: var(--radius);
-  padding: 0;
-  margin: 4px;
+  padding: 10px 4px;
 }
-#status-picker .scroller-1bVxF5 .separator-1So4YB {
-  display: none;
+#status-picker .submenuPaddingContainer-_k62dJ .item-1OdjEX {
+  padding: 10px 8px;
 }
 #status-picker .mask-2Me5HY {
   height: 18px;
@@ -570,10 +563,8 @@
 #status-picker .item-1OdjEX:not(#status-picker-custom-status, #status-picker-switch-account) .status-3TYC5W {
   margin-left: 4px;
 }
-#status-picker-custom-status .statusItem-2hiCNB,
-#status-picker-switch-account .statusItem-2hiCNB {
-  padding-left: 10px;
-  padding-right: 10px;
+#status-picker .statusItem-2hiCNB {
+  padding: 0 10px;
 }
 #status-picker-custom-status .status-3TYC5W,
 #status-picker-switch-account .status-3TYC5W,
@@ -721,53 +712,50 @@
 }
 
 /* call area */
-.wrapper-1gVUIN.minimum-fXpVNc {
+.wrapper-1gVUIN, .wrapper-1gVUIN.minimum-fXpVNc {
   background: none;
 }
-.wrapper-1gVUIN.minimum-fXpVNc .callContainer-HtHELf {
-  background-color: var(--background-primary);
-  border-radius: var(--radius) !important;
-  margin-bottom: var(--spacing);
-}
-.wrapper-1gVUIN {
-  background: none;
-}
-.callContainer-HtHELf {
+.wrapper-1gVUIN .callContainer-HtHELf, .wrapper-1gVUIN.minimum-fXpVNc .callContainer-HtHELf {
   background-color: var(--background-primary);
   border-radius: var(--radius);
+  margin-bottom: var(--spacing);
+}
+.wrapper-1gVUIN .resizeHandle-1zU8BL {
+  bottom: 0;
+  height: 6px;
 }
 .wrapper-1gVUIN.chatSidebarOpen--YCxhs .callContainer-HtHELf {
   border-radius: var(--radius);
 }
 
 /*call dock*/
-.wrapper-3t3Yqv {
+.wrapper-3t3Yqv,
+.bottomControls-31YuPK .justifyCenter-rrurWZ {
   background-color: var(--background-secondary);
   border-radius: 20px;
   transition: 0.25s;
 }
-.wrapper-3t3Yqv:hover {
+.wrapper-3t3Yqv:hover,
+.bottomControls-31YuPK .justifyCenter-rrurWZ:hover {
   background-color: var(--background-tertiary);
 }
-.controlButton-2PMNom {
-  margin: 0;
-}
-.colorable-3rVGna.primaryDark-2UJt1G,
-.colorable-3rVGna.primaryDark-2UJt1G:hover,
-.colorable-3rVGna.red-3T8maV,
-.colorable-3rVGna.red-3T8maV:hover,
-.colorable-3rVGna.white-11auuQ,
-.colorable-3rVGna.white-11auuQ:hover {
-  background: none;
+.colorable-3rVGna {
+  background: none !important;
 }
 .colorable-3rVGna.red-3T8maV .centerIcon-JYpTUi {
-  color: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  color: rgb(var(--dangercolor));
 }
-.colorable-3rVGna.white-11auuQ, .colorable-3rVGna.white-11auuQ .centerIcon-JYpTUi {
+.colorable-3rVGna .centerIcon-JYpTUi {
   color: white;
 }
 .contextMenuNub-NuTZ_U {
   background-color: var(--background-modifier-active) !important;
+}
+.topControls-23RE3h .title-31SJ6t {
+  background: none !important;
+}
+.joinButton-2KP9ZZ {
+  display: none;
 }
 
 /* region selector */
@@ -790,6 +778,12 @@
 #pluginNotice {
   margin: var(--spacing);
   margin-bottom: 0;
+}
+
+/* login box */
+.theme-dark.authBox-1HR6Ha {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
 }
 
 /* offline mode */
@@ -1266,24 +1260,25 @@
   border-radius: var(--radius);
   overflow: hidden;
 }
-.scroller-1bVxF5 .item-1OdjEX {
-  border-radius: 0;
-  padding: 10px 8px;
-  margin: 0;
-}
-.colorDefault-CDqZdO.focused-3qFvc8 {
-  background-color: var(--background-primary);
-}
-.colorDanger-3n-KnP.focused-3qFvc8 {
-  background-color: rgba(var(--dangercolor),0.5);
-}
 .menu-1QACrS .scroller-1bVxF5 {
   padding: 0;
 }
-.scroller-1bVxF5 .submenuPaddingContainer-_k62dJ {
+.menu-1QACrS .item-1OdjEX {
+  border-radius: 0;
+  padding: 10px 8px;
+  margin: 0;
+  transition: 0.1s;
+}
+.menu-1QACrS .item-1OdjEX.colorDefault-CDqZdO.focused-3qFvc8 {
+  background-color: var(--background-primary);
+}
+.menu-1QACrS .item-1OdjEX#message-delete.colorDefault-CDqZdO.focused-3qFvc8 {
+  background-color: rgba(var(--dangercolor), 0.6);
+}
+.menu-1QACrS .submenuPaddingContainer-_k62dJ {
   margin: 0 -8px;
 }
-.scroller-1bVxF5 .separator-1So4YB {
+.menu-1QACrS .separator-1So4YB {
   display: none;
 }
 .wrapper--nA0oy {
@@ -1292,6 +1287,33 @@
 .button-1zW0-r:hover {
   background-color: var(--background-primary);
   border-radius: var(--radius);
+}
+
+/* context menu volume slider */
+#user-context-user-volume {
+  padding-top: 0;
+  transition: 0.1s;
+}
+#user-context-user-volume:hover {
+  background-color: var(--background-primary);
+}
+#user-context-user-volume .labelContainer-2vJzYL {
+  padding: 0;
+}
+#user-context-user-volume .sliderContainer-2nidiS {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
+  padding: 2px 8px;
+}
+#user-context-user-volume:hover .sliderContainer-2nidiS {
+  background-color: var(--background-tertiary);
+}
+#user-context-user-volume .slider-BEB8u7 {
+  padding-top: 8px;
+}
+#user-context-user-volume .grabber-2GQyvM {
+  margin-top: 6.5px;
+  border-radius: 26%;
 }
 
 /* popout animations */
