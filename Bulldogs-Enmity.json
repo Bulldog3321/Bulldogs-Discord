@@ -1,0 +1,60 @@
+{
+  "name": "Bulldogs-Enmity",
+  "theme_color_map": {
+    "BACKGROUND_PRIMARY": [
+      "#181c25",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#14171f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#14171f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#0c0e13",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#0c0e13",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#0c0e13",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#181c25",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#14171f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#14171f",
+      "#FFFFFF"
+   ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "rgba(255, 255, 255, 0.03)",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "rgba(255, 255, 255, 0.04)",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "none",
+      "#FFFFFF"
+    ]
+  },
+  "colours": {
+    "PRIMARY_DARK": "#c8c8c8",
+    "PRIMARY_DARK_600": "#181c25",
+    "PRIMARY_DARK_630": "#15181f",
+    "PRIMARY_DARK_700": "#181c25",
+    "PRIMARY_DARK_800": "#0c0e13",
+  }
+}
