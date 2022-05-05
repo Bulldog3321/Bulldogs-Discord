@@ -3385,6 +3385,34 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
   border-radius: var(--radius);
 }
 
+/* MessageLoggerV2 */
+.MLv2-menu-root .header-1zd7se {
+  background-color: var(--background-tertiary);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding-bottom: 0;
+}
+.MLv2-menu-root .header-1zd7se .defaultColor-HXu-5n {
+  width: 100%;
+}
+.MLv2-input {
+  background-color: var(--background-secondary) !important;
+  border-radius: var(--radius) !important;
+}
+.MLv2-question-mark {
+  border-radius: var(--radius) !important;
+}
+.MLv2-tab-bar-container {
+  border: none !important;
+  padding: 0 !important;
+}
+#ML2-MENU-MESSAGES .message-2CShn3 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: -16px;
+}
+
+
 /* --------------------Cumcord -------------------- */
 
 /* The Cum Zone */
