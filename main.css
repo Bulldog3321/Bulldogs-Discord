@@ -250,6 +250,13 @@
 }
 .container-ZMc96U {
   margin-bottom: var(--spacing);
+  z-index: 1;
+}
+.content-1jQy2l:before {
+  display: none;
+}
+.input-1nrc5P {
+  border-radius: var(--radius);
 }
 .peopleColumn-1wMU14, .applicationStore-2nk7Lo {
   background-color: var(--background-primary);
@@ -1947,7 +1954,7 @@ display: none;
   background-color: rgba(var(--accentcolor), 0.1);
   border-radius: 6px;
   font-size: 0.9rem;
-  transition: filter 0.1s;
+  transition: background-color 0.1s;
 }
 #app-mount .mention:hover {
   filter: brightness(100%);
@@ -2295,7 +2302,8 @@ img[class^="avatar"] {
 .avatar-2e8lTP[src*="766385575530856458"] + h2::after, /* Crenshaw*/
 .avatar-2e8lTP[src*="424952600345968650"] + h2::after, /* Ary */
 .avatar-2e8lTP[src*="679860570782040186"] + h2::after, /* коронавирус */
-.avatar-2e8lTP[src*="590017562729775124"] + h2::after /* DieDoesMC */ {
+.avatar-2e8lTP[src*="590017562729775124"] + h2::after, /* DieDoesMC */
+.avatar-2e8lTP[src*="927695547421310996"] + h2::after /* BitterSweet */ {
   content: "";
 }
 /* Bulldög */
@@ -2340,8 +2348,16 @@ img[class^="avatar"] {
 }
 /* DieDoesMC */
 .avatar-2e8lTP[src*="590017562729775124"]:hover + h2::after {
-  content: 'Rich ass Femboy';
+  content: 'Rich Ass Femboy';
   background: linear-gradient(to left,rgb(170, 170, 170), rgb(200, 0, 120), rgb(110, 210, 255), rgb(170, 170 ,170));
+  animation: gradient-border 4s linear infinite;
+  background-size: 400% 100%;
+  z-index: 2;
+}
+/* BitterSweet */
+.avatar-2e8lTP[src*="927695547421310996"]:hover + h2::after {
+  content: 'Bitter Bitch';
+  background: linear-gradient(to left,rgb(0, 0, 0), rgb(190, 40, 220), rgb(0, 0, 0));
   animation: gradient-border 4s linear infinite;
   background-size: 400% 100%;
   z-index: 2;
