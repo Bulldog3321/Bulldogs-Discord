@@ -3,10 +3,7 @@ A simple rounded dark blue theme
 
 ## Installation
 ### ~~Powercord~~ Replugged
-git clone into your themes folder or paste below into command line
-```
-cd replugged/src/Powercord/themes && git clone https://github.com/Bulldog3321/Bulldogs-Theme
-```
+[Click here](https://replugged.dev/install?url=Bulldog3321/Bulldogs-Theme) while you have discord open
 
 ### Better Discord
 Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sBD.theme.css) into your themes folder
