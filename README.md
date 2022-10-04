@@ -8,14 +8,8 @@ A simple rounded dark blue theme
 ### Better Discord
 Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sBD.theme.css) into your themes folder
 
-### Cumcord
-Install [Cumstain](https://cumcordplugins.github.io/Condom/yellowsink.github.io/cc-plugins/cumstain/) and find it on the store page
-
 ## Plugin Support
 ### ~~Powercord~~ Replugged
-* [Better Folders](https://github.com/Juby210/better-folders)
-* [PSpectrum](https://github.com/parzival-space/powercord-pspectrum)
-* [DM Typing Indicator](https://github.com/zt64/dm-typing-indicator)
 * [Show Hidden Channels](https://github.com/discord-modifications/show-hidden-channels)
 
 ### Better Discord
@@ -29,13 +23,6 @@ Install [Cumstain](https://cumcordplugins.github.io/Condom/yellowsink.github.io/
 * [PinnedMessageIcons](https://github.com/Neodymium7/BetterDiscordStuff/tree/main/PinnedMessageIcons)
 * [VoiceActivity](https://betterdiscord.app/plugin/VoiceActivity)
 * [MessageLoggerV2](https://1lighty.github.io/BetterDiscordStuff/?plugin=MessageLoggerV2) (requires "Obfuscate CSS classes" to be disabled)
-
-### Cumcord
-* [The Cum Zone](https://cumcordplugins.github.io/Condom/yellowsink.github.io/cc-plugins/cum-zone/)
-* [Cumstain](https://cumcordplugins.github.io/Condom/yellowsink.github.io/cc-plugins/cumstain/)
-* [Sperm Bank](https://cumcordplugins.github.io/Condom/swishs-client-mod-plugins.github.io/sperm-bank/build/)
-* [Better Friends List](https://cumcordplugins.github.io/Condom/e-boi.github.io/cumcord-plugins/betterfriendslist/dist/)
-* [User Details](https://cumcordplugins.github.io/Condom/e-boi.github.io/cumcord-plugins/userdetails/dist/)
 
 ### Kernel
 * [Code Snippets](https://github.com/swishs-client-mod-plugins/code-snippets)
