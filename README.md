@@ -15,7 +15,6 @@ Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldo
 ### Better Discord
 * [XenoLib](https://github.com/1Lighty/BetterDiscordPlugins/blob/master/Plugins/1XenoLib.plugin.js)
 * [User Details](https://betterdiscord.app/plugin/UserDetails)
-* [UserBackgrounds](https://github.com/Strencher/BetterDiscordStuff/tree/master/UserBackgrounds)
 * [Permission Viewer](https://betterdiscord.app/plugin/PermissionsViewer)
 * [GuildProfile](https://betterdiscord.app/plugin/GuildProfile)
 * [PlatformIndicators](https://betterdiscord.app/plugin/PlatformIndicators)
@@ -26,6 +25,9 @@ Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldo
 
 ### Kernel
 * [Code Snippets](https://github.com/swishs-client-mod-plugins/code-snippets)
+
+### Vencord
+* MessageLogger
 
 ## Images
 ![image](https://cdn.discordapp.com/attachments/825154270881775677/1005975186551611442/home.png)
