@@ -1502,7 +1502,7 @@
   }
 }
 /* context menu, user popout, emoji/sticker tooltip */
-.menu-1QACrS, .userPopoutInner-1hXSeY, .popoutContainer-2wbmiM {
+.menu-1QACrS, .userProfileOuter-1K_BYU, .popoutContainer-2wbmiM {
   animation: popout 0.1s;
 }
 .full-motion .translate-PeW1wK.didRender-2SiRlm,
@@ -2144,14 +2144,17 @@ display: none;
 .userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
   padding: 0;
 }
+.userPopoutInner-1hXSeY:before {
+  border-radius: var(--radius);
+  height: 100%;
+  width: 100%;
+}
 .userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY {
   -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   min-height: 120px !important;
   min-width: 300px !important;
-}
-.userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY foreignObject,
-.userPopoutInner-1hXSeY .banner-2boKnS {
-  height: 120px;
+  height: 120px !important;
+  width: 300px !important;
 }
 .userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY mask,
 .userPopoutInner-1hXSeY .avatarHint-2g3Mcd,
@@ -2178,7 +2181,7 @@ display: none;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .userPopoutInner-1hXSeY .containerWithContent-2_V0PM {
-  padding: 3px;
+  padding: 2px;
 }
 .userPopoutInner-1hXSeY .pencilContainer-11Kuga,
 .userPopoutInner-1hXSeY .premiumIconWrapper-yyGDql,
@@ -2601,16 +2604,18 @@ img[class^="avatar"] {
 }
 .root-2uUafN .container-1U-qVy {
   position: absolute;
+  width: 100%;
   padding: 0;
-  top: 0;
+  bottom:  0;
   left: 0;
-}
+ }
 .root-2uUafN .nameTag-2ysfG3 {
   position: absolute;
+  flex-direction: column;
   width: 114px;
-  top: 150px;
+  bottom: 270px;
   margin: 0;
-  margin-left: 14px;
+  left: 14px;
   padding: 5px;
   background-color: rgba(0, 0, 0, .5);
   border-radius: var(--radius);
@@ -2618,12 +2623,13 @@ img[class^="avatar"] {
 }
 .root-2uUafN .customStatus-3QV7IG {
   position: absolute;
+  display: flex;
+  align-items: center;
   bottom: 14px;
   left: 0;
   right: 0;
-  margin: auto;
-  width: fit-content;
-  max-width: 280px;
+  margin-left: 205px;
+  margin-right: 134px;
   padding: 5px;
   background-color: rgba(0, 0, 0, .5);
   border-radius: var(--radius);
@@ -2655,7 +2661,7 @@ img[class^="avatar"] {
   margin: 0;
   margin-bottom: 10px;
   padding: 12px;
-  height: 32px;
+  height: 20px;
   border: none;
   font-size: 0;
 }
@@ -2729,7 +2735,7 @@ img[class^="avatar"] {
   margin: 0;
   flex-direction: row-reverse;
 }
-.root-2uUafN .warningCircleIcon-1YXIHu /**/ {
+.root-2uUafN .warningCircleIcon-1bhZXx {
   position: fixed;
   bottom: 14px;
   right: 14px;
