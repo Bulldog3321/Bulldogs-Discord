@@ -319,8 +319,9 @@
 .scroller-3X7KbA {
   contain: unset;
   background-color: var(--background-primary);
-  margin-bottom: 152px;
-  padding-top: 10px !important;
+  margin-bottom: 140px;
+  padding-top: calc(var(--spacing) * 2) !important;
+  padding-bottom: 4px;
   border-radius: var(--radius);
 }
 .guilds-2JjMmN {
@@ -328,25 +329,28 @@
 }
 .tutorialContainer-2jwoiB {
   position: fixed;
-  bottom: 74px;
+  bottom: calc(var(--spacing) * 12 + 2px);
 }
 .tutorialContainer-2jwoiB + .listItem-3SmSlK {
-  contain: none;
   position: fixed;
-  bottom: 14px;
+  bottom: calc(var(--spacing) * 3);
 }
 .scroller-3X7KbA > .listItem-3SmSlK:nth-last-child {
   position: fixed;
-  bottom: 14px;
+  bottom: calc(var(--spacing) * 2);
+}
+.tutorialContainer-2jwoiB .listItem-3SmSlK,
+.tutorialContainer-2jwoiB + .listItem-3SmSlK {
+  margin-bottom: 0;
 }
 .tutorialContainer-2jwoiB::before {
   background: var(--background-primary);
   position: fixed;
   content: "";
   border-radius: var(--radius);
-  height: 140px;
+  height: 128px;
   width: 72px;
-  bottom: 6px;
+  bottom: var(--spacing);
 }
 .circleIconButton-1VxDrg,
 .childWrapper-1j_1ub {
@@ -482,7 +486,7 @@
   background: linear-gradient(rgb(var(--dangercolor)), #0000);
 }
 .unreadMentionsIndicatorBottom-3RJMnQ {
-  bottom: 136px;
+  bottom: 140px;
   padding: 0;
 }
 .unreadMentionsIndicatorBottom-3RJMnQ .bar-2eAyLE {
@@ -2547,6 +2551,11 @@ img[class^="avatar"] {
 .root-2uUafN .userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
   padding: 0;
 }
+.root-2uUafN .userProfileModalInner-3fh3QA:before {
+  border-radius: var(--radius);
+  height: 100%;
+  width: 100%;
+}
 .root-2uUafN .overlayBackground-1KgwVi {
   margin: 0;
   height: 475px;
@@ -2590,8 +2599,8 @@ img[class^="avatar"] {
 .root-2uUafN .listScroller-XCVa1H::-webkit-scrollbar {
   display: none;
 }
-.root-2uUafN .noTabBar-2Q-iE_ /**/ {
-  border: none;
+.root-2uUafN .divider-1NpGam {
+  display: none;
 }
 
 /* left side */
