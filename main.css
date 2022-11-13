@@ -477,6 +477,10 @@
 /* ----------------------------------------SERVER LIST---------------------------------------- */
 
 /* unread mention indicator */
+.unreadMentionsIndicatorTop-2bTgUU,
+.unreadMentionsIndicatorBottom-3RJMnQ {
+  height: unset;
+}
 .unreadMentionsIndicatorTop-2bTgUU {
   padding: 0;
 }
@@ -2154,11 +2158,24 @@ display: none;
   width: 100%;
 }
 .userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY {
+  position: relative;
   -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   min-height: 120px !important;
-  min-width: 300px !important;
-  height: 120px !important;
-  width: 300px !important;
+  min-width: 100% !important;
+}
+.userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY foreignObject {
+  transform: translateY(-38px);
+  height: 136px;
+  width: 100%;
+}
+.userProfileInnerThemedWithBanner-2624Yx .bannerSVGWrapper-qc0szY foreignObject {
+  transform: translateY(-8px);
+  height: 136px;
+  width: 100%;
+}
+.userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY .banner-2boKnS {
+  height: 100%;
+  width: 100%;
 }
 .userPopoutInner-1hXSeY .bannerSVGWrapper-qc0szY mask,
 .userPopoutInner-1hXSeY .avatarHint-2g3Mcd,
@@ -2572,6 +2589,22 @@ img[class^="avatar"] {
   position: absolute;
   opacity: 0.5;
   z-index: 0;
+  height: 475px !important;
+  width: 100% !important;
+}
+.root-2uUafN .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY foreignObject {
+  transform: translateY(-150px);
+  height: 407.15px;
+  width: 100%;
+}
+.root-2uUafN .userProfileInnerThemedWithBanner-2624Yx .bannerSVGWrapper-qc0szY foreignObject {
+  transform: translateY(-97px);
+  height: 407.15px;
+  width: 100%;
+}
+.root-2uUafN .bannerSVGWrapper-qc0szY .banner-2boKnS {
+  height: 100%;
+  width: 100%;
 }
 .root-2uUafN .bannerSVGWrapper-qc0szY mask,
 .root-2uUafN .premiumIconWrapper-yyGDql {
@@ -2622,9 +2655,9 @@ img[class^="avatar"] {
   position: absolute;
   flex-direction: column;
   width: 114px;
-  bottom: 270px;
-  margin: 0;
+  top: -324px;
   left: 14px;
+  margin: 0;
   padding: 5px;
   background-color: rgba(0, 0, 0, .5);
   border-radius: var(--radius);
@@ -3516,6 +3549,8 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   border-bottom-right-radius: var(--radius);
 }
 
+/* ----------------------------------------CLIENT MODS---------------------------------------- */
+
 /* better powercord update toast */
 .powercord-toast {
   border-radius: var(--radius) !important;
@@ -3562,6 +3597,9 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 
 /* BD settings cards */
+.bd-controls+.bd-addon-list {
+  margin-top: 16px;
+}
 .bd-addon-list .bd-addon-card {
   border-radius: 5px 24px 24px 5px !important;
   border-left: 4px solid #7289da;
@@ -3732,7 +3770,44 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   max-width: 325px !important;
 }
 
-/* ----------------------------------------experiments---------------------------------------- */
+/* shelter plugin cards */
+._plugin_s1ljv_1 {
+  background-color: var(--background-secondary);
+  border-radius: 5px 24px 24px 5px !important;
+  border: none !important;
+  border-left: 4px solid #7289da !important;
+  margin: 16px 0 !important;
+  padding: 16px !important;
+}
+._row_s1ljv_1 {
+  align-items: unset !important;
+  padding-bottom: 10px;
+}
+._desc_s1ljv_1 {
+  font-size: 14px !important;
+}
+
+/* shelter modals */
+._modal_1cqgx_1 {
+  background-color: var(--background-primary) !important;
+  border-radius: var(--radius) !important;
+}
+._body_1cqgx_1 {
+  padding: 0 16px !important;
+}
+._sitem_1anvu_1:last-child div {
+  border: none !important;
+  margin-top: 0 !important;
+}
+._foot_1cqgx_1 {
+  background-color: var(--background-primary) !important;
+  border-radius: 0 0 var(--radius) var(--radius) !important;
+}
+._button_1hm31_1 {
+  border-radius: var(--radius) !important;
+}
+
+/* ----------------------------------------EXPERIMENTS---------------------------------------- */
 
 /* Home Tab */
 .homeContainer-r4Hvv1 {
