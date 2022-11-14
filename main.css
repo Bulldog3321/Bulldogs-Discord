@@ -605,9 +605,9 @@
 .accountProfilePopoutWrapper-3GskID .item-1OdjEX.hideInteraction-2jPGL_ {
   display: none;
 }
-#account-status-picker--online, 
-#account-status-picker--idle, 
-#account-status-picker--dnd, 
+#account-status-picker--online,
+#account-status-picker--idle,
+#account-status-picker--dnd,
 #account-status-picker--invisible {
   padding: 9px;
 }
@@ -4320,18 +4320,25 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 /* --------------------Vencord-------------------- */
 
 /* MessageLogger */
-#app-mount .messageLogger-deleted .message-2CShn3 {
-  background-color: rgba(var(--dangercolor), 0.1);
+.messagelogger-red-overlay .messageLogger-deleted,
+.messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv {
+  background-color: rgba(var(--dangercolor), 0.15) !important;
 }
-#app-mount .messageLogger-deleted .message-2CShn3:before {
-  background-color: rgba(var(--dangercolor), 1);
+.messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv {
+  background-color: rgba(var(--dangercolor), 0);
 }
-#app-mount .messageLogger-deleted .message-2CShn3:hover {
-  background-color: rgba(var(--dangercolor), 0.08);
+.messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv:hover {
+  background-color: var(--background-message-hover);
 }
-#app-mount .messageLogger-edited {
-  opacity: 50%
+.messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv:hover {
+  background-color: rgba(var(--dangercolor), 0.08) !important;
 }
-#app-mount .messageLogger-edited .timestamp-p1Df1m {
+.messageLogger-deleted .mentioned-Tre-dv::before {
+  background-color: rgb(var(--dangercolor));
+}
+.messageLogger-edited .timestamp-p1Df1m {
   display: none;
+}
+.messagelogger-red-overlay .messageLogger-deleted-attachment {
+  filter: none;
 }
