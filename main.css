@@ -2247,7 +2247,7 @@ display: none;
 .userPopoutInner-1hXSeY .headerContainer-1wJjOa {
   background-color: var(--background-primary);
   padding: 8px 10px;
-  margin: 0;
+  margin-top: 10px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   font-size: 14px;
@@ -2280,27 +2280,23 @@ display: none;
   display: flex;
   flex-grow: 1;
 }
-.userPopoutInner-1hXSeY .textarea-_59yqs {
-  background: none;
+.userPopoutInner-1hXSeY textarea,
+.userPopoutInner-1hXSeY textarea:focus {
+  background-color: var(--background-secondary);
   font-size: 14px;
 }
-.userPopoutInner-1hXSeY .messageInputContainer-2rGDH8 {
-  background-color: var(--background-primary);
-  border-radius: var(--radius);
-  padding: 10px;
+.userPopoutInner-1hXSeY .note-6O4w9y textarea {
+  border-radius: 0;
+  border: none !important;
+  height: 30px !important;
+  padding: 0;
 }
 .userPopoutInner-1hXSeY .messageInputContainer-2rGDH8 {
-  border-radius: var(--radius);
   border: none;
 }
 .userPopoutInner-1hXSeY .input-2z42oC {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--background-secondary);
   border: none;
-  transition: background-color 0.25s;
-}
-.userPopoutInner-1hXSeY .input-2z42oC:hover,
-.userPopoutInner-1hXSeY .input-2z42oC:focus {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .userPopoutInner-1hXSeY .activity-E0U09Y {
   background-color: var(--background-secondary);
@@ -4323,12 +4319,14 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 .messagelogger-red-overlay .messageLogger-deleted,
 .messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv {
   background-color: rgba(var(--dangercolor), 0.15) !important;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 .messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv {
   background-color: rgba(var(--dangercolor), 0);
 }
 .messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv:hover {
-  background-color: var(--background-message-hover);
+  background-color: rgba(var(--message-hover));
 }
 .messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv:hover {
   background-color: rgba(var(--dangercolor), 0.08) !important;
@@ -4336,9 +4334,30 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 .messageLogger-deleted .mentioned-Tre-dv::before {
   background-color: rgb(var(--dangercolor));
 }
-.messageLogger-edited .timestamp-p1Df1m {
-  display: none;
-}
 .messagelogger-red-overlay .messageLogger-deleted-attachment {
   filter: none;
+}
+
+/* ReviewDB */
+.userPopoutInner-1hXSeY .eyebrow-Ejf06y {
+  margin-bottom: 0 !important;
+}
+.userPopoutInner-1hXSeY .message-2CShn3 {
+  background-color: var(--background-secondary);
+  border-radius: 0;
+}
+.userPopoutInner-1hXSeY textarea {
+  border-radius: 0 0 var(--radius) var(--radius);
+  border-top: 1px solid var(--background-modifier-accent) !important;
+}
+.userPopoutInner-1hXSeY .modeDefault-2fEh7a {
+  background-color: var(--background-secondary);
+  padding: 10px;
+}
+
+/* PronounsDB */
+.userPopoutInner-1hXSeY .text-md-normal-304U3g {
+  background-color: var(--background-secondary);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
