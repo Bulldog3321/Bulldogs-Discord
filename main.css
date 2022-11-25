@@ -2226,10 +2226,8 @@ display: none;
   text-align: center;
 }
 .userPopoutInner-1hXSeY .customStatus-3Bvsdb .customStatusEmoji-1hUpwD {
-  float: none;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6px;
   width: 40px;
   height: 40px;
 }
@@ -2237,17 +2235,26 @@ display: none;
   display: none;
 }
 .userPopoutInner-1hXSeY .scroller-1jBQYo {
-  margin-right: -8px !important;
+  padding: 0 !important;
 }
 .userPopoutInner-1hXSeY .section-3FmfOT {
   padding: 0;
   margin: 10px 0px 0px 0px;
 }
+.userPopoutInner-1hXSeY .section-3FmfOT:first-child {
+  margin-top: 0;
+}
+.userPopoutInner-1hXSeY .usernameSection-2d814A,
+.userPopoutInner-1hXSeY .customStatusSection-2TRu5f {
+  margin-bottom: 10px;
+}
+.userPopoutInner-1hXSeY .customStatusSection-2TRu5f {
+  margin-top: 0;
+}
 .userPopoutInner-1hXSeY .eyebrow-Ejf06y,
 .userPopoutInner-1hXSeY .headerContainer-1wJjOa {
   background-color: var(--background-primary);
   padding: 8px 10px;
-  margin-top: 10px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   font-size: 14px;
@@ -2287,7 +2294,6 @@ display: none;
 }
 .userPopoutInner-1hXSeY .note-6O4w9y textarea {
   border-radius: 0;
-  border: none !important;
   height: 30px !important;
   padding: 0;
 }
@@ -4339,25 +4345,31 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 
 /* ReviewDB */
-.userPopoutInner-1hXSeY .eyebrow-Ejf06y {
+.ReviewDB .eyebrow-Ejf06y {
+  margin-top: 10px;
   margin-bottom: 0 !important;
+  padding: 8px 10px !important;
 }
-.userPopoutInner-1hXSeY .message-2CShn3 {
+.ReviewDB .message-2CShn3 {
   background-color: var(--background-secondary);
   border-radius: 0;
 }
-.userPopoutInner-1hXSeY textarea {
-  border-radius: 0 0 var(--radius) var(--radius);
+.ReviewDB textarea {
+  border-radius: 0 0 var(--radius) var(--radius) !important;
+  border: none !important;
   border-top: 1px solid var(--background-modifier-accent) !important;
+  margin-bottom: 0 !important;
 }
-.userPopoutInner-1hXSeY .modeDefault-2fEh7a {
+.ReviewDB .modeDefault-2fEh7a {
   background-color: var(--background-secondary);
-  padding: 10px;
+  padding: 10px !important;
+  margin-bottom: 0 !important;
 }
 
-/* PronounsDB */
+/* PronounDB */
 .userPopoutInner-1hXSeY .text-md-normal-304U3g {
   background-color: var(--background-secondary);
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+  padding: 10px;
 }
