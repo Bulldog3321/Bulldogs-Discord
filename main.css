@@ -403,16 +403,14 @@
 }
 
 /* member list */
-.members-3WRCEx,
-.members-3WRCEx>div {
-  background-color: var(--background-primary);
-  border-radius: var(--radius);
-}
 .membersWrap-3NUR2t {
-  background-color: var(--background-primary);
   border-radius: var(--radius);
   margin-left: var(--spacing);
   height: 100%;
+}
+.members-3WRCEx {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
 }
 .container-2o3qEW {
   background: none;
@@ -2310,8 +2308,11 @@ display: none;
   background-color: var(--background-secondary);
   border-radius: var(--radius);
 }
-.userPopoutInner-1hXSeY .headerContainer-1wJjOa {
+.userPopoutInner-1hXSeY .activity-E0U09Y .headerContainer-1wJjOa {
   width: unset;
+}
+.userPopoutInner-1hXSeY .activity-E0U09Y .bodyAlignCenter-3E27PU {
+  padding: 10px;
 }
 .userPopoutInner-1hXSeY .headerText-3g1XK9 {
   font-size: 14px;
@@ -2344,6 +2345,9 @@ display: none;
 }
 
 /* filled role colors */
+.rolePillBorder-RiRiuN {
+  border: none;
+}
 .role-2TIOKu {
   position: relative;
   transform: translate(0);
@@ -2380,9 +2384,6 @@ display: none;
   background: inherit;
   opacity: 0.1;
   z-index: -1;
-}
-.rolePillBorder-RiRiuN {
-  border: none;
 }
 
 /* colored role selection backgrounds */
@@ -3389,6 +3390,9 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 .accountProfileCard-lbN7n- .userInfo-regn9W {
   margin-bottom: 35px;
   height: auto;
+}
+.accountProfileCard-lbN7n- .container-5SvbtF {
+  justify-content: flex-start;
 }
 .accountProfileCard-lbN7n- .background-3d_SjE {
   background-color: rgb(20, 23, 31, 0.75);
