@@ -3787,18 +3787,28 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 
 /* Vencord */
-[id="vencordplugins-tab"] .container-1zDvAE {
-  margin-bottom: 0;
-}
-[id="vencordplugins-tab"] .container-1zDvAE .note-2C4pGr {
-  margin-top: 10px;
-}
 [id="vencordthemes-tab"] .input-2g-os5 {
   border-color: transparent !important;
   padding: 4px !important;
 }
 [id="vencordthemes-tab"] .input-2g-os5:focus {
   border-color: rgb(var(--accentcolor)) !important;
+}
+
+/* Vencord plugin cards */
+[id="vencordplugins-tab"] > div > div > div > div:not(.inputWrapper-1YNMmM) {
+  background-color: var(--background-secondary) !important;
+  border-radius: 5px 24px 24px 5px !important;
+  border-left: 4px solid #7289da !important;
+  padding: 16px !important;
+}
+[id="vencordplugins-tab"] .container-1zDvAE {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+[id="vencordplugins-tab"] .container-1zDvAE .note-2C4pGr {
+  margin-top: 10px;
 }
 
 /* shelter plugin cards */
