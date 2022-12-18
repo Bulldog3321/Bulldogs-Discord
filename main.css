@@ -122,7 +122,7 @@
 .bd-addon-list .bd-addon-card, .bd-search-wrapper, .notDetected-M3Ghh2, .nowPlaying-3UpuKc,
 .tooltip-14MtrL, .px-MnE_OR.botTag-7aX5WZ, .rem-3kT9wc.botTag-7aX5WZ, .tile-2mmK5T,
 .searchBar-3TnChZ .searchBarComponent-3N7dCG, .wrapper-2SplAX,
-.background-3d_SjE, .notice-1Qe0b_,
+.background-3d_SjE, .notice-1Qe0b_, .cardPrimary-3qRT__
 .cardWrapper-1bSePP, .warning-RBGtx2, .list-3-WAYB,
 .reactionDefault-1Sjj1f, .reactionSelected-1aMb2K, .membershipDialog-2wAdpQ {
   border-radius: var(--radius);
@@ -1360,12 +1360,66 @@
   border-top-right-radius: var(--radius);
 }
 
+/* home tab */
+.homeContainer-r4Hvv1 {
+  background-color: var(--background-primary);
+  border-radius: var(--radius);
+}
+.theme-dark .background-fkKrXt {
+  background: none;
+}
+.container-ZMc96U.themed-Hp1KC_ {
+  background-color: var(--background-primary);
+}
+.container-4HqGB3.background-3X6Uak, .container-2Hi7Km, .container-xwOzwi {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
+}
+.interactiveCard-2iMtdk {
+  background-color: var(--background-secondary);
+}
+
 /* threads area */
 .container-3XgAHv {
   border-radius: var(--radius);
 }
 .resizeHandle-PBRzPC {
   width: var(--spacing);
+}
+
+/* forums */
+.container-3wLKDe {
+  background-color: var(--background-primary) !important;
+  border-radius: var(--radius);
+}
+.container-3wLKDe .input-2g-os5 {
+  background: none;
+  border-radius: 0;
+}
+.container-3wLKDe .submitButton-3B-dZd,
+.container-3wLKDe .pill-3pRQlO {
+  border-radius: var(--radius);
+}
+.container-3wLKDe .matchingPostsRow-2IiEQ1 {
+  border-radius: var(--radius);
+  margin-top: 4px;
+}
+.container-3wLKDe .mainCard-3KBsBI {
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: var(--radius);
+}
+.container-3wLKDe .container-2qVG6q:hover,
+.container-3wLKDe .container-2qVG6q.isOpen-2OXbFs {
+  background-color: var(--background-tertiary) !important;
+}
+.container-3YcgdM {
+  border-top: none;
+  margin-top: 0;
+}
+.divider-AZrXIA {
+  background-color: var(--background-modifier-accent);
+  height: 1px;
 }
 
 /* nsfw warning page */
@@ -3427,6 +3481,14 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   right: 16px;
 }
 
+/* authorized apps */
+.authedApp-8q3NA9 {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
+  border: none;
+  margin-bottom: 16px;
+}
+
 /* devices */
 .sessions-2KZ0-Q .children-1xdcWE {
   margin-top: 16px;
@@ -3464,6 +3526,9 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 .connectContainer-1hylYM .accountButtonInner-33vCDY:hover {
   background-color: rgba(var(--hover));
 }
+.connectionsContainer-crWFPm .inner-1lPVFp {
+  border-radius: var(--radius);
+}
 .connectionList-11Q_X- {
   grid-gap: 16px;
 }
@@ -3483,14 +3548,19 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 .connectionList-11Q_X- .connectionDelete-3YgMVq {
   margin-right: 0;
 }
+.connectionList-11Q_X- .metadataContainer-35U-On {
+  margin: 0;
+  margin-top: 10px;
+}
 .connectionList-11Q_X- .connectionOptionsWrapper-3aVWcp {
   padding: 0;
   padding-top: 10px;
 }
 .connectionList-11Q_X- .connectionOptionSwitch-y1S-cR {
   padding: 0;
-  margin: 0;
 }
+
+/* ----------------------------------------EXPERIMENTS---------------------------------------- */
 
 /* ----------------------------------------CLIENT MODS---------------------------------------- */
 
@@ -3572,6 +3642,9 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 .bd-controls > .bd-addon-button:last-of-type {
   border-radius: 0 20px 20px 0;
+}
+.bd-switch-symbol {
+  display: none;
 }
 
 /* Kernel settings cards */
@@ -3713,6 +3786,21 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   max-width: 325px !important;
 }
 
+/* Vencord */
+[id="vencordplugins-tab"] .container-1zDvAE {
+  margin-bottom: 0;
+}
+[id="vencordplugins-tab"] .container-1zDvAE .note-2C4pGr {
+  margin-top: 10px;
+}
+[id="vencordthemes-tab"] .input-2g-os5 {
+  border-color: transparent !important;
+  padding: 4px !important;
+}
+[id="vencordthemes-tab"] .input-2g-os5:focus {
+  border-color: rgb(var(--accentcolor)) !important;
+}
+
 /* shelter plugin cards */
 ._plugin_s1ljv_1 {
   background-color: var(--background-secondary);
@@ -3738,6 +3826,10 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 ._body_1cqgx_1 {
   padding: 0 16px !important;
 }
+._tbox_vp2xy_1 {
+  background-color: var(--background-tertiary) !important;
+  border-radius: var(--radius) !important;
+}
 ._sitem_1anvu_1:last-child div {
   border: none !important;
   margin-top: 0 !important;
@@ -3748,79 +3840,6 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 ._button_1hm31_1 {
   border-radius: var(--radius) !important;
-}
-
-/* ----------------------------------------EXPERIMENTS---------------------------------------- */
-
-/* Home Tab */
-.homeContainer-r4Hvv1 {
-  background-color: var(--background-primary);
-  border-radius: var(--radius);
-}
-.theme-dark .background-fkKrXt {
-  background: none;
-}
-.container-ZMc96U.themed-Hp1KC_ {
-  background-color: var(--background-primary);
-}
-.container-4HqGB3.background-3X6Uak, .container-2Hi7Km, .container-xwOzwi {
-  background-color: var(--background-secondary);
-  border-radius: var(--radius);
-}
-
-/* Inbox redesign and badging */
-.iconButton-2z1iK7 {
-  background-color: var(--background-tertiary);
-  color: var(--blurple-recolor);
-  border-radius: var(--avatar-radius);
-  height: 48px;
-  margin: 0;
-}
-
-/* Forums */
-.theme-dark .container-3wLKDe {
-  background-color: var(--background-primary);
-  border-radius: var(--radius);
-}
-.container-3wLKDe .list-3FIpnh {
-  justify-content: unset;
-}
-.container-2qVG6q:active, .container-2qVG6q:hover {
-  transform: none;
-  box-shadow: none;
-}
-.container-3wLKDe .header-1Uy0p6 {
-  border: none !important;
-  transition: background-color 0.25s, box-shadow 0.25s;
-}
-.container-3wLKDe .headerBorder-jrk0Ic {
-  box-shadow: 0 0 0 2px var(--blurple-recolor);
-}
-.container-3wLKDe .formContainer-1zrOWf .input-2g-os5 {
-  background: none;
-  border: none;
-}
-.container-3wLKDe .form-25Aujy .submitButton-3B-dZd {
-  border-radius: var(--radius);
-}
-.container-3wLKDe .mainCard-3KBsBI {
-  background-color: var(--background-secondary);
-  border: none;
-  border-radius: var(--radius);
-}
-.container-3wLKDe .mainCard-3KBsBI:hover {
-  background-color: var(--background-tertiary);
-}
-.container-3wLKDe .pill-3pRQlO {
-  border-radius: var(--radius);
-}
-.container-3YcgdM {
-  border-top: none;
-  margin-top: 0;
-}
-.divider-AZrXIA {
-  background-color: var(--background);
-  height: 1px;
 }
 
 /* ----------------------------------------PLUGIN SUPPORT---------------------------------------- */
@@ -4286,25 +4305,39 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 }
 
 /* ReviewDB */
+.ReviewDB {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
+}
 .ReviewDB .eyebrow-Ejf06y {
   margin-top: 10px;
   margin-bottom: 0 !important;
   padding: 8px 10px !important;
 }
 .ReviewDB .message-2CShn3 {
-  background-color: var(--background-secondary);
   border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px !important;
+  padding-right: 10px !important;
+}
+.ReviewDB .messageContent-2t3eCI {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.ReviewDB .avatar-2e8lTP {
+  margin-top: 0;
+  margin-left: 10px !important;
 }
 .ReviewDB textarea {
   border-radius: 0 0 var(--radius) var(--radius) !important;
   border: none !important;
   border-top: 1px solid var(--background-modifier-accent) !important;
+  margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 .ReviewDB .modeDefault-2fEh7a {
-  background-color: var(--background-secondary);
   padding: 10px !important;
-  margin-bottom: 0 !important;
 }
 
 /* PronounDB */

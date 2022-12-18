@@ -28,6 +28,8 @@ Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldo
 
 ### Vencord
 * MessageLogger
+* ReviewDB
+* PronounDB
 
 ## Images
 ![image](https://cdn.discordapp.com/attachments/825154270881775677/1005975186551611442/home.png)
