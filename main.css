@@ -122,7 +122,7 @@
 .bd-addon-list .bd-addon-card, .bd-search-wrapper, .notDetected-M3Ghh2, .nowPlaying-3UpuKc,
 .tooltip-14MtrL, .px-MnE_OR.botTag-7aX5WZ, .rem-3kT9wc.botTag-7aX5WZ, .tile-2mmK5T,
 .searchBar-3TnChZ .searchBarComponent-3N7dCG, .wrapper-2SplAX,
-.background-3d_SjE, .notice-1Qe0b_, .cardPrimary-3qRT__
+.background-3d_SjE, .notice-1Qe0b_, .cardPrimary-3qRT__,
 .cardWrapper-1bSePP, .warning-RBGtx2, .list-3-WAYB,
 .reactionDefault-1Sjj1f, .reactionSelected-1aMb2K, .membershipDialog-2wAdpQ {
   border-radius: var(--radius);
@@ -3854,7 +3854,7 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 
 /* ----------------------------------------PLUGIN SUPPORT---------------------------------------- */
 
-/* --------------------Powercord-------------------- */
+/* --------------------Replugged-------------------- */
 
 /* Show Hidden Channels */
 .shc-locked-chat-content {
