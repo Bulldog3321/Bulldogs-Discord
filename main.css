@@ -1,12 +1,3 @@
-/**
-  * @name Bulldog's Theme
-  * @description A simple rounded dark blue theme
-  * @author Bulldög#0533
-  * @version BD
-  * @website https://github.com/Bulldog3321/Bulldogs-Theme
-  * @source https://raw.githubusercontent.com/Bulldog3321/Bulldogs-Theme/main/main.css
-  */
-
 /* ----------------------------------------ADDONS---------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
@@ -89,19 +80,13 @@
 .theme-dark .theme-light {
   --background-primary: rgb(24, 28, 37);
   --background-secondary: rgb(20, 23, 31);
-  --background-secondary-alt: rgb(12, 14, 19);
-  --background-tertiary: var(--background-secondary-alt);
-  --background-accent: var(--background-secondary-alt);
-  --background-floating: var(--background-secondary-alt);
+  --background-secondary-alt: var(--background-tertiary);
+  --background-tertiary: rgb(12, 14, 19);
+  --background-accent: var(--background-tertiary);
+  --background-floating: var(--background-tertiary);
   --background-modifier-hover: rgba(255, 255, 255, 0.01);
   --background-modifier-active: rgba(255, 255, 255, 0.03);
   --background-modifier-selected: rgba(255, 255, 255, 0.04);
-  --text-muted: rgb(182, 182, 182);
-  --interactive-normal: rgb(200, 200, 200);
-  --interactive-hover: var(--blurple-recolor);
-  --interactive-active: #ffffff;
-  --interactive-muted: #30343d;
-  --activity-card-background: var(--background-secondary-alt);
 }
 #app-mount .container-KM8BU6, #app-mount .reactors-1VXca7 .footer-VCsJQY.hasSpoilers-33hwf_,
 #app-mount .perksModal-fSYqOq, #app-mount .calendarPicker-sDhzdi .react-datepicker,
@@ -3196,7 +3181,7 @@ div[role*=radiogroup] .item-2idW98 {
   transition: background-color 0.25s;
 }
 div[role*=radiogroup] .item-2idW98:hover {
-  background-color: rgba(var(--hover));
+  background-color: rgba(var(--hover)) !important;
 }
 div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   background-color: var(--background-tertiary) !important;

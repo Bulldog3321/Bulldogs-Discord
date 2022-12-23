@@ -2,8 +2,6 @@
 A simple rounded dark blue theme
 
 ## Installation
-### Replugged
-[Click here](https://replugged.dev/install?url=Bulldog3321/Bulldogs-Theme) while you have discord open
 
 ### Better Discord
 Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sBD.theme.css) into your themes folder

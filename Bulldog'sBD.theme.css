@@ -4,7 +4,7 @@
   * @author Bulldög#0533
   * @version BD
   * @website https://github.com/Bulldog3321/Bulldogs-Theme
-  * @source https://raw.githubusercontent.com/Bulldog3321/Bulldogs-Theme/main/main.css
+  * @source https://bulldog3321.github.io/Bulldogs-Theme/main.css
   */
 
 @import url("https://bulldog3321.github.io/Bulldogs-Theme/main.css");
@@ -13,22 +13,16 @@
 .theme-dark {
   --background-primary: rgb(24, 28, 37);
   --background-secondary: rgb(20, 23, 31);
-  --background-secondary-alt: rgb(12, 14, 19);
+  --background-tertiary: rgb(12, 14, 19);
   --background-modifier-hover: rgba(255, 255, 255, 0.01);
   --background-modifier-active: rgba(255, 255, 255, 0.03);
   --background-modifier-selected: rgba(255, 255, 255, 0.04);
-  --text-muted: rgb(182, 182, 182);
-  --interactive-normal: rgb(200, 200, 200);
-  --interactive-active: #ffffff;
-  --interactive-muted: #30343d;
 }
 
 /* variables */
 :root {
-  --blurple-recolor: rgb(97, 179, 222);
+  --blurple-recolor: rgb(var(--accentcolor));
   --background: rgb(0, 0, 0);
-  --spacing: 6px;
-  --radius: 10px;
 }
 
 /* blurple recolor */
