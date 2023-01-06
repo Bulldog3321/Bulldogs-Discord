@@ -9,6 +9,9 @@ Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldo
 ### Vencord
 Paste `https://bulldog3321.github.io/Bulldogs-Theme/main.css` into Themes settings
 
+### Stylus
+[Click here](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sDiscord.user.css)
+
 ## Plugin Support
 
 ### Better Discord

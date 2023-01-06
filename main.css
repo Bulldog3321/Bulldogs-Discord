@@ -258,7 +258,7 @@
 
 /* ----------------------------------------LAYOUT---------------------------------------- */
 
-[class^="base-"] {
+.base-2jDfDU {
   border-radius: var(--radius);
   margin: var(--spacing);
 }
@@ -3082,9 +3082,6 @@ img[class^="avatar"] {
   pointer-events: auto !important;
   will-change: unset;
 }
-.animating-1rIrGV.stop-animations {
-  z-index: 100 !important;
-}
 .layer-86YKbF.stop-animations:first-child::after {
   content: "";
   position: fixed;
@@ -3094,7 +3091,7 @@ img[class^="avatar"] {
   left: 0;
   right: 0;
   opacity: 0.85;
-  z-index: 99;
+  z-index: 999;
 }
 .baseLayer-W6S8cY {
   opacity: 1 !important;
@@ -3104,7 +3101,7 @@ img[class^="avatar"] {
   border-radius: var(--radius);
   margin: 10vh 14vw;
   min-width: 0;
-  z-index: 100;
+  z-index: 999;
 }
 .layer-86YKbF .sidebar-nqHbhN {
   padding-top: 20px;
