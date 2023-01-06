@@ -10,7 +10,7 @@ Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldo
 Paste `https://bulldog3321.github.io/Bulldogs-Theme/main.css` into Themes settings
 
 ### Stylus
-[Click here](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sDiscord.user.css)
+[Click here](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sDiscord.user.css) (some aspects will be missing due to how stylus handles variables, nothing i can do about it)
 
 ## Plugin Support
 
