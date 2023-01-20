@@ -998,14 +998,14 @@
   width: 100%;
   padding: 0;
 }
-.interactive-1vLZ_I {
+.interactive-iyXY_x {
   transition: background-color 0.25s, padding 0.25s;
 }
 .link-39sEB3 {
   transition: none;
 }
 .wrapper-NhbLHG::before,
-.interactive-1vLZ_I::before {
+.interactive-iyXY_x::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1016,21 +1016,21 @@
   background: transparent;
 }
 .wrapper-NhbLHG:not(.wrapper-NhbLHG.modeSelected-3DmyhH):not(.wrapper-NhbLHG.modeConnected-NrO4cP):hover,
-.interactive-1vLZ_I:not(.interactive-1vLZ_I.selected-3veCBZ):hover {
+.interactive-iyXY_x:not(.interactiveSelected-29CP8y):hover {
   background-color: var(--hover);
   padding-left: 4px;
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH,
-.interactive-1vLZ_I.selected-3veCBZ {
+.interactiveSelected-29CP8y {
   background-color: var(--selected1);
   border-radius: 0 24px 24px 0;
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH:hover,
-.interactive-1vLZ_I.selected-3veCBZ:hover {
+.interactiveSelected-29CP8y:hover {
   background-color: var(--selected2);
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH::before,
-.interactive-1vLZ_I.selected-3veCBZ::before {
+.interactiveSelected-29CP8y::before {
   border-left: 3px solid var(--blurple-recolor);
 }
 .modeUnread-3Cxepe {
@@ -1065,7 +1065,7 @@
   transition: color 0.25s;
 }
 .wrapper-NhbLHG:hover .name-28HaxV,
-.interactive-1vLZ_I:focus-within, .interactive-1vLZ_I:hover {
+.interactive-iyXY_x:focus-within, .interactive-iyXY_x:hover {
   color: var(--interactive-active);
 }
 .modeUnread-3Cxepe .name-28HaxV,
@@ -1079,7 +1079,7 @@
 .wrapper-NhbLHG:hover:not(.modeMuted-2T4MDZ) .icon-2W8DHg,
 .modeSelected-3DmyhH .icon-2W8DHg,
 .modeUnread-3Cxepe .icon-2W8DHg,
-.interactive-1vLZ_I:hover:not(.muted-2El7St) .avatar-1HDIsL,
+.interactive-iyXY_x:hover:not(.muted-2El7St) .avatar-1HDIsL,
 .interactiveSelected-29CP8y .avatar-1HDIsL {
   color: var(--interactive-active) !important;
 }
@@ -3970,7 +3970,7 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
 
 /* BetterFormattingRedux */
 .bf-toolbar {
-  margin-right:2px !important;
+  margin-right:50px !important;
 }
 .bf-toolbar::before {
   background-color: var(--background-secondary) !important;
