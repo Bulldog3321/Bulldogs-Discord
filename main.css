@@ -1114,11 +1114,6 @@
 [d="M22.8093 8.55658L20.4681 3.80208C20.1036 3.06176 19.0536 3.05954 18.686 3.79833L16.3201 8.55283C15.9893 9.21773 16.4705 10 17.2103 10L21.9173 10C22.6553 10 23.1365 9.22122 22.8093 8.55658ZM20.0785 5.00004H19.0832L19.0833 7.50004H20.0785V5.00004ZM19.5808 9.00004C19.3061 9.00004 19.0832 8.77593 19.0832 8.49891C19.0832 8.22228 19.3061 7.99777 19.5808 7.99777C19.8555 7.99777 20.0785 8.22228 20.0785 8.49891C20.0785 8.77593 19.8555 9.00004 19.5808 9.00004Z"] {
   fill: hsl(359, 82.6%, 59.4%);
 }
-/* muted channel icon */
-.modeMuted-2T4MDZ .icon-2W8DHg path {
-  d: path('M20 18.69L7.84 6.14 5.27 3.49 4 4.76l2.8 2.8v.01c-.52.99-.8 2.16-.8 3.42v5l-2 2v1h13.73l2 2L21 19.72l-1-1.03zM12 22c1.11 0 2-.89 2-2h-4c0 1.11.89 2 2 2zm6-7.32V11c0-3.08-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68c-.15.03-.29.08-.42.12-.1.03-.2.07-.3.11h-.01c-.01 0-.01 0-.02.01-.23.09-.46.2-.68.31 0 0-.01 0-.01.01L18 14.68z') !important;
-  transform: scale(1);
-}
 
 /* keep ping indicator on channel hover and open */
 #app-mount .channelInfo-3jN1ay {
@@ -2196,19 +2191,6 @@ display: none;
 
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
 
-.profilePanel-2PWEok {
-  border-radius: var(--radius);
-  margin-left: var(--spacing);
-}
-.userPanelOuter-xc-WYi,
-.userPanelInner-1UAR7g {
-  border-radius: var(--radius);
-}
-.panelBanner-13bsBR {
-  border-radius: var(--radius) var(--radius) 0 0;
-  -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-}
-
 /* better user popouts */
 .userPopoutOuter-3AVBmJ,
 .userPopoutInner-1hXSeY {
@@ -2393,6 +2375,19 @@ display: none;
 }
 .userPopoutInner-1hXSeY .buttonsWrapper-2ARRp1:empty {
   display: none;
+}
+
+/* dm profile panel */
+.profilePanel-2PWEok {
+  margin-left: var(--spacing);
+}
+.userPanelOuter-xc-WYi,
+.userPanelInner-1UAR7g{
+  border-radius: var(--radius);
+}
+.panelBanner-13bsBR {
+  border-radius: var(--radius) var(--radius) 0 0;
+  -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
 
 /* avatar zoom on hover */
@@ -3437,7 +3432,12 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   min-width: 100% !important;
   z-index: -1;
 }
+[class^="accountProfileCard-"] [class^="bannerSVGWrapper-"] foreignObject {
+  height: 236px;
+  transform: translateY(-68px);
+}
 [class^="accountProfileCard-"] [class^="banner-"] {
+  height: 100%;
   opacity: 0.5;
 }
 [class^="accountProfileCard-"] [class^="wrapper-"] {
