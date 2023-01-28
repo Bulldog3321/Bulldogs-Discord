@@ -322,7 +322,7 @@
 }
 .scroller-3X7KbA {
   contain: unset;
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
   margin-right: 0 !important;
   margin-bottom: 140px;
   padding-top: calc(var(--spacing) * 2) !important;
@@ -369,7 +369,7 @@
 
 /* side bar */
 .sidebar-1tnWFu nav {
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -386,9 +386,13 @@
 
 /* user area */
 .panels-3wFtMD {
-  background-color: var(--background-primary);
   border-radius: var(--radius);
   margin-top: var(--spacing);
+}
+.container-YkUktl {
+  background-color: var(--background-primary) !important;
+  border-radius: var(--radius);
+  margin-bottom: 0;
 }
 .button-1EGGcP.buttonColor-3bP3fX {
   background-color: var(--background-secondary) !important;
@@ -884,56 +888,44 @@
 }
 
 /* input boxes */
-.input-2g-os5,
-.copyInput-3AbKWB {
+.input-3O04eu {
   background-color: var(--background-tertiary);
   border-radius: var(--radius);
 }
 
 /* options dropdown */
-#app-mount .select-1Ia3hD,
-#app-mount .css-xpql1x-control,
-#app-mount .css-1313o0h-control {
-  background-color: var(--background-secondary);
-  border-color: var(--background-tertiary);
+.select-Zz0IcO {
+  background-color: var(--background-secondary) !important;
+  border-color: var(--background-tertiary) !important;
   border-radius: var(--radius);
 }
-#app-mount .open-1FRZsK,
-#app-mount .css-5symcw-control {
+.open-LeyjhI {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border: 1px solid var(--background-tertiary);
 }
-#app-mount .popout-1KHNAq,
-#app-mount .css-3vaxre-menu {
+.popout-15UxD6 {
   border-radius: var(--radius);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border: 1px solid var(--background-tertiary);
   border-top: none;
 }
-.css-3vaxre-menu {
-  border-top: 1px solid var(--background-tertiary);
-}
-.option-2eIyOn,
-.css-1yz4bi9-option {
+.option-Uc12mm {
   transition: background-color 0.1s;
 }
-.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
+.option-Uc12mm[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
   background-color: var(--background-tertiary);
 }
-.option-2eIyOn:focus {
+.option-Uc12mm:focus {
   background-color: var(--background-secondary);
   color: var(--interactive-normal);
 }
-.option-2eIyOn:hover,
-.css-rzbxvl-option {
+.option-Uc12mm:hover {
   background-color: var(--background-primary) !important;
   color: var(--blurple-recolor);
-}
-.css-5p4o8y::-webkit-scrollbar-thumb {
-  border: 2px solid transparent !important;
 }
 
 /* notice bar */
@@ -1190,7 +1182,7 @@
 /* better chat box */
 .scrollableContainer-15eg7h,
 .channelTextArea-1VQBuV {
-  background: none;
+  background: none !important;
 }
 .scrollableContainer-15eg7h::-webkit-scrollbar {
   display: none;
@@ -3190,18 +3182,18 @@ div[role*=radiogroup] {
   border-radius: var(--radius);
   padding: 14px;
 }
-div[role*=radiogroup] .item-2idW98 {
+div[role*=radiogroup] [class^="item-"] {
   background-color: var(--background-primary);
   border-radius: var(--radius);
   transition: background-color 0.25s;
 }
-div[role*=radiogroup] .item-2idW98:hover {
+div[role*=radiogroup] [class^="item-"]:hover {
   background-color: var(--hover) !important;
 }
-div[role*=radiogroup] .item-2idW98[aria-checked=true] {
+div[role*=radiogroup] [class^="item-"][aria-checked=true] {
   background-color: var(--background-tertiary) !important;
 }
-.radioIconForeground-2BMavi {
+[class^="radioIconForeground-"] {
   color: var(--blurple-recolor);
 }
 
@@ -4159,15 +4151,15 @@ div[role*=radiogroup] .item-2idW98[aria-checked=true] {
   border-radius: var(--radius);
   padding: 8px;
 }
-.ysink_stain_tcard {
-  background-color: var(--background-secondary);
+.ysink_stain_card {
+  background-color: var(--background-secondary) !important;
   border-radius: 5px 24px 24px 5px !important;
   border: none !important;
   border-left: 4px solid #7289da !important;
   margin: 16px 0 !important;
   padding: 16px !important;
 }
-.ysink_stain_tcard .ysink_stain_tmedia,
-.ysink_stain_tcard .ysink_stain_tmedia * {
+.ysink_stain_card .ysink_stain_tmedia,
+.ysink_stain_card .ysink_stain_tmedia * {
   border-radius: var(--radius);
 }
