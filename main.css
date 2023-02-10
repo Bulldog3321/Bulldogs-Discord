@@ -1,19 +1,10 @@
 /* ----------------------------------------ADDONS---------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://leeprky.github.io/snippits/discoloured.css");
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
-
-/* blurple recolor */
-:root {
-  --accentcolor:   97, 179, 222;   /* blurple */
-  --accentcolor2:  250, 110, 246;  /* boostpink */
-  --linkcolor:     129, 216, 208;  /* link */
-  --dangercolor:   240, 71, 71;    /* red */
-}
 
 /* radial status */
 :root {
@@ -54,7 +45,7 @@
 
 /* variables */
 :root {
-  --blurple-recolor: rgb(97, 179, 222);
+  --blurple-recolor: hsl(200, 65%, 65%);
   --background: rgb(0, 0, 0);
   --hover: rgba(79, 84, 92, 0.25);
   --selected1: rgba(112, 135, 215, 0.1);
@@ -99,7 +90,63 @@
   --background-modifier-hover: rgba(255, 255, 255, 0.01);
   --background-modifier-active: rgba(255, 255, 255, 0.03);
   --background-modifier-selected: rgba(255, 255, 255, 0.04);
+  --text-link: hsl(175, 50%, 65%);
+	--text-link-low-saturation: hsl(175, 50%, 65%);
+
+/* blurple recoloring */
+  --brand-experiment: var(--blurple-recolor) !important;
+  --brand-experiment-100: hsl(200, 96.2%, 96.2%) !important;
+  --brand-experiment-130: hsl(200, 92.4%, 92.4%) !important;
+  --brand-experiment-160: hsl(200, 88.6%, 88.6%) !important;
+  --brand-experiment-200: hsl(200, 84.8%, 84.8%) !important;
+  --brand-experiment-230: hsl(200, 81.0%, 81.0%) !important;
+  --brand-experiment-260: hsl(200, 77.2%, 77.2%) !important;
+  --brand-experiment-300: hsl(200, 73.4%, 73.4%) !important;
+  --brand-experiment-330: hsl(200, 69.6%, 69.6%) !important;
+  --brand-experiment-360: hsl(200, 65.8%, 65.8%) !important;
+  --brand-experiment-400: hsl(200, 62.0%, 62.0%) !important;
+  --brand-experiment-430: hsl(200, 58.2%, 58.2%) !important;
+  --brand-experiment-460: hsl(200, 54.4%, 54.4%) !important;
+  --brand-experiment-500: hsl(200, 50.6%, 50.6%) !important;
+  --brand-experiment-530: hsl(200, 46.8%, 46.8%) !important;
+  --brand-experiment-560: hsl(200, 43.0%, 43.0%) !important;
+  --brand-experiment-600: hsl(200, 39.2%, 39.2%) !important;
+  --brand-experiment-630: hsl(200, 35.4%, 35.4%) !important;
+  --brand-experiment-660: hsl(200, 31.6%, 31.6%) !important;
+  --brand-experiment-700: hsl(200, 27.8%, 27.8%) !important;
+  --brand-experiment-730: hsl(200, 24.0%, 24.0%) !important;
+  --brand-experiment-760: hsl(200, 20.2%, 20.2%) !important;
+  --brand-experiment-800: hsl(200, 16.4%, 16.4%) !important;
+  --brand-experiment-830: hsl(200, 12.6%, 12.6%) !important;
+  --brand-experiment-860: hsl(200, 8.8%, 8.8%) !important;
+  --brand-experiment-900: hsl(200, 5.0%, 5.0%) !important;
+  --brand-100: hsl(200, 96.2%, 96.2%) !important;
+  --brand-130: hsl(200, 92.4%, 92.4%) !important;
+  --brand-160: hsl(200, 88.6%, 88.6%) !important;
+  --brand-200: hsl(200, 84.8%, 84.8%) !important;
+  --brand-230: hsl(200, 81.0%, 81.0%) !important;
+  --brand-260: hsl(200, 77.2%, 77.2%) !important;
+  --brand-300: hsl(200, 73.4%, 73.4%) !important;
+  --brand-330: hsl(200, 69.6%, 69.6%) !important;
+  --brand-360: hsl(200, 65.8%, 65.8%) !important;
+  --brand-400: hsl(200, 62.0%, 62.0%) !important;
+  --brand-430: hsl(200, 58.2%, 58.2%) !important;
+  --brand-460: hsl(200, 54.4%, 54.4%) !important;
+  --brand-500: hsl(200, 50.6%, 50.6%) !important;
+  --brand-530: hsl(200, 46.8%, 46.8%) !important;
+  --brand-560: hsl(200, 43.0%, 43.0%) !important;
+  --brand-600: hsl(200, 39.2%, 39.2%) !important;
+  --brand-630: hsl(200, 35.4%, 35.4%) !important;
+  --brand-660: hsl(200, 31.6%, 31.6%) !important;
+  --brand-700: hsl(200, 27.8%, 27.8%) !important;
+  --brand-730: hsl(200, 24.0%, 24.0%) !important;
+  --brand-760: hsl(200, 20.2%, 20.2%) !important;
+  --brand-800: hsl(200, 16.4%, 16.4%) !important;
+  --brand-830: hsl(200, 12.6%, 12.6%) !important;
+  --brand-860: hsl(200, 8.8%, 8.8%) !important;
+  --brand-900: hsl(200, 5.0%, 5.0%) !important;
 }
+
 #app-mount .container-KM8BU6, #app-mount .reactors-1VXca7 .footer-VCsJQY.hasSpoilers-33hwf_,
 #app-mount .perksModal-fSYqOq, #app-mount .calendarPicker-sDhzdi .react-datepicker,
 #app-mount .pageWrapper-2PwDoS, #app-mount .calendarPicker-sDhzdi .react-datepicker__header,
@@ -326,7 +373,7 @@
   margin-right: 0 !important;
   margin-bottom: 140px;
   padding-top: calc(var(--spacing) * 2) !important;
-  padding-bottom: 4px !important;
+  padding-bottom: calc(var(--spacing) * 2 - 8px) !important;
   border-radius: var(--radius);
 }
 .guilds-2JjMmN {
@@ -386,12 +433,13 @@
 
 /* user area */
 .panels-3wFtMD {
+  background-color: var(--background-primary);
   border-radius: var(--radius);
   margin-top: var(--spacing);
 }
-.container-YkUktl {
-  background-color: var(--background-primary) !important;
-  border-radius: var(--radius);
+.container-YkUktl,
+.panel-2ZFCRb {
+  background: none !important;
   margin-bottom: 0;
 }
 .button-1EGGcP.buttonColor-3bP3fX {
@@ -1014,7 +1062,7 @@
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH,
 .interactiveSelected-29CP8y {
-  background-color: var(--selected1);
+  background-color: var(--selected1) !important;
   border-radius: 0 24px 24px 0;
 }
 .wrapper-NhbLHG.modeSelected-3DmyhH:hover,
@@ -1843,7 +1891,7 @@
 }
 .message-2CShn3.replying-eZ7p5z.selected-2LX7Jy, .message-2CShn3.replying-eZ7p5z:hover,
 .message-2CShn3.ephemeral-2nDdnn.selected-2LX7Jy, .message-2CShn3.ephemeral-2nDdnn:hover {
-  background-color: var(--blurple3);
+  background-color: var(--blurple3) !important;
 }
 .message-2CShn3.replying-eZ7p5z::before,
 .message-2CShn3.ephemeral-2nDdnn::before {
@@ -1960,7 +2008,8 @@ display: none;
 }
 
 /* audio embeds */
-.wrapperAudio-1Bzv_Z {
+.wrapperAudio-1Bzv_Z,
+.wrapperAudio-1Bzv_Z.newMosaicStyle-31sBoZ {
   border-radius: var(--radius);
   border: none;
   padding: 10px 0 0 0;
@@ -1977,6 +2026,7 @@ display: none;
 .audioControls-3fmemK {
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+  margin-top: 0;
 }
 
 /* invite embeds */
@@ -1999,15 +2049,26 @@ display: none;
 }
 
 /* non-embed attachment */
-.attachment-1PZZB2 {
+.attachment-1PZZB2,
+.attachment-1PZZB2.newMosaicStyle-35X6XO {
   border-radius: var(--radius);
   border: none;
   width: fit-content !important;
   min-width: 200px;
+  padding: 10px;
   transition: background-color 0.1s;
 }
 .message-2CShn3:hover .attachment-1PZZB2 {
   background-color: var(--background-tertiary);
+}
+
+/* media download button */
+.hoverButtonGroup-2yZIzC {
+  border-radius: var(--radius);
+  transition: opacity 0.25s !important;
+}
+.nonMediaAttachment-3C_4Pd {
+  outline: none;
 }
 
 /* text embed */
@@ -2173,7 +2234,7 @@ display: none;
   transition: background-color 0.1s;
 }
 #app-mount .mention:hover {
-  filter: brightness(100%);
+  background-color: var(--blurple2);
 }
 #app-mount .mention .channelIcon-3I2O7O {
   height: 1rem;
@@ -3172,7 +3233,10 @@ img[class^="avatar"] {
 }
 
 /* simple switches */
-.slider-32CRPX svg {
+.container-1QtPKm.checked-16gMAN {
+  background-color: var(--blurple-recolor) !important;
+}
+.slider-HJFN2i svg {
   display: none;
 }
 
@@ -3562,6 +3626,20 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 }
 .connectionList-11Q_X- .connectionOptionSwitch-y1S-cR {
   padding: 0;
+}
+
+/* registered games */
+.addGamePopout-2SKNIV {
+  background-color: var(--background-tertiary) !important;
+  border-radius: var(--radius);
+  border: none;
+}
+.game-2f2vPC {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius);
+  box-shadow: none !important;
+  margin-top: 16px;
+  padding: 16px;
 }
 
 /* ----------------------------------------EXPERIMENTS---------------------------------------- */
@@ -4063,31 +4141,31 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 /* --------------------Vencord-------------------- */
 
 /* MessageLogger */
-.messagelogger-red-overlay .messageLogger-deleted,
-.messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv {
+.messagelogger-red-overlay .messagelogger-deleted,
+.messagelogger-red-text .messagelogger-deleted .mentioned-Tre-dv {
   background-color: var(--red2) !important;
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
-.messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv {
+.messagelogger-red-overlay .messagelogger-deleted .mentioned-Tre-dv {
   background-color: var(--red4);
 }
-.messagelogger-red-overlay .messageLogger-deleted .mentioned-Tre-dv:hover {
+.messagelogger-red-overlay .messagelogger-deleted .mentioned-Tre-dv:hover {
   background-color: var(--message-hover);
 }
-.messagelogger-red-text .messageLogger-deleted .mentioned-Tre-dv:hover {
+.messagelogger-red-text .messagelogger-deleted .mentioned-Tre-dv:hover {
   background-color: var(--red3) !important;
 }
-.messageLogger-deleted .mentioned-Tre-dv::before {
+.messagelogger-deleted .mentioned-Tre-dv::before {
   background-color: var(--red);
 }
-.messagelogger-red-overlay .messageLogger-deleted-attachment {
+.messagelogger-red-overlay .messagelogger-deleted-attachment {
   filter: none;
 }
-.messageLogger-edited {
+.messagelogger-edited {
   filter: brightness(60%) !important;
 }
-.messageLogger-edited .timestamp-p1Df1m time::after {
+.messagelogger-edited .timestamp-p1Df1m time::after {
   display: none;
 }
 
