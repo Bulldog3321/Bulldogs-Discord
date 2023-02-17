@@ -60,7 +60,6 @@
   --blurple3: rgba(97, 179, 222, 0.1);
   --blurple4: rgba(97, 179, 222, 0.05);
 
-  --red: rgb(240, 71, 71);
   --red1: rgba(240, 71, 71, 0.6);
   --red2: rgba(240, 71, 71, 0.15);
   --red3: rgba(240, 71, 71, 0.08);
@@ -165,7 +164,7 @@
 }
 
 /* rounded */
-.app-2CXKsg button, .button-f2h6uQ, .select-2NDsde, .topPill-3DJJNV .item-3XjbnG,
+.app-2CXKsg button, .button-ejjZWC, .select-2NDsde, .topPill-3DJJNV .item-3XjbnG,
 .searchable-22AIU7, .css-gvi9bl-control, .css-118dehu-control, .css-6fzn47-control, .css-17e1tep-control,
 .container-3EtAkD, .container-1SX9VC, .container-2oNtJn, .copyInput-3AbKWB, .container-2O1UgZ, .modal-2RrUKJ,
 .emptyCard-COmm00, .container-30qY7E, .addGamePopout-3yePJc,
@@ -542,7 +541,7 @@
 .unreadMentionsIndicatorTop-2bTgUU .bar-2eAyLE {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background: linear-gradient(var(--red), #0000);
+  background: linear-gradient(var(--status-danger), #0000);
 }
 .unreadMentionsIndicatorBottom-3RJMnQ {
   bottom: 140px;
@@ -551,7 +550,7 @@
 .unreadMentionsIndicatorBottom-3RJMnQ .bar-2eAyLE {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background: linear-gradient(#0000, var(--red));
+  background: linear-gradient(#0000, var(--status-danger));
 }
 .unreadMentionsIndicatorTop-2bTgUU .bar-2eAyLE .text-2GsXbW,
 .unreadMentionsIndicatorBottom-3RJMnQ .bar-2eAyLE .text-2GsXbW {
@@ -888,7 +887,7 @@
   background: none;
 }
 #app-mount .colorable-3rVGna.red-3T8maV .centerIcon-JYpTUi {
-  color: var(--red);
+  color: var(--status-danger);
 }
 #app-mount .colorable-3rVGna .centerIcon-JYpTUi {
   color: white;
@@ -1631,6 +1630,7 @@
 .recentMentionsPopout-2bI1ZN,
 .container-18GwIk,
 .popout-3gby1q {
+  max-height: 80% !important;
   width: auto;
   max-width: 600px;
   position: fixed;
@@ -1830,7 +1830,7 @@
 #user-profile-actions-user-remove.colorDefault-CDqZdO.focused-3qFvc8:active,
 #user-profile-actions-user-block.colorDefault-CDqZdO.focused-3qFvc8:active,
 #channel-context-delete-channel.colorDefault-CDqZdO.focused-3qFvc8:active {
-  background-color: var(--red);
+  background-color: var(--status-danger);
 }
 .menu-1QACrS .submenuPaddingContainer-_k62dJ {
   margin: 0 -8px;
@@ -2474,7 +2474,7 @@ display: none;
   transition: 1s;
 }
 .role-2TIOKu .roleRemoveIcon-387wKV {
-  background-color: var(--red);
+  background-color: var(--status-danger);
   border-radius: var(--radius);
   left: 9px;
   cursor: pointer;
@@ -3939,14 +3939,6 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 
 /* ----------------------------------------PLUGIN SUPPORT---------------------------------------- */
 
-/* --------------------Replugged-------------------- */
-
-/* Show Hidden Channels */
-.shc-locked-chat-content {
-  background-color: var(--background-primary);
-  border-radius: var(--radius);
-}
-
 /* --------------------Better Discord-------------------- */
 
 /* Permission Viewer */
@@ -4141,26 +4133,12 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 /* --------------------Vencord-------------------- */
 
 /* MessageLogger */
-.messagelogger-red-overlay .messagelogger-deleted,
-.messagelogger-red-text .messagelogger-deleted .mentioned-Tre-dv {
-  background-color: var(--red2) !important;
+.messagelogger-deleted {
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
-.messagelogger-red-overlay .messagelogger-deleted .mentioned-Tre-dv {
-  background-color: var(--red4);
-}
-.messagelogger-red-overlay .messagelogger-deleted .mentioned-Tre-dv:hover {
-  background-color: var(--message-hover);
-}
-.messagelogger-red-text .messagelogger-deleted .mentioned-Tre-dv:hover {
-  background-color: var(--red3) !important;
-}
 .messagelogger-deleted .mentioned-Tre-dv::before {
-  background-color: var(--red);
-}
-.messagelogger-red-overlay .messagelogger-deleted-attachment {
-  filter: none;
+  background-color: var(--status-danger);
 }
 .messagelogger-edited {
   filter: brightness(60%) !important;
