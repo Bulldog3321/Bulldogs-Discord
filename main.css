@@ -2475,7 +2475,7 @@ display: none;
   margin: 0 4px 4px 0;
   background: none;
 }
-.role-2TIOKu .roleCircle-3K9O3d {
+.role-2TIOKu .roleCircle-3TFUOr {
   width: 8px;
   height: 8px;
   margin-left: 1px;
@@ -2491,7 +2491,7 @@ display: none;
   cursor: pointer;
   transition: opacity 1s;
 }
-.role-2TIOKu .roleCircle-3K9O3d::after {
+.role-2TIOKu .roleCircle-3TFUOr::after {
   position: absolute;
   content: "";
   top: 0;
@@ -4213,19 +4213,19 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 }
 
 /* BetterFolders */
-.bf-folder-sidebar {
+.vc-bf-folder-sidebar {
   margin-right: var(--spacing);
 }
-.bf-folder-sidebar .scroller-3X7KbA {
+.vc-bf-folder-sidebar .scroller-3X7KbA {
   margin-bottom: var(--spacing);
 }
-.bf-folder-sidebar .childWrapper-1j_1ub,
-.bf-folder-sidebar .lowerBadge-3j0ZAg,
-.bf-folder-sidebar .upperBadge-1d6YsW {
+.vc-bf-folder-sidebar .childWrapper-1j_1ub,
+.vc-bf-folder-sidebar .lowerBadge-3j0ZAg,
+.vc-bf-folder-sidebar .upperBadge-1d6YsW {
   display: flex !important;
 }
-.bf-folder-sidebar .unreadMentionsIndicatorTop-2bTgUU,
-.bf-folder-sidebar .unreadMentionsIndicatorBottom-3RJMnQ {
+.vc-bf-folder-sidebar .unreadMentionsIndicatorTop-2bTgUU,
+.vc-bf-folder-sidebar .unreadMentionsIndicatorBottom-3RJMnQ {
   display: none;
 }
 

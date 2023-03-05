@@ -25,6 +25,7 @@ Paste `https://bulldog3321.github.io/Bulldogs-Theme/main.css` into Themes settin
 * MessageLogger
 * ReviewDB
 * PronounDB
+* BetterFolders
 
 ### Shelter
 * [Snazzy Shelter](https://yellowsink.github.io/shelter-plugins/snazzy-shelter/)
