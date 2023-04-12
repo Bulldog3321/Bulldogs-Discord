@@ -1,10 +1,10 @@
 /* ----------------------------------------ADDONS---------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://api.fonts.coollabs.io/css2?family=Quicksand&display=swap");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://leeprky.github.io/snippits/discoloured.css");
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://crearts-community.github.io/Settings-Icons/clients/settings-icons.theme.css");
 
 /* radial status */
 :root {
@@ -31,14 +31,6 @@
 #app-mount .wrapper-3Un6-K foreignObject[mask*=mobile]:after {
   top: 75% !important;
   right: 3px !important;
-}
-
-/* settings icons */
-[class^="tabBarItemContainer-"] svg {
-  display: unset;
-}
-[class^="premiumLabel-"] svg {
-  display: none;
 }
 
 /* ----------------------------------------MISC---------------------------------------- */
@@ -68,8 +60,7 @@
 
 /* font */
 * {
-  --font-display: var(--font-primary);
-  font-family: "Nunito";
+  font-family: "Quicksand";
 }
 
 /* background */
@@ -2759,7 +2750,7 @@ img[class^="avatar"] {
 .root-8LYsGj .listScroller-entkMk::-webkit-scrollbar {
   display: none;
 }
-.root-8LYsGj .divider-1NpGam {
+.root-8LYsGj .divider-SH6OnO {
   display: none;
 }
 
@@ -3867,6 +3858,13 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 /* Vencord */
 .vc-plugins-grid {
   grid-template-columns: 1fr 1fr 1fr !important;
+}
+.vc-notification-root {
+  border-radius: var(--radius) !important;
+  min-height: 0 !important;
+}
+.vc-notification {
+  padding: 16px !important;
 }
 
 /* Vencord plugin cards */
