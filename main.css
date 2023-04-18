@@ -5,6 +5,7 @@
 @import url("https://leeprky.github.io/snippits/discoloured.css");
 @import url("https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css");
 @import url("https://crearts-community.github.io/Settings-Icons/clients/settings-icons.theme.css");
+@import url('https://comfy-themes.github.io/Discord/betterdiscord/comfy.theme.css');
 
 /* radial status */
 :root {
@@ -4201,6 +4202,16 @@ div[role*=radiogroup] [class^="item-"][aria-checked=true] {
 .vc-bf-folder-sidebar .unreadMentionsIndicatorTop-2bTgUU,
 .vc-bf-folder-sidebar .unreadMentionsIndicatorBottom-3RJMnQ {
   display: none;
+}
+
+/* USRBG */
+[class*="NonPremium"]:has([class*="bannerPremium"]) [class*="avatarPositionNormal"],
+[class*="PremiumWithoutBanner"]:has([class*="bannerPremium"]) [class*="avatarPositionPremiumNoBanner"] {
+  top: 21px !important;
+}
+
+[class*="userPopout"] [class*="NonPremium"] [class*="bannerPremium"] {
+  top: 0px !important;
 }
 
 /* --------------------Shelter-------------------- */
