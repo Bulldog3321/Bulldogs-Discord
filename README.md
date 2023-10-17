@@ -1,16 +1,19 @@
 # Bulldogs-Theme
-A simple rounded dark blue theme
+A simple rounded dark blue theme for Discord.com
 
 ## Installation
 
+### Universal CSS import
+Paste `@import url("https://bulldog3321.github.io/Bulldogs-Theme/main.css");` at the top of any CSS editor
+
 ### Better Discord
-Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sBD.theme.css) into your themes folder
+Drop [Bulldog'sBD.theme.css](https://bulldog3321.github.io/Bulldogs-Theme/Bulldogs-Discord.BD.theme.css) into your themes folder
 
 ### Vencord
 Paste `https://bulldog3321.github.io/Bulldogs-Theme/main.css` into Themes settings
 
 ### Stylus
-[Click here](https://bulldog3321.github.io/Bulldogs-Theme/Bulldog'sDiscord.user.css) (not perfect due to how stylus handles variables, wont fix.)
+[Click here](https://bulldog3321.github.io/Bulldogs-Theme/Bulldogs-Discord.Stylus.user.css) (Must enable "Patch CSP to allow style assets" in Stylus settings)
 
 ## Plugin Support
 
