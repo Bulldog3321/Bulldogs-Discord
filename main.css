@@ -431,6 +431,7 @@
 }
 .panels__58331 button:not(.rtcConnectionStatusLabel__7029b) {
   background-color: var(--background-secondary);
+  border-radius: var(--radius);
   width: 100%;
   transition: transform 0.25s;
 }
@@ -644,7 +645,7 @@
   margin-right: 0 ;
 }
 [class*="accountProfilePopoutWrapper"] [class*="menu"] [class*="item"][class*="focused"] {
-  background-color: hsla(var(--brand-560-hsl));
+  background-color: hsl(var(--brand-560-hsl));
 }
 [class*="accountProfilePopoutWrapper"] [class*="submenu"] [class*="scroller"] {
   margin-right: -8px;
@@ -1568,12 +1569,10 @@
 /* modals */
 #app-mount .root_a28985 {
   background-color: var(--background-primary);
-  border-radius: var(--radius);
   box-shadow: none;
 }
 #app-mount .footer__89240 {
   background-color: var(--background-tertiary);
-  border-radius: 0 0 var(--radius) var(--radius);
   box-shadow: none;
 }
 
@@ -2572,39 +2571,9 @@ display: none;
 img[class*="avatar"] {
   border-radius: var(--avatar-radius);
 }
-.wrapper-1VLyxH foreignObject,
-.callAvatarMask__29ce7 foreignObject,
-.avatarContainer__7b330 foreignObject,
-.avatarMasked__0b3c8 {
+.wrapper_edb6e0 foreignObject {
   mask: none;
   -webkit-mask: none;
-}
-.wrapper-1VLyxH,
-.avatar__08316,
-.profile_f166d1 .avatarUploaderInner-yEhTv5,
-.voiceAvatar__54cc1,
-.avatar_a56eee,
-.border_e782de,
-.avatar__777a6,
-.clickableAvatar_e26163,
-.emptyUser_dba665,
-.avatar-b5OQ1N,
-.wrapper__0be4c.ringingIncoming__5e70d::after,
-.wrapper__0be4c.ringingOutgoing_a69e6a::after,
-.replyAvatar_cea07c,
-.avatarSpeaking-33RRJU,
-.avatar-2EVtgZ,
-.avatarContainer-3tBLDx,
-.appAvatar-2_lufo,
-.flexChild__6e093 .avatarUploaderInner-yEhTv5,
-.iconInactive__90d40,
-.avatarUploaderInner_c81617,
-.embedAuthorIcon__6b055,
-.avatarUploaderInner__63001 {
-  border-radius: var(--avatar-radius) !important;
-}
-.avatarHint__8e5b9 foreignObject:not(.avatarHintInner__3d1c9) {
-  mask: unset !important;
 }
 
 /* ----------------------------------------USER MODALS---------------------------------------- */
@@ -3144,7 +3113,7 @@ img[class*="avatar"] {
 [class*="standardSidebarView_"] [class*="contentColumn_"] {
   max-width: unset;
 }
-[class*="tools_"], [class*="closeButton_"] {
+[class*="tools_"], [class*="tools_"] [class*="closeButton_"] {
   border-radius: 0;
   position: absolute;
   width: 100%;
