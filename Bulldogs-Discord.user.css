@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Bulldog's Discord
+@description    A clean and simple dark blue theme for Discord.com
+@author         baldagh
+@version        1.0
+@namespace      github.com/Bulldog3321
+@homepageURL    https://github.com/Bulldog3321/Bulldogs-Discord
+@updateURL      https://bulldog3321.github.io/Bulldogs-Discord/Bulldogs-Discord.user.css
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document domain("discord.com") {
+  @import url("https://bulldog3321.github.io/Bulldogs-Discord/main.css");
+}
