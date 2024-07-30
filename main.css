@@ -5,8 +5,14 @@
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://discord-extensions.github.io/modern-indicators/src/source.css");
 @import url("https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css");
-@import url("https://minidiscordthemes.github.io/MinimalAddonCards/MinimalAddonCards.theme.css");
-@import url("https://minidiscordthemes.github.io/Snippets/AltTextImprovements/main.css");
+@import url('https://sl4f.github.io/vencord/themes/betterbadges/src/DarkBadges.css');
+
+/* accent swap */
+:root {
+  --accent-h: 227 !important;
+  --accent-s: 58% !important;
+  --accent-l: 65% !important;
+}
 
 /* radial status */
 :root {
@@ -19,6 +25,7 @@
   --rs-large-width: 4px;
 
   --rs-avatar-shape: calc(var(--avatar-radius) - 4%);
+  --rs-phone-visible: block;
 
   --rs-online-color: #43b581;
   --rs-idle-color: #faa61a;
@@ -28,25 +35,34 @@
   --rs-invisible-color: #747f8d;
   --rs-self-speaking-color: #57d39b;
   --rs-phone-color: var(--rs-online-color);
-
-  --rs-phone-visible: block;
 }
 
 /* modern indicators */
 [class*="sidebar_"] [class*="containerDefault_"],
 [class*="sidebar_"] [class*="channel_"] {
-  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 [class*="sidebar_"] [class*="containerDefault_"]:has([class*="modeSelected_"], [class*="modeConnected_"]),
 [class*="sidebar_"] [class*="channel_"]:has([class*="selected_"]) {
   border-radius: 0 24px 24px 0;
 }
 
+/* better badges */
+:root {
+  --badge-size: 22px;
+  --badge-margin: 2px;
+}
+
 /* ----------------------------------------MAIN---------------------------------------- */
 
 /* variables */
 :root {
+  --blurple: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --avatar-radius: 28%;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
 }
 
 /* font */
@@ -67,13 +83,6 @@
   --background-modifier-selected: rgba(255, 255, 255, 0.08) !important;
   --background-message-hover: hsla(0, 0%, 0%, 0.15);
   --text-link: hsl(214, 77%, 74%) !important;
-}
-
-/* blurple recoloring */
-:root {
-  --accent-h: 227 !important;
-  --accent-s: 58% !important;
-  --accent-l: 65% !important;
 }
 
 /* tooltip */
@@ -100,6 +109,39 @@ img[class*="avatar"],
 [class*="wrapper_"] foreignObject {
   mask: none;
   border-radius: var(--avatar-radius);
+}
+
+/* offline browsing */
+[class*="fixClipping_"] {
+  background: var(--background-tertiary);
+  border-radius: var(--radius-md);
+  opacity: 0.9;
+  height: 130px;
+  width: 150px;
+  top: unset !important;
+  left: unset !important;
+  right: 16px;
+  bottom: 16px;
+}
+[class*="fixClipping_"] [class*="content_"] {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 150px;
+  top: 0;
+}
+[class*="fixClipping_"] [class*="problems_"] {
+  padding-bottom: 16px;
+}
+[class*="fixClipping_"] [class*="statusLink_"] {
+  margin: 0;
+}
+[class*="fixClipping_"] [class*="text_"],
+[class*="fixClipping_"] [class*="problemsText_"],
+[class*="fixClipping_"] [class*="links_"]:not([class*="statusLink_"]) {
+  display: none;
 }
 
 /* ----------------------------------------SERVER LIST---------------------------------------- */
@@ -201,6 +243,14 @@ img[class*="avatar"],
   --brand-experiment-560: var(--primary-400);
 }
 
+/* hide home search */
+[class*="sidebar_"] [class*="searchBar_"] {
+  display: none;
+}
+[class*="sidebar_"] [class*="channel_"]:nth-child(2) {
+  margin-top: 0;
+}
+
 /* persistent server banner */
 :not([class*="bannerVisible_"]) > [class*="animatedContainer_"] {
   opacity: 0.5 !important;
@@ -223,7 +273,7 @@ img[class*="avatar"],
   opacity: 0.8;
 }
 [class*="sidebar_"] [class*="wrapperCommon_"] [class*="container_"]::before {
-  background: linear-gradient(to left, var(--brand-experiment) 50%, transparent);
+  background: linear-gradient(to left, var(--blurple) 50%, transparent);
   content: "";
   height: 2px;
   flex-grow: 1;
@@ -231,7 +281,7 @@ img[class*="avatar"],
   margin-right: 6px;
 }
 [class*="sidebar_"] [class*="wrapperCommon_"] [class*="container_"]::after {
-  background: linear-gradient(to right, var(--brand-experiment) 50%, transparent);
+  background: linear-gradient(to right, var(--blurple) 50%, transparent);
   content: "";
   height: 2px;
   flex-grow: 1;
@@ -298,7 +348,7 @@ img[class*="avatar"],
 [class*="peopleListItem_"]:hover,
 [class*="peopleListItem_"][class*="active_"] {
   border: none;
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-md);
   margin: 0;
   padding: 16px 14px;
   flex-grow: 1;
@@ -526,8 +576,8 @@ img[class*="avatar"],
 
 /* message list */
 [class*="messageListItem_"] [class*="message_"] {
-  border-top-right-radius: var(--radius-sm);
-  border-bottom-right-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
 }
 [class*="messageListItem_"] [class*="replying_"]:hover,
 [class*="messageListItem_"] [class*="replying_"][class*="selected_"] {
@@ -550,19 +600,6 @@ img[class*="avatar"],
 }
 [class*="replyAvatar_"] {
   border-radius: var(--avatar-radius);
-}
-
-/* full edited text */
-[class*="timestamp_"]:not([class*="timestampInline_"], [class*="timestampVisibleOnHover_"]) time::after {
-  content: "(" attr(aria-label) ")";
-  color: var(--text-muted);
-  font-size: 0.625rem;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: lowercase;
-}
-[class*="timestamp_"] [class*="edited_"] {
-  display: none;
 }
 
 /* bold date seperator */
@@ -652,11 +689,8 @@ img[class*="avatar"],
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
 
 /* no user border */
-[class*="userProfileInnerThemedNonPremium_"] [class*="overlayBackground_"] {
-  background-color: var(--background-secondary);
-}
 [class*="userProfileOuterThemed_"][class*="userPopoutOuter_"],
-[class*="userProfileOuterThemed_"][class*="userProfileModalOuter_"] {
+[class*="userProfileOuterThemed_"][class*="userProfileOuter_"] {
   padding: 0;
 }
 [class*="userProfileOuterThemed_"] [class*="userPopoutInner_"]:before,
@@ -665,7 +699,7 @@ img[class*="avatar"],
   width: 100%;
 }
 
-/* no avatar hint */
+/* no avatar background */
 [class*="userPopoutInner_"] [class*="bannerSVGWrapper_"] mask circle {
   fill: none;
 }
@@ -673,37 +707,40 @@ img[class*="avatar"],
   display: none;
 }
 
+/* display full bio and status */
+[class^="userPopoutInner_"] [class^="descriptionClamp_"] {
+  -webkit-line-clamp: unset;
+  max-height: unset;
+}
+[class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
+  -webkit-line-clamp: unset;
+  max-height: unset !important;
+}
+
 /* filled role colors */
-[class*="roles_"] [class*="role_"] {
+[class*="role_"] {
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
+  border: none;
+  max-width: fit-content !important;
   transform: translate(0);
   overflow: hidden;
-  border: none;
-  border-left: 3px solid;
-  border-radius: 3px var(--radius-xs) var(--radius-xs) 3px;
 }
-[class*="roles_"] [class*="role_"] [class*="roleCircle_"] {
-  width: 8px;
-  height: 8px;
-  margin-left: 2px;
-}
-[class*="roles_"] [class*="role_"] [class*="roleCircle_"]::after {
+[class*="role_"] [class*="roleCircle_"]::after {
   content: "";
   position: absolute;
   background: inherit;
-  opacity: 0.15;
+  opacity: 0.35;
   width: 100%;
   height: 100%;
   left: 0;
+  z-index: -1;
 }
-[class*="roles_"] [class*="role_"] [class*="roleRemoveButton_"] {
+[class*="role_"] [class*="roleRemoveButton_"] {
   position: static;
 }
-[class*="roles_"] [class*="role_"] [class*="roleRemoveIcon_"] {
-  background-color: var(--status-danger);
-  border-radius: 50%;
-  left: 8px;
-  cursor: pointer;
-  transition: opacity 1s;
+[class*="role_"] [class*="roleRemoveIcon_"] {
+  top: 12px;
+  left: 11px;
 }
 
 /* filled role selection colors */
@@ -754,7 +791,7 @@ img[class*="avatar"],
 }
 [class*="layers_"] [class*="standardSidebarView_"] [class*="contentRegion_"],
 [class*="layers_"] [class*="standardSidebarView_"] [class*="contentRegionScroller_"] {
-  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 [class*="layers_"] [class*="standardSidebarView_"] [class*="contentColumn_"] {
   width: 740px;
@@ -779,7 +816,17 @@ img[class*="avatar"],
   color: transparent !important;
 }
 
-/* clean toggles */
+/* slim switches */
+[class*="control_"] [class*="container_"] {
+  height: 18px;
+  width: 36px;
+}
+[class*="control_"] [class*="container_"] [class*="slider_"] {
+  margin-top: 0;
+}
+[class*="control_"] [class*="container_"]:not([class*="checked_"]) [class*="slider_"] {
+  margin-left: 0;
+}
 [class*="control_"] [class*="container_"] [class*="slider_"] svg {
   display: none;
 }
@@ -808,67 +855,4 @@ span[data-tag="vc mod"],
 span[data-tag="chat mod"] {
   background-color: green;
   color: white;
-}
-
-/* ----------------------------------------to be added or removed---------------------------------------- */
-
-/*call dock*
-#app-mount .wrapper__3f3a7,
-#app-mount .bottomControls__8bd89 .justifyCenter__4080c {
-  background-color: var(--background-secondary);
-  border-radius: 20px;
-  transition: background-color 0.25s;
-}
-#app-mount .wrapper__3f3a7:hover,
-#app-mount .bottomControls__8bd89 .justifyCenter__4080c:hover {
-  background-color: var(--background-tertiary);
-}
-#app-mount .colorable_c84c4c {
-  background: none;
-}
-#app-mount .colorable_c84c4c.red_a51ba8 .centerIcon__6075a {
-  color: var(--status-danger);
-}
-#app-mount .colorable_c84c4c .centerIcon__6075a {
-  color: white;
-}
-#app-mount .contextMenuNub__7c02f {
-  background-color: var(--background-modifier-active);
-}
-#app-mount .topControls_d202b0 .title_b7d661 {
-  background: none;
-}
-#app-mount .joinButton__4bf9a {
-  display: none;
-}
-
-/* offline mode *
-.container__4bde3 {
-  background: transparent;
-  pointer-events: none;
-}
-.container__4bde3 .anchor-1MIwyf {
-  pointer-events: auto;
-}
-.container__4bde3 .content__0e954 .text__32559 {
-  display:none;
-}
-.links_ab4aa2:before {
-  display: none;
-}
-.container__4bde3 .ready__61f2f {
-  position: absolute;
-  bottom: 12px;
-  right: 28px;
-  z-index: 1;
-}
-.container__4bde3 .problems__755eb {
-  padding: 10px 15px;
-  padding-top: 120px;
-  bottom: 6px;
-  left: unset;
-  right: 6px;
-  background-color: var(--background-tertiary);
-  border-radius: var(--radius-md);
-  box-shadow: var(--elevation-high);
 }
