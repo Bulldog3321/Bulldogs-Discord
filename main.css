@@ -4,8 +4,8 @@
 @import url("https://dablulite.github.io/css-snippets/AccentSwap/import.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://discord-extensions.github.io/modern-indicators/src/source.css");
-@import url("https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css");
-@import url('https://sl4f.github.io/vencord/themes/betterbadges/src/DarkBadges.css');
+/* @import url("https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css"); */
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
 
 /* accent swap */
 :root {
@@ -47,10 +47,11 @@
   border-radius: 0 24px 24px 0;
 }
 
-/* better badges */
+/* discord icons */
 :root {
-  --badge-size: 22px;
-  --badge-margin: 2px;
+  --si-animations : false;
+  --si-color: white;
+  --si-permacolor: true;
 }
 
 /* ----------------------------------------MAIN---------------------------------------- */
@@ -83,12 +84,6 @@
   --background-modifier-selected: rgba(255, 255, 255, 0.08) !important;
   --background-message-hover: hsla(0, 0%, 0%, 0.15);
   --text-link: hsl(214, 77%, 74%) !important;
-}
-
-/* tooltip */
-[class*="tooltip_"] {
-  border-radius: var(--radius-sm);
-  box-shadow: none;
 }
 
 /* minimal scrollbars */
@@ -165,7 +160,7 @@ img[class*="avatar"],
 
 /* badge shadow */
 [class*="guilds_"] [class*="lowerBadge_"] {
-  filter: drop-shadow(0 0 2px #000);
+  filter: drop-shadow(0 0 3px #000);
 }
 
 /* slim open folders */
@@ -178,77 +173,66 @@ img[class*="avatar"],
 
 /* clean user panel */
 [class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) {
-  display: grid;
-  height: fit-content;
   padding: 8px;
+  height: fit-content;
+}
+[class*="panels_"] [class*="container_"] [class*="content_"] {
+  padding: 0;
+  flex-direction: column;
+}
+[class*="panels_"] [class*="container_"] [class*="avatarWrapper_"] {
+  background: none;
+  margin: 0;
+  padding: 0 0 8px 0;
+  width: 100%;
+}
+[class*="panels_"] [class*="container_"] [class*="nameTag_"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+[class*="panels_"] [class*="container_"] [class*="nameTag_"] [class*="panelSubtextContainer_"] {
+  width: 100%;
 }
 [class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) [class*="flex_"] {
   gap: 8px;
-  padding-top: 8px;
-}
-[class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) button {
-  background-color: var(--background-primary);
   width: 100%;
-  transition: transform 0.25s;
 }
-[class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) button:hover {
+[class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) button,
+[class*="panels_"] [class*="container_"] [class*="micButtonParent_"] {
+  background-color: var(--background-primary);
+  border-radius: var(--radius-xs);
+  width: 100%;
+}
+[class*="panels_"] [class*="container_"]:has([class*="avatarWrapper_"]) button:hover,
+[class*="panels_"] [class*="container_"] [class*="micButtonParent_"]:hover {
   background-color: var(--background-secondary);
 }
-[class*="panels_"] [class*="container_"] [class*="avatarWrapper_"] {
-  margin: 0;
-}
 
-/* compact status selection */
-[class*="userPopoutInner"]:has(#account) > *:not(:has(#account)),
-[class*="userPopoutOverlayBackground"]:has(#account) > *:not(#account),
-[class*="accountProfilePopoutWrapper"] [class*="section"],
-[class*="accountProfilePopoutWrapper"] [class*="separator"] {
-  display: none;
-}
-[class*="accountProfilePopoutWrapper"] {
-  left: unset;
-}
-[class*="accountProfilePopoutWrapper"] [class*="userPopout"] {
-  background: var(--background-tertiary);
-  width: 100%;
-}
-[class*="accountProfilePopoutWrapper"] [class*="userPopout"]::before {
-  display: none;
-}
-[class*="accountProfilePopoutWrapper"] [class*="overlayBackground"] {
-  margin: 0;
-}
-[class*="accountProfilePopoutWrapper"] [class*="submenu"] [class*="description"] {
+/* clean status picker */
+[class*="statusPickerModalMenu_"] [class*="description"] {
   opacity: 0;
   height: fit-content;
   max-height: 0;
   margin-bottom: 0;
   transition: 0.25s;
 }
-[class*="accountProfilePopoutWrapper"] [class*="submenu"] [class*="item"][class*="focused"] [class*="description"] {
+[class*="statusPickerModalMenu_"] [class*="item"][class*="focused"] [class*="description"] {
   opacity: 1;
   height: fit-content;
   max-height: 32px;
 }
-#account-status-picker--online {
-  --brand-experiment-560: var(--green-360);
+[class*="statusPickerModalMenu_"] [id="set-status-submenu-online"][class*="focused"] {
+  background-color: var(--green-360);
 }
-#account-status-picker--dnd {
-  --brand-experiment-560: var(--red-400);
+[class*="statusPickerModalMenu_"] [id="set-status-submenu-idle"][class*="focused"] {
+  background-color: var(--yellow-330);
 }
-#account-status-picker--idle {
-  --brand-experiment-560: var(--yellow-330);
+[class*="statusPickerModalMenu_"] [id="set-status-submenu-dnd"][class*="focused"] {
+  background-color: var(--red-400);
 }
-#account-status-picker--invisible {
-  --brand-experiment-560: var(--primary-400);
-}
-
-/* hide home search */
-[class*="sidebar_"] [class*="searchBar_"] {
-  display: none;
-}
-[class*="sidebar_"] [class*="channel_"]:nth-child(2) {
-  margin-top: 0;
+[class*="statusPickerModalMenu_"] [id="set-status-submenu-invisible"][class*="focused"] {
+  background-color: var(--primary-400);
 }
 
 /* persistent server banner */
@@ -316,10 +300,9 @@ img[class*="avatar"],
 
 /* ----------------------------------------HOME---------------------------------------- */
 
-/* friend list grid */
+/* friends list */
 [class*="peopleColumn_"] {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px 16px 0 16px;
 }
 [class*="peopleColumn_"] > div > div {
   display: grid;
@@ -337,9 +320,12 @@ img[class*="avatar"],
   display: flex;
 }
 [class*="peopleColumn_"] [class*="title_"] {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: capitalize;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
+}
+[class*="peopleColumn_"] [class*="blockedIgnoredSettingsNotice_"] {
+  margin: 0;
 }
 [class*="peopleListItem_"] {
   background-color: var(--background-secondary);
@@ -564,14 +550,31 @@ img[class*="avatar"],
 }
 
 /* bubble message actions */
-[class*="messageListItem_"] [class*="message_"] [class*="buttonContainer_"] [class*="wrapper_"] {
+[class*="messageListItem_"] [class*="buttonContainer_"] [class*="buttonsInner_"] {
   background: none;
+  border: none;
   box-shadow: none !important;
-  column-gap: 4px;
+  grid: repeat(2, 32px) / auto-flow 32px;
+  grid-auto-flow: column;
+  gap: 4px;
 }
-[class*="messageListItem_"] [class*="message_"] [class*="buttonContainer_"] [class*="button_"] {
+[class*="messageListItem_"] [class*="buttonContainer_"] [class*="button_"] {
   background-color: var(--background-secondary-alt);
   border-radius: var(--radius-sm);
+  padding: 0;
+  height: 32px;
+  width: 32px;
+}
+[class*="messageListItem_"] [class*="buttonContainer_"] [aria-label="Edit"],
+[class*="messageListItem_"] [class*="buttonContainer_"] [aria-label="Reply"] {
+  order: 1;
+  grid-row: span 2;
+  height: calc(32px * 2 + 4px);
+  width: calc(32px * 1.25);
+  margin-left: 4px;
+}
+[class*="messageListItem_"] [class*="popoverReactionHoverBar_"] [class*="separator_"] {
+  display: none;
 }
 
 /* message list */
@@ -688,66 +691,59 @@ img[class*="avatar"],
 
 /* ----------------------------------------USER POPOUTS---------------------------------------- */
 
-/* no user border */
-[class*="userProfileOuterThemed_"][class*="userPopoutOuter_"],
-[class*="userProfileOuterThemed_"][class*="userProfileOuter_"] {
-  padding: 0;
-}
-[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"]:before,
-[class*="userProfileOuterThemed_"] [class*="userProfileModalInner_"]:before {
-  height: 100%;
-  width: 100%;
+/* no nitro border */
+[id*="popout_"] [class*="custom-profile-theme"] {
+  --custom-user-profile-theme-padding: 0 !important;
 }
 
-/* no avatar background */
-[class*="userPopoutInner_"] [class*="bannerSVGWrapper_"] mask circle {
-  fill: none;
-}
-[class*="userPopoutInner_"] [class*="avatarHintInner_"] {
+/* no avatar mask */
+[id*="popout_"] [class*="inner_"] [class*="mask_"] circle {
   display: none;
 }
-
-/* display full bio and status */
-[class^="userPopoutInner_"] [class^="descriptionClamp_"] {
-  -webkit-line-clamp: unset;
-  max-height: unset;
-}
-[class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
-  -webkit-line-clamp: unset;
-  max-height: unset !important;
+[id*="popout_"] [class*="inner_"] [class*="overlay_"]:after {
+  border-radius: var(--avatar-radius);
 }
 
 /* filled role colors */
 [class*="role_"] {
-  background-color: hsla(0, 0%, 0%, 0.25) !important;
+  background-color: hsla(0, 0%, 0%, 0.25);
   border: none;
-  max-width: fit-content !important;
+  padding: 6px;
   transform: translate(0);
   overflow: hidden;
+}
+[class*="role_"] [class*="roleCircle_"] {
+  margin: 0 2px 0 1px;
 }
 [class*="role_"] [class*="roleCircle_"]::after {
   content: "";
   position: absolute;
   background: inherit;
-  opacity: 0.35;
-  width: 100%;
+  opacity: 0.4;
   height: 100%;
-  left: 0;
-  z-index: -1;
+  width: 100%;
+  right: 0;
 }
 [class*="role_"] [class*="roleRemoveButton_"] {
   position: static;
 }
 [class*="role_"] [class*="roleRemoveIcon_"] {
   top: 12px;
-  left: 11px;
+  left: 14px;
+  right: 0;
+  bottom: 0;
+}
+[class*="role_"] [class*="roleName_"] {
+  padding: 4px 6px 4px 0;
+  margin-right: -6px;
+  z-index: 1;
 }
 
 /* filled role selection colors */
-[class*="container_"] [class*="combobox_"] [class*="item_"] {
+[id*="popout_"] [class*="container_"] [class*="combobox_"] [class*="item_"] {
   position: relative;
 }
-[class*="container_"] [class*="combobox_"] [class*="item_"] [class*="roleCircle_"]::after {
+[id*="popout_"] [class*="container_"] [class*="combobox_"] [class*="item_"] [class*="roleCircle_"]::after {
   position: absolute;
   content: "";
   background: inherit;
@@ -829,6 +825,42 @@ img[class*="avatar"],
 }
 [class*="control_"] [class*="container_"] [class*="slider_"] svg {
   display: none;
+}
+
+/* grid account panel */
+[class*="accountProfileCard_"] {
+  background-color: var(--background-secondary);
+}
+[class*="accountProfileCard_"] circle {
+  display: none;
+}
+[class*="accountProfileCard_"] .background__1fed1,
+[class*="accountProfileCard_"] .fieldSpacer__1fed1,
+[class*="accountProfileCard_"] .fieldSpacerBottom__1fed1 {
+  margin: 0;
+}
+[class*="accountProfileCard_"] .fieldList__1fed1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+[class*="accountProfileCard_"] .field__1fed1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+  border-radius: var(--radius-sm);
+  height: 120px;
+  padding: 16px;
+}
+[class*="accountProfileCard_"] .fieldButton__1fed1 {
+  width: 100%;
+}
+[class*="accountProfileCard_"] .removeButton__1fed1 {
+  background-color: var(--button-danger-background);
+  transition: 0.2s;
+}
+[class*="accountProfileCard_"] .removeButton__1fed1:hover {
+  background-color: var(--button-danger-background-hover);
 }
 
 /* ----------------------------------------VENCORD---------------------------------------- */
