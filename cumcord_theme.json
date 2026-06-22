@@ -1,11 +1,10 @@
 {
-  "name": "Bulldog's Theme",
+  "name": "Bulldog's Discord",
   "description": "A clean and simple dark blue theme",
-  "author": "baldagh",
-  "license": "coom",
+  "author": "Bulldog",
+  "license": "MIT",
   "media": [
-    "",
-    "",
-    ""
+    "https://bulldog3321.github.io/Bulldogs-Discord/screenshots/home.png",
+    "https://bulldog3321.github.io/Bulldogs-Discord/screenshots/server.png"
   ]
 }
