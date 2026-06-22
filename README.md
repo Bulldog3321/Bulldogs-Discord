@@ -1,7 +1,8 @@
 # Bulldogs-Discord
 A clean and simple dark blue theme for Discord.com
 
-> [!WARNING] Discontinuation Notice
+> [!NOTE]
+> #### Discontinuation Notice
 > Since I don't use discord much anymore, this theme is currently a shell of it's former glory and will no longer recieve major support or feature updates. Occasional maintenence and small additions will likely continue.
 
 ## Installation
